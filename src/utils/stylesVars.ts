@@ -1,3 +1,3 @@
-export const stylesVars={
-    navBorderColor:"#DCDFE4"
-}
+export const stylesVars = {
+  navBorderColor: "#DCDFE4",
+};

@@ -1,4 +1,3 @@
 export const paths = {
-  firstBlock: [{ path: "/dashboard", icon: "", name: "Home" }]
-}
-
+  firstBlock: [{ path: "/dashboard", icon: "", name: "Home" }],
+};
