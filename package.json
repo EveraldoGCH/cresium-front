@@ -30,11 +30,5 @@
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "typescript": "^5"
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "bash -c 'git diff --cached --name-only --diff-filter=ACMRTUXB | grep \\.tsx\\?$ | xargs prettier --write'",
-      "git add"
-    ]
   }
 }
