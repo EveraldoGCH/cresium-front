@@ -33,7 +33,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "bash -c 'git diff --cached --name-only --diff-filter=ACMRTUXB | grep \\.tsx\\?$ | xargs eslint --fix'",
+      "bash -c 'git diff --cached --name-only --diff-filter=ACMRTUXB | grep \\.tsx\\?$ | xargs prettier --write'",
       "git add"
     ]
   }
