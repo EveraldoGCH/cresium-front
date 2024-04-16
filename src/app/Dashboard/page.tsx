@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function DashBoard() {
-  const [lol] = useState("XD");
-
-  return <div>page dash{lol}</div>;
+  return <div>page dash</div>;
 }
