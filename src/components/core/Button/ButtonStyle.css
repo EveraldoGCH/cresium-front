@@ -1,0 +1,47 @@
+.button {
+    all: unset;
+    align-items: center;
+    box-sizing: border-box;
+    display: inline-flex;
+    gap: 8px;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.button.text {
+    font-family: Inter, Helvetica;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+
+.button.secondary {
+    border: 1px solid;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .button.tertiary {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .button.primary {
+    border: 1px solid;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: black;
+
+  }
+
+
+  .button :hover {
+    box-shadow: 0px 1px 2px #1018280d;
+    background-color: black;
+    color:white;
+  }

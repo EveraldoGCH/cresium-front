@@ -39,5 +39,7 @@ line-height: 28px;
 `;
 
 export const ChildrenCont =styled.main`
-padding-left:${stylesVars.verticalMenuWidth};
+margin-left:${stylesVars.verticalMenuWidth};
+padding: 32px 64px 48px 64px;
+width:100%;
 `
