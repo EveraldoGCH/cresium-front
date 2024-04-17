@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { VerticalMenu } from "@/components/layout/VerticalMenu/VerticalMenu";
+import StyledComponentsRegistry from "./registry";
 
 export const metadata: Metadata = {
   title: "Cresium",
@@ -15,7 +16,12 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
-        <VerticalMenu>{children}</VerticalMenu>
+        <StyledComponentsRegistry>{/*Sin esto, el css no se ve al entrar a una pagina por 1s por usar styled-components */}
+          <VerticalMenu>
+            {children}
+          </VerticalMenu>
+        </StyledComponentsRegistry>
+
       </body>
     </html>
   );

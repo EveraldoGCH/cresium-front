@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from "react";
 import { VerticalMenuProps } from "./VerticalMenuProps";
-import { Block, ListItemNav, LogoCont, SideNavCont } from "./styles";
+import { Block, ChildrenCont, ListItemNav, LogoCont, SideNavCont } from "./styles";
 import Image from "next/image";
 import logo from "../../../../public/assets/logo.svg";
 import { paths } from "@/utils/paths";
@@ -18,8 +18,9 @@ export function VerticalMenu({ children }: VerticalMenuProps) {
     }
   }, [])
 
-  return (
+  return (<>
     <SideNavCont>
+      
       <LogoCont>
         <Image src={logo} alt="Logo" />
       </LogoCont>
@@ -44,5 +45,9 @@ export function VerticalMenu({ children }: VerticalMenuProps) {
         })}
       </Block>
     </SideNavCont>
+    <ChildrenCont>
+      {children}
+    </ChildrenCont>
+    </>
   );
 }

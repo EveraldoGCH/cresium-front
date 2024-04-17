@@ -3,12 +3,12 @@ import { stylesVars } from "@/utils/stylesVars";
 
 export const SideNavCont = styled.div`
   background: white;
-  color: rgba(52, 64, 84, 1);
+  color: ${stylesVars.grey900};
   border-right: 1px solid ${stylesVars.navBorderColor};
   display:flex;
   flex-direction: column;
   height: 100%;
-  width: 280px;
+  width: ${stylesVars.verticalMenuWidth};
   left: 0;
   position: fixed;
   top: 0;
@@ -37,3 +37,7 @@ cursor:pointer;
 font-size: 0.875rem;
 line-height: 28px;
 `;
+
+export const ChildrenCont =styled.main`
+padding-left:${stylesVars.verticalMenuWidth};
+`
