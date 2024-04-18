@@ -4,5 +4,6 @@ export interface ButtonProps {
     destructive?: boolean;
     disabled?: boolean;
     className?: any;
+    StartIcon?:(props:any)=>React.JSX.Element;
     children: React.ReactNode;
   }

@@ -41,5 +41,5 @@ line-height: 28px;
 export const ChildrenCont =styled.main`
 margin-left:${stylesVars.verticalMenuWidth};
 padding: 32px 64px 48px 64px;
-width:100%;
+width:100vw;
 `

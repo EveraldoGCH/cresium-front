@@ -26,3 +26,1110 @@ body {
   overflow-x: hidden;
   display:flex
 }
+
+p{
+  margin:1em 0;
+}
+
+
+/* ESTILOS DEVIAN */
+
+
+
+/* Remove is recharts is not used */
+.recharts-cartesian-axis-tick-value {
+  color: var(--mui-palette-text-secondary);
+  font-size: var(--fontSize-xs);
+}
+
+.recharts-cartesian-grid line {
+  stroke: var(--mui-palette-divider);
+}
+
+.recharts-pie path:focus {
+  outline: none;
+}
+
+/* Remove if react-simple-maps is not used */
+.rsm-geographies path:focus {
+  outline: none;
+}
+
+/* Remove if fullcalendar is not used */
+C
+
+.fc .fc-license-message {
+  display: none;
+}
+
+.fc .fc-list {
+  border-color: transparent;
+}
+
+.fc .fc-scrollgrid {
+  border-color: transparent;
+}
+
+.fc .fc-scrollgrid-section-header>th {
+  border-color: transparent;
+}
+
+.fc .fc-scrollgrid-section-body>td {
+  border-color: transparent;
+}
+
+.fc .fc-col-header-cell:first-of-type {
+  border-left-color: transparent;
+}
+
+.fc .fc-col-header-cell:last-of-type {
+  border-right-color: transparent;
+}
+
+.fc .fc-col-header-cell-cushion {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 2.5;
+  padding: 8px;
+  text-transform: uppercase;
+}
+
+.fc .fc-daygrid-day-frame {
+  padding: 12px;
+}
+
+.fc .fc-day-other .fc-daygrid-day-top {
+  color: var(--mui-palette-text-secondary);
+}
+
+.fc .fc-event {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* Typography */
+.Display-2xlBold {
+  font-family: Inter;
+  font-size: 72px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -1.44px;
+}
+
+.Display-2xlSemibold {
+  font-family: Inter;
+  font-size: 72px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -1.44px;
+}
+
+.Display-2xlMedium {
+  font-family: Inter;
+  font-size: 72px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -1.44px;
+}
+
+.Display-2xlRegular {
+  font-family: Inter;
+  font-size: 72px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -1.44px;
+}
+
+.Display-xlBold {
+  font-family: Inter;
+  font-size: 60px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+}
+
+.Display-xlSemibold {
+  font-family: Inter;
+  font-size: 60px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+}
+
+.Display-xlMedium {
+  font-family: Inter;
+  font-size: 60px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+}
+
+.Display-xlRegular {
+  font-family: Inter;
+  font-size: 60px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+}
+
+.Display-lgBold {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -0.96px;
+}
+
+.Display-lgSemibold {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -0.96px;
+}
+
+.Display-lgMedium {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -0.96px;
+}
+
+.Display-lgRegular {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -0.96px;
+}
+
+.Display-mdBold {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: -0.72px;
+}
+
+.Display-mdSemibold {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: -0.72px;
+}
+
+.Display-mdMedium {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: -0.72px;
+}
+
+.Display-mdRegular {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: -0.72px;
+}
+
+.Display-smBold {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+}
+
+.Display-smSemibold {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+}
+
+.Display-smMedium {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+}
+
+.Display-smRegular {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+}
+
+.Display-xsBold {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+}
+
+.Display-xsSemibold {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+}
+
+.Display-xsMedium {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+}
+
+.Display-xsRegular {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+}
+
+.Text-xlBold {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.Text-xlSemibold {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.Text-xlMedium {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.Text-xlRegular-underlined {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.Text-xlRegular {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.Text-lgBold {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+}
+
+.Text-lgSemibold {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+}
+
+.Text-lgMedium {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+}
+
+.Text-lg-Medium-underlined {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+}
+
+.Text-lgRegular {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+}
+
+.Text-mdBold {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.Text-mdSemibold {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.componentsAlert-Title {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+}
+
+.Text-mdMedium {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.componentsInput-Text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+}
+
+.Text-mdRegular {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.componentsButton-Large {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.73;
+  letter-spacing: normal;
+}
+
+.Text-sm-Bold {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+}
+
+.componentsAvatar-Initials {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+}
+
+.Text-smSemibold {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+}
+
+.componentsTable-Header {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+}
+
+.componentsMenu-Item-Dense {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.17px;
+}
+
+.componentsList-Subheader {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.43;
+  letter-spacing: 0.1px;
+}
+
+.componentsInput-Label {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.componentsButton-Medium {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+}
+
+.Text-smMedium {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+}
+
+.componentsBottom-Navigation-Active-Label {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.66;
+  letter-spacing: 0.4px;
+}
+
+.Text-smRegular {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+}
+
+.componentsNavLeaf {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+}
+
+.componentsChip {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: 0.16px;
+}
+
+.componentsButton-Small {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.69;
+  letter-spacing: 0.2px;
+}
+
+.Text-xs-Bold {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.Text-xsSemibold {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.Text-xsMedium {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.componentsHelper-Text {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+}
+
+.Text-xsRegular {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.componentsBadge-Label {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.14px;
+}
+
+.componentsTooltip {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+
+.componentsProgress-loaded {
+  font-family: Inter;
+  font-size: 4px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 16px;
+}
+
+/* Variables */
+:root {
+  --fontSize-xs: 0.75rem;
+  --fontSize-sm: 0.875rem;
+  --fontSize-md: 1rem;
+  --fontSize-lg: 1.125rem;
+  --fontSize-xl: 1.25rem;
+  --fontSize-2xl: 1.5rem;
+
+  --icon-fontSize-sm: 1rem;
+  --icon-fontSize-md: 1.25rem;
+  --icon-fontSize-lg: 1.5rem;
+
+  /* Remember to keep in sync with theme breakpoints */
+  --maxWidth-xs: 0;
+  --maxWidth-sm: 600px;
+  --maxWidth-md: 960px;
+  --maxWidth-lg: 1200px;
+  --maxWidth-xl: 1440px;
+
+  /* SPACING */
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-s: 12px;
+  --spacing-m: 16px;
+  --spacing-l: 20px;
+  --spacing-xl: 24px;
+  --spacing-xxl: 28px;
+
+  /* COLORS  */
+  --baseblack: rgba(0, 0, 0, 1);
+  --basewhite: rgba(255, 255, 255, 1);
+
+  --blue-100: rgba(209, 233, 255, 1);
+  --blue-200: rgba(178, 221, 255, 1);
+  --blue-25: rgba(245, 250, 255, 1);
+  --blue-300: rgba(132, 202, 255, 1);
+  --blue-400: rgba(83, 177, 253, 1);
+  --blue-50: rgba(239, 248, 255, 1);
+  --blue-500: rgba(46, 144, 250, 1);
+  --blue-600: rgba(21, 112, 239, 1);
+  --blue-700: rgba(23, 92, 211, 1);
+  --blue-800: rgba(24, 73, 169, 1);
+  --blue-900: rgba(25, 65, 133, 1);
+
+  --blue-dark-100: rgba(209, 224, 255, 1);
+  --blue-dark-200: rgba(178, 204, 255, 1);
+  --blue-dark-25: rgba(245, 248, 255, 1);
+  --blue-dark-300: rgba(132, 173, 255, 1);
+  --blue-dark-400: rgba(82, 139, 255, 1);
+  --blue-dark-50: rgba(239, 244, 255, 1);
+  --blue-dark-500: rgba(41, 112, 255, 1);
+  --blue-dark-600: rgba(21, 94, 239, 1);
+  --blue-dark-700: rgba(0, 78, 235, 1);
+  --blue-dark-800: rgba(0, 64, 193, 1);
+  --blue-dark-900: rgba(0, 53, 158, 1);
+
+  --blue-light100: rgba(224, 242, 254, 1);
+  --blue-light200: rgba(185, 230, 254, 1);
+  --blue-light25: rgba(245, 251, 255, 1);
+  --blue-light300: rgba(124, 212, 253, 1);
+  --blue-light400: rgba(54, 191, 250, 1);
+  --blue-light50: rgba(240, 249, 255, 1);
+  --blue-light500: rgba(11, 165, 236, 1);
+  --blue-light600: rgba(0, 134, 201, 1);
+  --blue-light700: rgba(2, 106, 162, 1);
+  --blue-light800: rgba(6, 89, 134, 1);
+  --blue-light900: rgba(11, 74, 111, 1);
+
+  --cyan-100: rgba(207, 249, 254, 1);
+  --cyan-200: rgba(165, 240, 252, 1);
+  --cyan-25: rgba(245, 254, 255, 1);
+  --cyan-300: rgba(103, 227, 249, 1);
+  --cyan-400: rgba(34, 204, 238, 1);
+  --cyan-50: rgba(236, 253, 255, 1);
+  --cyan-500: rgba(6, 174, 212, 1);
+  --cyan-600: rgba(8, 138, 178, 1);
+  --cyan-700: rgba(14, 112, 144, 1);
+  --cyan-800: rgba(21, 91, 117, 1);
+  --cyan-900: rgba(22, 76, 99, 1);
+
+  --error-100: rgba(254, 228, 226, 1);
+  --error-200: rgba(254, 205, 202, 1);
+  --error-25: rgba(255, 251, 250, 1);
+  --error-300: rgba(253, 162, 155, 1);
+  --error-400: rgba(249, 112, 102, 1);
+  --error-50: rgba(254, 243, 242, 1);
+  --error-500: rgba(240, 68, 56, 1);
+  --error-600: rgba(217, 45, 32, 1);
+  --error-700: rgba(180, 35, 24, 1);
+  --error-800: rgba(145, 32, 24, 1);
+  --error-900: rgba(122, 39, 26, 1);
+
+  --fuchsia-100: rgba(251, 232, 255, 1);
+  --fuchsia-200: rgba(246, 208, 254, 1);
+  --fuchsia-25: rgba(254, 250, 255, 1);
+  --fuchsia-300: rgba(238, 170, 253, 1);
+  --fuchsia-400: rgba(228, 120, 250, 1);
+  --fuchsia-50: rgba(253, 244, 255, 1);
+  --fuchsia-500: rgba(212, 68, 241, 1);
+  --fuchsia-600: rgba(186, 36, 213, 1);
+  --fuchsia-700: rgba(159, 26, 177, 1);
+  --fuchsia-800: rgba(130, 24, 144, 1);
+  --fuchsia-900: rgba(111, 24, 119, 1);
+
+  --gray-100: rgba(242, 244, 247, 1);
+  --gray-200: rgba(234, 236, 240, 1);
+  --gray-25: rgba(252, 252, 253, 1);
+  --gray-300: rgba(208, 213, 221, 1);
+  --gray-400: rgba(152, 162, 179, 1);
+  --gray-50: rgba(249, 250, 251, 1);
+  --gray-500: rgba(102, 112, 133, 1);
+  --gray-600: rgba(71, 84, 103, 1);
+  --gray-700: rgba(52, 64, 84, 1);
+  --gray-800: rgba(29, 41, 57, 1);
+  --gray-900: rgba(16, 24, 40, 1);
+
+  --gray-blue100: rgba(234, 236, 245, 1);
+  --gray-blue200: rgba(213, 217, 235, 1);
+  --gray-blue25: rgba(252, 252, 253, 1);
+  --gray-blue300: rgba(179, 184, 219, 1);
+  --gray-blue400: rgba(113, 123, 188, 1);
+  --gray-blue50: rgba(248, 249, 252, 1);
+  --gray-blue500: rgba(78, 91, 166, 1);
+  --gray-blue600: rgba(62, 71, 132, 1);
+  --gray-blue700: rgba(54, 63, 114, 1);
+  --gray-blue800: rgba(41, 48, 86, 1);
+  --gray-blue900: rgba(16, 19, 35, 1);
+
+  --gray-cool-100: rgba(239, 241, 245, 1);
+  --gray-cool-200: rgba(220, 223, 234, 1);
+  --gray-cool-25: rgba(252, 252, 253, 1);
+  --gray-cool-300: rgba(185, 192, 212, 1);
+  --gray-cool-400: rgba(125, 137, 176, 1);
+  --gray-cool-50: rgba(249, 249, 251, 1);
+  --gray-cool-500: rgba(93, 107, 152, 1);
+  --gray-cool-600: rgba(74, 85, 120, 1);
+  --gray-cool-700: rgba(64, 73, 104, 1);
+  --gray-cool-800: rgba(48, 55, 79, 1);
+  --gray-cool-900: rgba(17, 19, 34, 1);
+
+  --gray-iron-100: rgba(244, 244, 245, 1);
+  --gray-iron-200: rgba(228, 228, 231, 1);
+  --gray-iron-25: rgba(252, 252, 252, 1);
+  --gray-iron-300: rgba(209, 209, 214, 1);
+  --gray-iron-400: rgba(160, 160, 171, 1);
+  --gray-iron-50: rgba(250, 250, 250, 1);
+  --gray-iron-500: rgba(112, 112, 123, 1);
+  --gray-iron-600: rgba(81, 82, 92, 1);
+  --gray-iron-700: rgba(63, 63, 70, 1);
+  --gray-iron-800: rgba(38, 39, 43, 1);
+  --gray-iron-900: rgba(24, 24, 27, 1);
+
+  --gray-modern-100: rgba(238, 242, 246, 1);
+  --gray-modern-200: rgba(227, 232, 239, 1);
+  --gray-modern-25: rgba(252, 252, 253, 1);
+  --gray-modern-300: rgba(205, 213, 223, 1);
+  --gray-modern-400: rgba(154, 164, 178, 1);
+  --gray-modern-50: rgba(248, 250, 252, 1);
+  --gray-modern-500: rgba(105, 117, 134, 1);
+  --gray-modern-600: rgba(75, 85, 101, 1);
+  --gray-modern-700: rgba(54, 65, 82, 1);
+  --gray-modern-800: rgba(32, 41, 57, 1);
+  --gray-modern-900: rgba(18, 25, 38, 1);
+
+  --gray-neutral-100: rgba(243, 244, 246, 1);
+  --gray-neutral-200: rgba(229, 231, 235, 1);
+  --gray-neutral-25: rgba(252, 252, 253, 1);
+  --gray-neutral-300: rgba(210, 214, 219, 1);
+  --gray-neutral-400: rgba(157, 164, 174, 1);
+  --gray-neutral-50: rgba(249, 250, 251, 1);
+  --gray-neutral-500: rgba(108, 115, 127, 1);
+  --gray-neutral-600: rgba(77, 87, 97, 1);
+  --gray-neutral-700: rgba(56, 66, 80, 1);
+  --gray-neutral-800: rgba(31, 42, 55, 1);
+  --gray-neutral-900: rgba(17, 25, 39, 1);
+
+  --gray-true-100: rgba(245, 245, 245, 1);
+  --gray-true-200: rgba(229, 229, 229, 1);
+  --gray-true-25: rgba(252, 252, 252, 1);
+  --gray-true-300: rgba(214, 214, 214, 1);
+  --gray-true-400: rgba(163, 163, 163, 1);
+  --gray-true-50: rgba(250, 250, 250, 1);
+  --gray-true-500: rgba(115, 115, 115, 1);
+  --gray-true-600: rgba(82, 82, 82, 1);
+  --gray-true-700: rgba(66, 66, 66, 1);
+  --gray-true-800: rgba(41, 41, 41, 1);
+  --gray-true-900: rgba(20, 20, 20, 1);
+
+  --gray-warm-100: rgba(245, 245, 244, 1);
+  --gray-warm-200: rgba(231, 229, 228, 1);
+  --gray-warm-25: rgba(253, 253, 252, 1);
+  --gray-warm-300: rgba(215, 211, 208, 1);
+  --gray-warm-400: rgba(169, 162, 157, 1);
+  --gray-warm-50: rgba(250, 250, 249, 1);
+  --gray-warm-500: rgba(121, 113, 107, 1);
+  --gray-warm-600: rgba(87, 83, 78, 1);
+  --gray-warm-700: rgba(68, 64, 60, 1);
+  --gray-warm-800: rgba(41, 37, 36, 1);
+  --gray-warm-900: rgba(28, 25, 23, 1);
+
+  --green-100: rgba(211, 248, 223, 1);
+  --green-200: rgba(170, 240, 196, 1);
+  --green-25: rgba(246, 254, 249, 1);
+  --green-300: rgba(115, 226, 163, 1);
+  --green-400: rgba(60, 203, 127, 1);
+  --green-50: rgba(237, 252, 242, 1);
+  --green-500: rgba(22, 179, 100, 1);
+  --green-600: rgba(9, 146, 80, 1);
+  --green-700: rgba(8, 116, 67, 1);
+  --green-800: rgba(9, 92, 55, 1);
+  --green-900: rgba(8, 76, 46, 1);
+
+  --green-light-100: rgba(227, 251, 204, 1);
+  --green-light-200: rgba(208, 248, 171, 1);
+  --green-light-25: rgba(250, 254, 245, 1);
+  --green-light-300: rgba(166, 239, 103, 1);
+  --green-light-400: rgba(133, 225, 58, 1);
+  --green-light-50: rgba(243, 254, 231, 1);
+  --green-light-500: rgba(102, 198, 28, 1);
+  --green-light-600: rgba(76, 163, 13, 1);
+  --green-light-700: rgba(59, 124, 15, 1);
+  --green-light-800: rgba(50, 98, 18, 1);
+  --green-light-900: rgba(43, 83, 20, 1);
+
+  --indigo-100: rgba(224, 234, 255, 1);
+  --indigo-200: rgba(199, 215, 254, 1);
+  --indigo-25: rgba(245, 248, 255, 1);
+  --indigo-300: rgba(164, 188, 253, 1);
+  --indigo-400: rgba(128, 152, 249, 1);
+  --indigo-50: rgba(238, 244, 255, 1);
+  --indigo-500: rgba(97, 114, 243, 1);
+  --indigo-600: rgba(68, 76, 231, 1);
+  --indigo-700: rgba(53, 56, 205, 1);
+  --indigo-800: rgba(45, 49, 166, 1);
+  --indigo-900: rgba(45, 50, 130, 1);
+
+  --moss-100: rgba(230, 244, 215, 1);
+  --moss-200: rgba(206, 234, 176, 1);
+  --moss-25: rgba(250, 253, 247, 1);
+  --moss-300: rgba(172, 220, 121, 1);
+  --moss-400: rgba(134, 203, 60, 1);
+  --moss-50: rgba(245, 251, 238, 1);
+  --moss-500: rgba(102, 159, 42, 1);
+  --moss-600: rgba(79, 122, 33, 1);
+  --moss-700: rgba(63, 98, 26, 1);
+  --moss-800: rgba(51, 80, 21, 1);
+  --moss-900: rgba(43, 66, 18, 1);
+
+  --orange-100: rgba(253, 234, 215, 1);
+  --orange-200: rgba(249, 219, 175, 1);
+  --orange-25: rgba(254, 250, 245, 1);
+  --orange-300: rgba(247, 178, 122, 1);
+  --orange-400: rgba(243, 135, 68, 1);
+  --orange-50: rgba(254, 246, 238, 1);
+  --orange-500: rgba(239, 104, 32, 1);
+  --orange-600: rgba(224, 79, 22, 1);
+  --orange-700: rgba(185, 56, 21, 1);
+  --orange-800: rgba(147, 47, 25, 1);
+  --orange-900: rgba(119, 41, 23, 1);
+
+  --orange-dark-100: rgba(255, 230, 213, 1);
+  --orange-dark-25: rgba(255, 249, 245, 1);
+  --orange-dark-300: rgba(255, 156, 102, 1);
+  --orange-dark-400: rgba(255, 105, 46, 1);
+  --orange-dark-50: rgba(255, 244, 237, 1);
+  --orange-dark-500: rgba(255, 68, 5, 1);
+  --orange-dark-600: rgba(230, 46, 5, 1);
+  --orange-dark-700: rgba(188, 27, 6, 1);
+  --orange-dark-800: rgba(151, 24, 12, 1);
+  --orange-dark-900: rgba(119, 26, 13, 1);
+  --orange-dark200: rgba(255, 214, 174, 1);
+
+  --pink-100: rgba(252, 231, 246, 1);
+  --pink-200: rgba(252, 206, 238, 1);
+  --pink-25: rgba(254, 246, 251, 1);
+  --pink-300: rgba(250, 167, 224, 1);
+  --pink-400: rgba(246, 112, 199, 1);
+  --pink-50: rgba(253, 242, 250, 1);
+  --pink-500: rgba(238, 70, 188, 1);
+  --pink-600: rgba(221, 37, 144, 1);
+  --pink-700: rgba(193, 21, 116, 1);
+  --pink-800: rgba(158, 22, 95, 1);
+  --pink-900: rgba(133, 22, 81, 1);
+
+  --primary-100: rgba(224, 234, 255, 1);
+  --primary-200: rgba(199, 215, 254, 1);
+  --primary-25: rgba(245, 248, 255, 1);
+  --primary-300: rgba(164, 188, 253, 1);
+  --primary-400: rgba(128, 152, 249, 1);
+  --primary-50: rgba(238, 244, 255, 1);
+  --primary-500: rgba(97, 114, 243, 1);
+  --primary-600: rgba(68, 76, 231, 1);
+  --primary-700: rgba(53, 56, 205, 1);
+  --primary-800: rgba(45, 49, 166, 1);
+  --primary-900: rgba(45, 50, 130, 1);
+
+  --purple-100: rgba(235, 233, 254, 1);
+  --purple-200: rgba(217, 214, 254, 1);
+  --purple-25: rgba(250, 250, 255, 1);
+  --purple-300: rgba(189, 180, 254, 1);
+  --purple-400: rgba(155, 138, 251, 1);
+  --purple-50: rgba(244, 243, 255, 1);
+  --purple-500: rgba(122, 90, 248, 1);
+  --purple-600: rgba(105, 56, 239, 1);
+  --purple-700: rgba(89, 37, 220, 1);
+  --purple-800: rgba(74, 31, 184, 1);
+  --purple-900: rgba(62, 28, 150, 1);
+
+  --ros-100: rgba(255, 228, 232, 1);
+  --ros-200: rgba(254, 205, 214, 1);
+  --ros-25: rgba(255, 245, 246, 1);
+  --ros-300: rgba(254, 163, 180, 1);
+  --ros-400: rgba(253, 111, 142, 1);
+  --ros-50: rgba(255, 241, 243, 1);
+  --ros-500: rgba(246, 61, 104, 1);
+  --ros-600: rgba(227, 27, 84, 1);
+  --ros-700: rgba(192, 16, 72, 1);
+  --ros-800: rgba(161, 16, 67, 1);
+  --ros-900: rgba(137, 18, 62, 1);
+
+  --success-100: rgba(209, 250, 223, 1);
+  --success-200: rgba(166, 244, 197, 1);
+  --success-25: rgba(246, 254, 249, 1);
+  --success-300: rgba(108, 233, 166, 1);
+  --success-400: rgba(50, 213, 131, 1);
+  --success-50: rgba(236, 253, 243, 1);
+  --success-500: rgba(18, 183, 106, 1);
+  --success-600: rgba(3, 152, 85, 1);
+  --success-700: rgba(2, 122, 72, 1);
+  --success-800: rgba(5, 96, 58, 1);
+  --success-900: rgba(5, 79, 49, 1);
+
+  --teal-100: rgba(204, 251, 239, 1);
+  --teal-200: rgba(153, 246, 224, 1);
+  --teal-25: rgba(246, 254, 252, 1);
+  --teal-300: rgba(95, 233, 208, 1);
+  --teal-400: rgba(46, 211, 183, 1);
+  --teal-50: rgba(240, 253, 249, 1);
+  --teal-500: rgba(21, 183, 158, 1);
+  --teal-600: rgba(14, 147, 132, 1);
+  --teal-700: rgba(16, 117, 105, 1);
+  --teal-800: rgba(18, 93, 86, 1);
+  --teal-900: rgba(19, 78, 72, 1);
+
+  --violet-100: rgba(236, 233, 254, 1);
+  --violet-200: rgba(221, 214, 254, 1);
+  --violet-25: rgba(251, 250, 255, 1);
+  --violet-300: rgba(195, 181, 253, 1);
+  --violet-400: rgba(164, 138, 251, 1);
+  --violet-50: rgba(245, 243, 255, 1);
+  --violet-500: rgba(135, 91, 247, 1);
+  --violet-600: rgba(120, 57, 238, 1);
+  --violet-700: rgba(105, 39, 218, 1);
+  --violet-800: rgba(87, 32, 183, 1);
+  --violet-900: rgba(73, 28, 150, 1);
+
+  --warning-100: rgba(254, 240, 199, 1);
+  --warning-200: rgba(254, 223, 137, 1);
+  --warning-25: rgba(255, 252, 245, 1);
+  --warning-300: rgba(254, 200, 75, 1);
+  --warning-400: rgba(253, 176, 34, 1);
+  --warning-50: rgba(255, 250, 235, 1);
+  --warning-500: rgba(247, 144, 9, 1);
+  --warning-600: rgba(220, 104, 3, 1);
+  --warning-700: rgba(181, 71, 8, 1);
+  --warning-800: rgba(147, 55, 13, 1);
+  --warning-900: rgba(122, 46, 14, 1);
+
+  --yellow-100: rgba(254, 247, 195, 1);
+  --yellow-200: rgba(254, 238, 149, 1);
+  --yellow-25: rgba(254, 253, 240, 1);
+  --yellow-300: rgba(253, 226, 114, 1);
+  --yellow-400: rgba(250, 197, 21, 1);
+  --yellow-50: rgba(254, 251, 232, 1);
+  --yellow-500: rgba(234, 170, 8, 1);
+  --yellow-600: rgba(202, 133, 4, 1);
+  --yellow-700: rgba(161, 92, 7, 1);
+  --yellow-800: rgba(133, 74, 14, 1);
+  --yellow-900: rgba(113, 59, 18, 1);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--mui-palette-primary-main);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}

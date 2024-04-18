@@ -1,47 +1,69 @@
 .button {
-    all: unset;
-    align-items: center;
-    box-sizing: border-box;
-    display: inline-flex;
-    gap: 8px;
-    justify-content: center;
-    position: relative;
-    cursor: pointer;
+  all: unset;
+  align-items: center;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  gap:8px;
+  max-height: 44px;
 }
 
 .button.text {
-    font-family: Inter, Helvetica;
-    font-weight: 600;
-    letter-spacing: 0;
-    margin-top: -1px;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
+  font-family: Inter, Helvetica;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
 }
 
 
 .button.secondary {
-    border: 1px solid;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .button.tertiary {
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .button.primary {
-    border: 1px solid;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: black;
+  border: 1px solid;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
-  }
+.button.tertiary {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.button.primary {
+  border: 1px solid;
+  border-radius: 8px;
+  overflow: hidden;
+  border-color: rgb(68, 76, 231);
+  background-color: rgb(68, 76, 231);
+  color:white;
+}
+
+.button.primary.xl{
+  padding: 12px 20px;
+}
+
+.button.text.primary.disabled{
+  background-color: #ffffff;
+  box-shadow: 0px 1px 2px #1018280d;
+  color: #cfd4dc;
+  border-color: #eaecf0;
+}
+
+.button:hover{
+transform: scale(1.03);
+transition: 0.1s ease;
+}
 
 
-  .button :hover {
-    box-shadow: 0px 1px 2px #1018280d;
-    background-color: black;
-    color:white;
-  }
+.button :hover {
+  box-shadow: 0px 1px 2px #1018280d;
+  background-color: black;
+  color: white;
+}
+
+svg.icon.primary{
+  color:white;
+}
