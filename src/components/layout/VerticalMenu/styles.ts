@@ -42,4 +42,6 @@ export const ChildrenCont =styled.main`
 margin-left:${stylesVars.verticalMenuWidth};
 padding: 32px 64px 48px 64px;
 width:100vw;
+min-height:100%;
+background-color:${stylesVars.backgroundColor}
 `
