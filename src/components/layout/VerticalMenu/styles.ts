@@ -36,6 +36,10 @@ border-radius: 8px;
 cursor:pointer;
 font-size: 0.875rem;
 line-height: 28px;
+&:hover{
+  background-color:rgb(242, 244, 247, 0.4);
+  transition:0.2s ease;
+}
 `;
 
 export const ChildrenCont =styled.main`
