@@ -8,7 +8,9 @@
 //Ejemplo a seguir
 import TrendUp02 from "../../public/assets/iconsComponents/Charts/TrendUp02";
 //Ejemplo a seguir
-
+import TrendUp01 from "../../public/assets/iconsComponents/Charts/TrendUp01";
+import TrendDown01 from "../../public/assets/iconsComponents/Charts/TrendDown01"
 import TrendDown02 from "../../public/assets/iconsComponents/Charts/TrendDown02"
 
-export {TrendUp02, TrendDown02}
+
+export {TrendUp01, TrendUp02, TrendDown02, TrendDown01}

@@ -1,6 +1,7 @@
 export const stylesVars = {
   navBorderColor: "#DCDFE4",
   succesMain:"#15B79F",
+  errorMain:"#F04438",
   backgroundColor:"#F9FAFB",
   primary25:"#F5F8FF",
   primary200:"#C7D7FE",

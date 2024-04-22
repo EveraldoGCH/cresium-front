@@ -2,7 +2,7 @@
 import { Box, CardActions, CardContent, Divider, Grid, Stack } from "@mui/material";
 import Button from "@/components/core/Button/Button";
 import React from "react";
-import { TrendUp02, TrendDown02 } from "../../utils/iconsComponents";
+import { TrendUp02, TrendDown02, TrendUp01, TrendDown01 } from "../../utils/iconsComponents";
 import { ChartBalance } from "@/components/widgets/charts/ChartBalance/ChartBalance";
 import { Card } from "@/components/core/Card/Card";
 import { stylesVars } from "@/utils/stylesVars";
@@ -51,10 +51,25 @@ export default function DashBoard() {
       </Grid>
       <Grid container xs={12} justifyContent={"space-between"} flexWrap={"nowrap"} style={{ gap: "4%" }}>
         <Grid item xs={6} >
-          <CardDinero />
+          <CardDinero
+            icon={<TrendUp01 color={stylesVars.succesMain} />}
+            title1="Ingreso de dinero"
+            title2="$650.000"
+            subtitle="1-9 de Marzo"
+            colorPrice={stylesVars.succesMain}
+            price="$302.430"
+            info="más que el mes pasado" />
         </Grid>
         <Grid item xs={6}>
-          <CardDinero />
+          <CardDinero
+            icon={<TrendDown01 color={stylesVars.errorMain} />}
+            title1="Egreso de dinero"
+            title2="$650.000"
+            subtitle="1-9 de Marzo"
+            colorPrice={stylesVars.errorMain}
+            price="$302.430"
+            info="menos que el mes pasado" 
+          />
         </Grid>
       </Grid>
       {/*FIN Contenedor Principal*/}
