@@ -1,56 +1,82 @@
-"use client"
-import { Box, CardActions, CardContent, Divider, Grid, Stack } from "@mui/material";
+"use client";
+import { Box, Divider, Grid, Stack } from "@mui/material";
 import Button from "@/components/core/Button/Button";
 import React from "react";
-import { TrendUp02, TrendDown02, TrendUp01, TrendDown01 } from "../../utils/iconsComponents";
-import { ChartBalance } from "@/components/widgets/charts/ChartBalance/ChartBalance";
+import {
+  TrendUp02,
+  TrendDown02,
+  TrendUp01,
+  TrendDown01,
+} from "../../../public/assets/iconsComponents/iconsComponents";
 import { Card } from "@/components/core/Card/Card";
 import { stylesVars } from "@/utils/stylesVars";
 import { CardDinero } from "./components/CardDinero/CardDinero";
-
+import { CardDatosCuenta } from "./components/CardDatosCuenta/CardDatosCuenta";
+import { CardInfo } from "./components/CardInfo/CardInfo";
 
 export default function DashBoard() {
   return (
-    <Stack spacing={5.5} sx={{ width: "100%" }}>{/* Contenedor Principal*/}
-      <Stack > {/* Primer contenedor */}
-        <Stack direction={{ xs: 'column', sm: 'row' }} spacing={3} sx={{ alignItems: 'center', width: "100%" }}>
-          <Box sx={{ flex: '1 1 auto' }}>
+    <Stack spacing={5.5} sx={{ width: "100%" }}>
+      {/* Contenedor Principal*/}
+      <Stack>
+        {" "}
+        {/* Primer contenedor */}
+        <Stack
+          direction={{ xs: "column", sm: "row" }}
+          spacing={3}
+          sx={{ alignItems: "center", width: "100%" }}
+        >
+          <Box sx={{ flex: "1 1 auto" }}>
             <p>Home</p>
-            <h1 style={{ fontWeight: "600", fontSize: "30px", margin: "20px 0" }}>Bienvenido Maximiliano</h1>
+            <h1
+              style={{ fontWeight: "600", fontSize: "30px", margin: "20px 0" }}
+            >
+              Bienvenido Maximiliano
+            </h1>
             <p>Cresium.io</p>
           </Box>
-          <Button
-            size="xl"
-            color="primary"
-            StartIcon={TrendUp02}
-          >
+          <Button size="xl" color="primary" StartIcon={TrendUp02}>
             Enviar dinero
           </Button>
-          <Button
-            size="xl"
-            color="primary"
-            StartIcon={TrendDown02}
-          >
+          <Button size="xl" color="primary" StartIcon={TrendDown02}>
             Recibir dinero
           </Button>
         </Stack>
         <Divider />
-      </Stack>{/*Fin primer contenedor */}
-      <Grid container xs={12} justifyContent={"space-between"} style={{ gap: "4%" }} flexWrap={"nowrap"}>
+      </Stack>
+      {/*Fin primer contenedor */}
+      <Grid
+        container
+        xs={12}
+        justifyContent={"space-between"}
+        style={{ gap: "4%" }}
+        flexWrap={"nowrap"}
+      >
+        {/*Contenedor Cards y chart*/}
         <Grid item xs={8}>
-          <Card
-            height={"414px"} />
+          <Card height={"414px"} />
         </Grid>
-        <Grid container item xs={4} justifyContent={"space-between"} direction={"column"} >
-          <Card
-            height={"220px"} />
-          <Card
-            height={"150px"}
-            style={{ border: `1px solid ${stylesVars.primary200}`, backgroundColor: `${stylesVars.primary25}` }} />
+        <Grid
+          container
+          item
+          xs={4}
+          justifyContent={"space-between"}
+          direction={"column"}
+        >
+          <CardDatosCuenta />
+          <CardInfo />
         </Grid>
       </Grid>
-      <Grid container xs={12} justifyContent={"space-between"} flexWrap={"nowrap"} style={{ gap: "4%" }}>
-        <Grid item xs={6} >
+      {/*FIN contenedor Cards y chart*/}
+      <Grid
+        container
+        xs={12}
+        justifyContent={"space-between"}
+        flexWrap={"nowrap"}
+        style={{ gap: "4%" }}
+      >
+        {/*Contenedor Cards Ingreso egreso dinero*/}
+        <Grid item xs={6}>
           <CardDinero
             icon={<TrendUp01 color={stylesVars.succesMain} />}
             title1="Ingreso de dinero"
@@ -58,7 +84,8 @@ export default function DashBoard() {
             subtitle="1-9 de Marzo"
             colorPrice={stylesVars.succesMain}
             price="$302.430"
-            info="más que el mes pasado" />
+            info="más que el mes pasado"
+          />
         </Grid>
         <Grid item xs={6}>
           <CardDinero
@@ -68,11 +95,17 @@ export default function DashBoard() {
             subtitle="1-9 de Marzo"
             colorPrice={stylesVars.errorMain}
             price="$302.430"
-            info="menos que el mes pasado" 
+            info="menos que el mes pasado"
           />
+        </Grid>
+      </Grid>
+      {/*FIN contenedor Cards Ingreso egreso dinero*/}
+      <Grid container xs={12}>
+        <Grid item xs={12}>
+          <Card height="600px" />
         </Grid>
       </Grid>
       {/*FIN Contenedor Principal*/}
     </Stack>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 function TrendUp02(props) {
   return (
@@ -18,7 +18,7 @@ function TrendUp02(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
-export default TrendUp02
+export default TrendUp02;

@@ -16,12 +16,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
-        <StyledComponentsRegistry>{/*Sin esto, el css no se ve al entrar a una pagina por 1s por usar styled-components */}
-          <VerticalMenu>
-            {children}
-          </VerticalMenu>
+        <StyledComponentsRegistry>
+          {/*Sin esto, el css no se ve al entrar a una pagina por 1s por usar styled-components */}
+          <VerticalMenu>{children}</VerticalMenu>
         </StyledComponentsRegistry>
-
       </body>
     </html>
   );
