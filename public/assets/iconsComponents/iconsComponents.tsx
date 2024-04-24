@@ -12,6 +12,7 @@ import TrendUp01 from "./Charts/TrendUp01";
 import TrendDown01 from "./Charts/TrendDown01";
 import TrendDown02 from "./Charts/TrendDown02";
 import Copy06 from "./General/Copy06";
+import UploadCloud02 from "./General/UploadCloud02";
 import CoinsStacked03 from "./Finance/CoinsStacked03";
 import ArrowRight from "./Arrows/ArrowRight";
 
@@ -23,4 +24,5 @@ export {
   Copy06,
   CoinsStacked03,
   ArrowRight,
+  UploadCloud02
 };

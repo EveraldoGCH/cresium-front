@@ -13,6 +13,7 @@ import { stylesVars } from "@/utils/stylesVars";
 import { CardDinero } from "./components/CardDinero/CardDinero";
 import { CardDatosCuenta } from "./components/CardDatosCuenta/CardDatosCuenta";
 import { CardInfo } from "./components/CardInfo/CardInfo";
+import { TablaMovimientos } from "./components/TablaMovimientos/TablaMovimientos";
 
 export default function DashBoard() {
   return (
@@ -101,9 +102,9 @@ export default function DashBoard() {
       </Grid>
       {/*FIN contenedor Cards Ingreso egreso dinero*/}
       <Grid container xs={12}>
-        <Grid item xs={12}>
-          <Card height="600px" />
-        </Grid>
+        {/*Contenedor Tabla */}
+          <TablaMovimientos/>
+        {/*FIN Contenedor Tabla */}
       </Grid>
       {/*FIN Contenedor Principal*/}
     </Stack>
