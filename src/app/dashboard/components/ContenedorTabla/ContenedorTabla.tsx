@@ -4,7 +4,7 @@ import { stylesVars } from "@/utils/stylesVars";
 import { Box, Divider, Grid, IconButton, Tab, Tabs, Typography } from "@mui/material";
 import { UploadCloud02 } from "../../../../../public/assets/iconsComponents/iconsComponents";
 import { useState } from "react";
-import { TabStyled } from "./TablaMovimientosStyle";
+import Tabla, { Columns, Row } from "../../../../components/core/Tabla/Tabla";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -12,7 +12,7 @@ interface TabPanelProps {
   value: number;
 }
 
-export function TablaMovimientos(): React.JSX.Element {
+export function ContenedorTabla(): React.JSX.Element {
   const [value, setValue] = useState(0)
 
   function CustomTabPanel(props: TabPanelProps) {
@@ -27,8 +27,8 @@ export function TablaMovimientos(): React.JSX.Element {
         {...other}
       >
         {value === index && (
-          <Box sx={{ p: 3 }}>
-            <Typography>{children}</Typography>
+          <Box>
+            {children}
           </Box>
         )}
       </div>
@@ -46,6 +46,24 @@ export function TablaMovimientos(): React.JSX.Element {
       
     };
   }
+
+  let columns:Columns[]=[
+    {label:"Fecha"},
+    {label:"Nombre", align:"left"},
+    {label:"Monto"},
+    {label:"Cuenta"},
+    {label:"Tipo de transacción", align:"right"},
+  ]
+
+  let rows:Row[]=[
+    {accesor:"Fecha", value:"12 Feb 2024"},
+    {accesor:"Nombre", value:"Everaldo"},
+    {accesor:"Monto", value:"120120"},
+    {accesor:"Fecha", value:"12 Feb 2024"},
+    {accesor:"Tipo de transacción", value:"wefefdfdsf", align:"right"},
+
+
+  ]
 
   return (
     <Card height="600px">
@@ -91,7 +109,7 @@ export function TablaMovimientos(): React.JSX.Element {
               </Tabs>
             </Box>
             <CustomTabPanel value={value} index={0}>
-              Ver todos
+              <Tabla columns={columns} rows={rows}/>
             </CustomTabPanel>
             <CustomTabPanel value={value} index={1}>
               Ingresos
