@@ -1,12 +1,11 @@
 "use client";
 import { Card } from "@/components/core/Card/Card";
 import { stylesVars } from "@/utils/stylesVars";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import {
   ArrowRight,
   CoinsStacked03,
 } from "../../../../../public/assets/iconsComponents/iconsComponents";
-import { TypographyCresium } from "@/components/core/TypographyCresium/TypographyCresium";
 
 export function CardInfo(): React.JSX.Element {
   return (
@@ -31,14 +30,14 @@ export function CardInfo(): React.JSX.Element {
             <CoinsStacked03 />
           </Grid>
           <Grid item xs={10}>
-            <TypographyCresium
+            <Typography
               variant="subtitle2"
               color={stylesVars.primary700}
-              fontWeight={600}
+              fontWeight={500}
             >
               Ingresa dinero a tu cuenta de Cresium ahora y empeza a generar
               rendimiento.
-            </TypographyCresium>
+            </Typography>
           </Grid>
         </Grid>
         <Grid
@@ -49,15 +48,15 @@ export function CardInfo(): React.JSX.Element {
           style={{ marginLeft: "12px", marginTop: "4vh" }}
         >
           <Grid item xs={5.5}>
-            <TypographyCresium
+            <Typography
               variant="subtitle2"
               component={"button"}
               color={stylesVars.primary700}
-              fontWeight={600}
+              fontWeight={500}
               style={{ border: "none", background: "none", cursor: "pointer" }}
             >
               Aprendé más
-            </TypographyCresium>
+            </Typography>
           </Grid>
           <Grid
             item
@@ -66,15 +65,15 @@ export function CardInfo(): React.JSX.Element {
             alignItems={"center"}
             style={{ gap: "8px" }}
           >
-            <TypographyCresium
+            <Typography
               variant="subtitle2"
               component={"button"}
               color={stylesVars.primary700}
-              fontWeight={600}
+              fontWeight={500}
               style={{ border: "none", background: "none", cursor: "pointer" }}
             >
               Ingresá dinero
-            </TypographyCresium>
+            </Typography>
             <ArrowRight
               color={stylesVars.primary700}
               style={{ cursor: "pointer" }}

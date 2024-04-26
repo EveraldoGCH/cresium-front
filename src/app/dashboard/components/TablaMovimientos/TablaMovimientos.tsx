@@ -1,8 +1,7 @@
 "use client";
 import { Card } from "@/components/core/Card/Card";
-import { TypographyCresium } from "@/components/core/TypographyCresium/TypographyCresium";
 import { stylesVars } from "@/utils/stylesVars";
-import { Box, Divider, Grid, IconButton, Tab, Tabs } from "@mui/material";
+import { Box, Divider, Grid, IconButton, Tab, Tabs, Typography } from "@mui/material";
 import { UploadCloud02 } from "../../../../../public/assets/iconsComponents/iconsComponents";
 import { useState } from "react";
 import { TabStyled } from "./TablaMovimientosStyle";
@@ -29,7 +28,7 @@ export function TablaMovimientos(): React.JSX.Element {
       >
         {value === index && (
           <Box sx={{ p: 3 }}>
-            <TypographyCresium>{children}</TypographyCresium>
+            <Typography>{children}</Typography>
           </Box>
         )}
       </div>
@@ -53,14 +52,14 @@ export function TablaMovimientos(): React.JSX.Element {
       <Grid container item xs={12} style={{ padding: "20px 24px 20px 24px" }}>{/*Contenedor Header*/}
         <Grid item container xs={9}>{/*Header 1er bloque*/}
           <Grid item xs={12}>
-            <TypographyCresium variant="h6">
+            <Typography variant="h6">
               Últimos movimientos
-            </TypographyCresium>
+            </Typography>
           </Grid>
           <Grid item xs={12}>
-            <TypographyCresium variant="subtitle1" color={stylesVars.grey600}>
+            <Typography variant="body1" color={stylesVars.grey600}>
               Mantené registro de tus últimos movimientos
-            </TypographyCresium>
+            </Typography>
           </Grid>
         </Grid>{/*FIN Header 1er bloque*/}
         <Grid item container xs={3}>{/* Header 2do bloque*/}
@@ -72,11 +71,11 @@ export function TablaMovimientos(): React.JSX.Element {
             xs={12}
           >
             <IconButton>
-              <UploadCloud02 color={stylesVars.grey600} />
+              <UploadCloud02 color={stylesVars.grey600} style={{height:"20px", width:"20px"}} />
             </IconButton>
-            <TypographyCresium variant="subtitle1" color={stylesVars.grey600}>
+            <Typography variant="body1" color={stylesVars.grey600}>
               Exportar información
-            </TypographyCresium>
+            </Typography>
           </Grid>
         </Grid>{/*FIN Header 2do bloque*/}
       </Grid>
@@ -86,9 +85,9 @@ export function TablaMovimientos(): React.JSX.Element {
           <Box sx={{ width: '100%' }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
               <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                <TabStyled label="Ver todos" style={{textTransform:"none"}} {...a11yProps(0)} />
-                <TabStyled label="Ingresos" style={{textTransform:"none"}} {...a11yProps(1)} />
-                <TabStyled label="Egresos" style={{textTransform:"none"}} {...a11yProps(2)} />
+                <Tab label="Ver todos" style={{textTransform:"none"}} {...a11yProps(0)} />
+                <Tab label="Ingresos" style={{textTransform:"none"}} {...a11yProps(1)} />
+                <Tab label="Egresos" style={{textTransform:"none"}} {...a11yProps(2)} />
               </Tabs>
             </Box>
             <CustomTabPanel value={value} index={0}>

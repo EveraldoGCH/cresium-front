@@ -1,6 +1,6 @@
 "use client";
 import { Box, Divider, Grid, Stack } from "@mui/material";
-import Button from "@/components/core/Button/Button";
+import { Button } from "@mui/material";
 import React from "react";
 import {
   TrendUp02,
@@ -36,12 +36,9 @@ export default function DashBoard() {
             </h1>
             <p>Cresium.io</p>
           </Box>
-          <Button size="xl" color="primary" StartIcon={TrendUp02}>
-            Enviar dinero
-          </Button>
-          <Button size="xl" color="primary" StartIcon={TrendDown02}>
-            Recibir dinero
-          </Button>
+
+          <Button variant="contained" startIcon={<TrendUp02 />}>Enviar dinero</Button>
+          <Button variant="contained" startIcon={<TrendDown02 />}>Recibir dinero</Button>
         </Stack>
         <Divider />
       </Stack>
@@ -103,7 +100,7 @@ export default function DashBoard() {
       {/*FIN contenedor Cards Ingreso egreso dinero*/}
       <Grid container xs={12}>
         {/*Contenedor Tabla */}
-          <TablaMovimientos/>
+        <TablaMovimientos />
         {/*FIN Contenedor Tabla */}
       </Grid>
       {/*FIN Contenedor Principal*/}

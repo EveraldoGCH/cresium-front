@@ -1,9 +1,9 @@
 "use client";
 import { Card } from "@/components/core/Card/Card";
-import { CardActions, CardContent, Divider, Grid } from "@mui/material";
+import { CardActions, CardContent, Divider, Grid, Typography } from "@mui/material";
 import React from "react";
-import { TypographyCresium } from "@/components/core/TypographyCresium/TypographyCresium";
 import { CardDineroProps } from "./CardDineroProps";
+import { stylesVars } from "@/utils/stylesVars";
 
 export function CardDinero({
   icon,
@@ -25,33 +25,33 @@ export function CardDinero({
             direction={"column"}
             style={{ gap: "8px" }}
           >
-            <TypographyCresium variant="subtitle2" style={{ fontSize: "16px" }}>
+            <Typography variant="subtitle2">
               {title1}
-            </TypographyCresium>
-            <TypographyCresium variant="h4">{title2}</TypographyCresium>
+            </Typography>
+            <Typography variant="h4">{title2}</Typography>
           </Grid>
           <Grid item container xs={4} justifyContent={"flex-end"}>
-            <TypographyCresium variant="subtitle1">
+            <Typography variant="subtitle2">
               {subtitle}
-            </TypographyCresium>
+            </Typography>
           </Grid>
         </Grid>
       </CardContent>
       <Divider style={{ width: "100%" }} />
       <CardActions style={{ padding: "24px 16px 24px 16px" }}>
         {icon}
-        <TypographyCresium
+        <Typography
           style={{ display: "inline", color: colorPrice }}
           variant="body1"
         >
           {price}
-        </TypographyCresium>
-        <TypographyCresium
-          variant="body1"
-          style={{ display: "inline", marginLeft: "4px" }}
+        </Typography>
+        <Typography
+          variant="subtitle2"
+          style={{ marginLeft: "4px", color:stylesVars.grey500}}
         >
           {info}
-        </TypographyCresium>
+        </Typography>
       </CardActions>
     </Card>
   );
