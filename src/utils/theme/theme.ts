@@ -93,7 +93,8 @@ const customThemeOptions: ThemeOptions = createTheme({
                     color: stylesVars.grey500,
                     fontSize: defaultTheme.typography.pxToRem(14),
                     fontWeight: 500,
-                    lineHeight: defaultTheme.typography.pxToRem(22)
+                    lineHeight: defaultTheme.typography.pxToRem(22),
+                    textTransform:"none"
                 },
                 selected: {
                     color: "white"
@@ -113,7 +114,7 @@ const customThemeOptions: ThemeOptions = createTheme({
             color: '#353535',
         },
         h2: {
-            fontSize: defaultTheme.typography.pxToRem(36),
+            fontSize: defaultTheme.typography.pxToRem(30),
             fontWeight: 500,
             color: '#353535',
         },

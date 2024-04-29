@@ -47,5 +47,6 @@ export const ChildrenCont = styled.main`
   padding: 32px 64px 48px 64px;
   width: 100vw;
   min-height: 100%;
+  min-width:81vw;
   background-color: ${stylesVars.backgroundColor};
 `;

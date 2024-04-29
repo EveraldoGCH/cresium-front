@@ -14,6 +14,7 @@ import { CardDinero } from "./components/CardDinero/CardDinero";
 import { CardDatosCuenta } from "./components/CardDatosCuenta/CardDatosCuenta";
 import { CardInfo } from "./components/CardInfo/CardInfo";
 import { ContenedorTabla } from "./components/ContenedorTabla/ContenedorTabla";
+import { ChartDashboard } from "./components/ChartDashboard/ChartDashbaord";
 
 
 export default function DashBoard() {
@@ -53,7 +54,7 @@ export default function DashBoard() {
       >
         {/*Contenedor Cards y chart*/}
         <Grid item xs={8}>
-          <Card height={"414px"} />
+          <ChartDashboard/>
         </Grid>
         <Grid
           container
