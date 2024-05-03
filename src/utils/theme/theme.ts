@@ -103,7 +103,18 @@ const customThemeOptions: ThemeOptions = createTheme({
                 
 
             }
+        },
+        MuiBreadcrumbs:{
+            styleOverrides:{
+                separator:{
+                    color:stylesVars.grey300
+                },
+                li:{
+                    color:stylesVars.grey500
+                }
+            }
         }
+
     },
     typography: {
         fontFamily: "Inter",

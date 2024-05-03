@@ -1,5 +1,5 @@
 "use client";
-import { Box, Divider, Grid, Stack } from "@mui/material";
+import { Box, Divider, Grid, Stack, Typography } from "@mui/material";
 import { Button } from "@mui/material";
 import React from "react";
 import {
@@ -8,22 +8,20 @@ import {
   TrendUp01,
   TrendDown01,
 } from "../../../public/assets/iconsComponents/iconsComponents";
-import { Card } from "@/components/core/Card/Card";
 import { stylesVars } from "@/utils/stylesVars";
 import { CardDinero } from "./components/CardDinero/CardDinero";
 import { CardDatosCuenta } from "./components/CardDatosCuenta/CardDatosCuenta";
 import { CardInfo } from "./components/CardInfo/CardInfo";
 import { ContenedorTabla } from "./components/ContenedorTabla/ContenedorTabla";
 import { ChartDashboard } from "./components/ChartDashboard/ChartDashbaord";
+import { useRouter } from "next/navigation";
 
 
 export default function DashBoard() {
+  const router = useRouter()
   return (
-    <Stack spacing={5.5} sx={{ width: "100%" }}>
-      {/* Contenedor Principal*/}
-      <Stack>
-        {" "}
-        {/* Primer contenedor */}
+    <Stack spacing={5.5} sx={{ width: "100%" }}>{/* Contenedor Principal*/}
+      <Stack>{/* Primer contenedor */}
         <Stack
           direction={{ xs: "column", sm: "row" }}
           spacing={3}
@@ -31,30 +29,29 @@ export default function DashBoard() {
         >
           <Box sx={{ flex: "1 1 auto" }}>
             <p>Home</p>
-            <h1
-              style={{ fontWeight: "600", fontSize: "30px", margin: "20px 0" }}
+            <Typography
+              variant="h2"
+              style={{ fontWeight: "600", margin: "20px 0" }}
             >
               Bienvenido Maximiliano
-            </h1>
+            </Typography>
             <p>Cresium.io</p>
           </Box>
 
-          <Button variant="contained" startIcon={<TrendUp02 />}>Enviar dinero</Button>
+          <Button variant="contained" startIcon={<TrendUp02 />} onClick={() => router.push("/enviar-dinero")}>Enviar dinero</Button>
           <Button variant="contained" startIcon={<TrendDown02 />}>Recibir dinero</Button>
         </Stack>
         <Divider />
-      </Stack>
-      {/*Fin primer contenedor */}
+      </Stack>{/*Fin primer contenedor */}
       <Grid
         container
         xs={12}
         justifyContent={"space-between"}
         style={{ gap: "4%" }}
         flexWrap={"nowrap"}
-      >
-        {/*Contenedor Cards y chart*/}
+      >{/*Contenedor Cards y chart*/}
         <Grid item xs={8}>
-          <ChartDashboard/>
+          <ChartDashboard />
         </Grid>
         <Grid
           container

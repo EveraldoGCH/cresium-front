@@ -12,15 +12,17 @@ import Image from "next/image";
 import logo from "../../../../public/assets/logo.svg";
 import { paths } from "@/utils/paths";
 import { stylesVars } from "@/utils/stylesVars";
+import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export function VerticalMenu({ children }: VerticalMenuProps) {
+  const pathname = usePathname();
+  const router = useRouter();
   const [currentPath, setCurrentPath] = useState<string>("");
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setCurrentPath(window.location.pathname);
-    }
-  }, []);
+    setCurrentPath(pathname);
+  }, [pathname]);
 
   return (
     <>
@@ -38,6 +40,7 @@ export function VerticalMenu({ children }: VerticalMenuProps) {
                     ? { backgroundColor: stylesVars.grey100 }
                     : {}
                 }
+                onClick={()=>router.push(elm.path)}
               >
                 <Image src={elm.icon} alt={elm.name} />
                 {elm.name}

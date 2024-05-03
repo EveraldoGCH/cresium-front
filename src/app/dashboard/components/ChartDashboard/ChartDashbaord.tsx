@@ -3,7 +3,7 @@ import { Card } from "@/components/core/Card/Card";
 import { CardContent, Chip, Divider, Grid, Typography } from "@mui/material";
 import { TabStyled, TabsStyled } from "./ChartDashboardStyle";
 import { useState } from "react";
-import { Chart } from "../Chart/Chart";
+import { Chart } from "../../../../components/core/Chart/Chart";
 
 
 export function ChartDashboard(): React.JSX.Element {
