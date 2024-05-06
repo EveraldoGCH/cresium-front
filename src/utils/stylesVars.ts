@@ -7,6 +7,7 @@ export const stylesVars = {
 	primaryMain: "#635BFF",
 	primary25: "#F5F8FF",
 	primary200: "#C7D7FE",
+	primary500: "#6172F3",
 	primary600: "#444CE7",
 	primary700: "#3538CD",
 	grey100: "#F2F4F7",

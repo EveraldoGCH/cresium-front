@@ -14,6 +14,7 @@ export function CardInfo(): React.JSX.Element {
         border: `1px solid ${stylesVars.primary200}`,
         backgroundColor: `${stylesVars.primary25}`,
         padding: "16px",
+        borderRadius:"12px"
       }}
     >
       <Grid container xs={12}>
@@ -33,7 +34,6 @@ export function CardInfo(): React.JSX.Element {
             <Typography
               variant="subtitle2"
               color={stylesVars.primary700}
-              fontWeight={500}
             >
               Ingresa dinero a tu cuenta de Cresium ahora y empeza a generar
               rendimiento.
@@ -52,7 +52,6 @@ export function CardInfo(): React.JSX.Element {
               variant="subtitle2"
               component={"button"}
               color={stylesVars.primary700}
-              fontWeight={500}
               style={{ border: "none", background: "none", cursor: "pointer" }}
             >
               Aprendé más
@@ -69,7 +68,6 @@ export function CardInfo(): React.JSX.Element {
               variant="subtitle2"
               component={"button"}
               color={stylesVars.primary700}
-              fontWeight={500}
               style={{ border: "none", background: "none", cursor: "pointer" }}
             >
               Ingresá dinero

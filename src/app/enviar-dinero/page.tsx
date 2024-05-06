@@ -6,6 +6,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import { stylesVars } from "@/utils/stylesVars";
 import { Card } from "@/components/core/Card/Card";
 import { ArrowRight } from "../../../public/assets/iconsComponents/iconsComponents";
+import Step1EnviarDinero from "./Step1EnviarDinero";
 
 
 export default function EnviarDinero() {
@@ -66,7 +67,7 @@ export default function EnviarDinero() {
             <Divider />
             <Stack sx={{ width: "100%", alignItems: "flex-end" }} spacing={4}>{/*Contenedor Card */}
                 {step === 0 && (
-                    <Card height="733px">step1</Card>
+                    <Step1EnviarDinero />
                 )}
                 {step === 1 && (
                     <Card height="733px">step2</Card>
@@ -79,7 +80,7 @@ export default function EnviarDinero() {
                         <Button
                             variant="contained"
                             endIcon={<ArrowRight />}
-                            onClick={() => {setStep(1), window.scrollTo({ top: 0, behavior: 'smooth' })}}
+                            onClick={() => { setStep(1), window.scrollTo({ top: 0, behavior: 'smooth' }) }}
                         >Continuar</Button>
                     </>
                 )}

@@ -150,7 +150,7 @@ const customThemeOptions: ThemeOptions = createTheme({
             color: '#353535',
         },
         h6: {
-            fontWeight: 600,
+            fontWeight: 500,
             fontSize: defaultTheme.typography.pxToRem(18)
         },
         subtitle1: {
