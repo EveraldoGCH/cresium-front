@@ -30,7 +30,7 @@ export default function EnviarDinero() {
     ];
 
     return (
-        <Stack spacing={2.8} sx={{ width: "100%" }}>{/* Contenedor Principal*/}
+        <Stack spacing={4} sx={{ width: "100%" }}>{/* Contenedor Principal*/}
             <Stack
                 direction={{ xs: "column", sm: "column", md: "row" }}
                 spacing={3}

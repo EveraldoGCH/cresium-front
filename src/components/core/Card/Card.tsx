@@ -14,7 +14,7 @@ export function Card({
   style,
 }: CardProps): React.JSX.Element {
   return (
-    <CardContainer style={{ height: height, ...style }}>
+    <CardContainer style={{ height: height, ...style }} className="CardCresium">
       {children}
     </CardContainer>
   );
