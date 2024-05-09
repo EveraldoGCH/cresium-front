@@ -1,5 +1,6 @@
-export const stylesVars = {
+export const colorsVars = {
 	navBorderColor: "#DCDFE4",
+	divider: "#DCDFE4",
 	textSecondary: "#667085",//igual a grey500
 	succesMain: "#15B79F",
 	errorMain: "#F04438",
@@ -13,6 +14,7 @@ export const stylesVars = {
 	grey100: "#F2F4F7",
 	grey200: "#EAECF0",
 	grey300: "#D0D5DD",
+	grey400: "#98A2B3",
 	grey500: "#667085",//igual a textSecondary
 	grey600: "#475467",
 	grey700: "#344054",

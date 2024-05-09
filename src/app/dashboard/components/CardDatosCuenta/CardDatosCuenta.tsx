@@ -1,6 +1,6 @@
 "use client";
 import { Card } from "@/components/core/Card/Card";
-import { stylesVars } from "@/utils/stylesVars";
+import { colorsVars } from "@/utils/colorsVars";
 import {
 	CardActions,
 	CardContent,
@@ -26,7 +26,7 @@ export function CardDatosCuenta(): React.JSX.Element {
 					<Grid item>
 						<Typography
 							variant="subtitle2"
-							color={stylesVars.grey500}
+							color={colorsVars.grey500}
 						>
 							Alias
 						</Typography>
@@ -42,7 +42,7 @@ export function CardDatosCuenta(): React.JSX.Element {
 						</Typography>
 						<IconButton style={{ padding: "3px" }}>
 							<Copy06
-								style={{ cursor: "pointer", colors: stylesVars.primary600 }}
+								style={{ cursor: "pointer", colors: colorsVars.primary600 }}
 							/>
 						</IconButton>
 					</Grid>
@@ -52,7 +52,7 @@ export function CardDatosCuenta(): React.JSX.Element {
 					<Grid item>
 						<Typography
 							variant="subtitle2"
-							color={stylesVars.grey500}
+							color={colorsVars.grey500}
 							fontSize={"18px"}
 						>
 							CVU
@@ -69,7 +69,7 @@ export function CardDatosCuenta(): React.JSX.Element {
 						</Typography>
 						<IconButton style={{ padding: "3px" }}>
 							<Copy06
-								style={{ cursor: "pointer", colors: stylesVars.primary600 }}
+								style={{ cursor: "pointer", colors: colorsVars.primary600 }}
 							/>
 						</IconButton>
 					</Grid>

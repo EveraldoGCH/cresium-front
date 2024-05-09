@@ -15,6 +15,7 @@ import Copy06 from "./General/Copy06";
 import UploadCloud02 from "./General/UploadCloud02";
 import CoinsStacked03 from "./Finance/CoinsStacked03";
 import ArrowRight from "./Arrows/ArrowRight";
+import CheckCircle from "./General/CheckCircle"
 
 export {
   TrendUp01,
@@ -24,5 +25,6 @@ export {
   Copy06,
   CoinsStacked03,
   ArrowRight,
-  UploadCloud02
+  UploadCloud02,
+  CheckCircle
 };

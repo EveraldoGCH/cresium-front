@@ -3,7 +3,7 @@ import { Card } from "@/components/core/Card/Card";
 import { CardActions, CardContent, Divider, Grid, Typography } from "@mui/material";
 import React from "react";
 import { CardDineroProps } from "./CardDineroProps";
-import { stylesVars } from "@/utils/stylesVars";
+import { colorsVars } from "@/utils/colorsVars";
 
 export function CardDinero({
   icon,
@@ -48,7 +48,7 @@ export function CardDinero({
         </Typography>
         <Typography
           variant="subtitle2"
-          style={{ marginLeft: "4px", color:stylesVars.grey500}}
+          style={{ marginLeft: "4px", color:colorsVars.grey500}}
         >
           {info}
         </Typography>

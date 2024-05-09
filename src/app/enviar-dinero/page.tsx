@@ -3,7 +3,7 @@ import { Stack, Box, Link, Typography, Breadcrumbs, Button, Divider } from "@mui
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import HomeIcon from '@mui/icons-material/Home';
-import { stylesVars } from "@/utils/stylesVars";
+import { colorsVars } from "@/utils/colorsVars";
 import { Card } from "@/components/core/Card/Card";
 import { ArrowRight } from "../../../public/assets/iconsComponents/iconsComponents";
 import Step1EnviarDinero from "./Step1EnviarDinero";
@@ -50,7 +50,7 @@ export default function EnviarDinero() {
                     >
                         Enviar dinero
                     </Typography>
-                    <Typography variant="body1" color={stylesVars.grey500}>Envia dinero de tu cuenta a una persona o empresa</Typography>
+                    <Typography variant="body1" color={colorsVars.grey500}>Envia dinero de tu cuenta a una persona o empresa</Typography>
                 </Box>
                 <Box sx={{
                     flex: "1 1 auto",

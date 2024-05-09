@@ -1,6 +1,6 @@
 "use client";
 import { Card } from "@/components/core/Card/Card";
-import { stylesVars } from "@/utils/stylesVars";
+import { colorsVars } from "@/utils/colorsVars";
 import { Box, Divider, Grid, IconButton, Tab, Tabs, Typography } from "@mui/material";
 import { UploadCloud02 } from "../../../../../public/assets/iconsComponents/iconsComponents";
 import { useState } from "react";
@@ -73,7 +73,7 @@ export function ContenedorTabla(): React.JSX.Element {
             </Typography>
           </Grid>
           <Grid item xs={12}>
-            <Typography variant="body1" color={stylesVars.grey600}>
+            <Typography variant="body1" color={colorsVars.grey600}>
               Mantené registro de tus últimos movimientos
             </Typography>
           </Grid>
@@ -87,9 +87,9 @@ export function ContenedorTabla(): React.JSX.Element {
             xs={12}
           >
             <IconButton>
-              <UploadCloud02 color={stylesVars.grey600} style={{ height: "20px", width: "20px" }} />
+              <UploadCloud02 color={colorsVars.grey600} style={{ height: "20px", width: "20px" }} />
             </IconButton>
-            <Typography variant="body1" color={stylesVars.grey600}>
+            <Typography variant="body1" color={colorsVars.grey600}>
               Exportar información
             </Typography>
           </Grid>

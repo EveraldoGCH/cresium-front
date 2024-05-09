@@ -1,14 +1,14 @@
 import styled from "styled-components";
-import { stylesVars } from "@/utils/stylesVars";
+import { colorsVars } from "@/utils/colorsVars";
 
 export const SideNavCont = styled.div`
   background: white;
-  color: ${stylesVars.grey900};
-  border-right: 1px solid ${stylesVars.navBorderColor};
+  color: ${colorsVars.grey900};
+  border-right: 1px solid ${colorsVars.navBorderColor};
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: ${stylesVars.verticalMenuWidth};
+  width: ${colorsVars.verticalMenuWidth};
   left: 0;
   position: fixed;
   top: 0;
@@ -43,10 +43,10 @@ export const ListItemNav = styled.div`
 `;
 
 export const ChildrenCont = styled.main`
-  margin-left: ${stylesVars.verticalMenuWidth};
+  margin-left: ${colorsVars.verticalMenuWidth};
   padding: 32px 64px 48px 64px;
   width: 100vw;
   min-height: 100%;
   min-width:81vw;
-  background-color: ${stylesVars.backgroundColor};
+  background-color: ${colorsVars.backgroundColor};
 `;

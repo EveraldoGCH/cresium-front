@@ -11,7 +11,7 @@ import {
 import Image from "next/image";
 import logo from "../../../../public/assets/logo.svg";
 import { paths } from "@/utils/paths";
-import { stylesVars } from "@/utils/stylesVars";
+import { colorsVars } from "@/utils/colorsVars";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 
@@ -37,7 +37,7 @@ export function VerticalMenu({ children }: VerticalMenuProps) {
                 key={i}
                 style={
                   currentPath === elm.path
-                    ? { backgroundColor: stylesVars.grey100 }
+                    ? { backgroundColor: colorsVars.grey100 }
                     : {}
                 }
                 onClick={()=>router.push(elm.path)}
@@ -55,7 +55,7 @@ export function VerticalMenu({ children }: VerticalMenuProps) {
                 key={i}
                 style={
                   currentPath === elm.path
-                    ? { backgroundColor: stylesVars.grey100 }
+                    ? { backgroundColor: colorsVars.grey100 }
                     : {}
                 }
               >

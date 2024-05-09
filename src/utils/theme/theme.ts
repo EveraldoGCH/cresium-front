@@ -1,5 +1,5 @@
 import { createTheme, ThemeOptions } from '@mui/material/styles';
-import { stylesVars } from '../stylesVars';
+import { colorsVars } from '../colorsVars';
 
 const defaultTheme = createTheme();
 
@@ -90,27 +90,41 @@ const customThemeOptions: ThemeOptions = createTheme({
         MuiTab: {
             styleOverrides: {
                 root: {
-                    color: stylesVars.grey500,
+                    color: colorsVars.grey500,
                     fontSize: defaultTheme.typography.pxToRem(14),
                     fontWeight: 500,
                     lineHeight: defaultTheme.typography.pxToRem(22),
-                    textTransform:"none"
+                    textTransform: "none"
                 },
                 selected: {
                     color: "white"
                 },
-                
-                
+
+
 
             }
         },
-        MuiBreadcrumbs:{
-            styleOverrides:{
-                separator:{
-                    color:stylesVars.grey300
+        MuiBreadcrumbs: {
+            styleOverrides: {
+                separator: {
+                    color: colorsVars.grey300
                 },
-                li:{
-                    color:stylesVars.grey500
+                li: {
+                    color: colorsVars.grey500
+                }
+            }
+        },
+        MuiOutlinedInput: {
+            styleOverrides: {
+                root: {
+                    padding: "8px 12px",
+                    borderRadius: "8px",
+                    border: `1px solid ${colorsVars.divider}`,
+                    background: "white",
+                    input: {
+                        padding: 0,
+                        height: "24px"
+                    }
                 }
             }
         }
@@ -163,16 +177,17 @@ const customThemeOptions: ThemeOptions = createTheme({
             fontSize: defaultTheme.typography.pxToRem(16),
             lineHeight: defaultTheme.typography.pxToRem(21),
             fontWeight: 500,
-            color: stylesVars.grey900,
+            color: colorsVars.grey900,
         },
         body1: {
             fontSize: defaultTheme.typography.pxToRem(14),
             lineHeight: defaultTheme.typography.pxToRem(20),
-            fontWeight: 400
+            fontWeight: 500
         },
         body2: {
             fontSize: defaultTheme.typography.pxToRem(16),
             lineHeight: defaultTheme.typography.pxToRem(22),
+            fontWeight: 400
         },
         button: {
             fontWeight: 600,
@@ -183,7 +198,7 @@ const customThemeOptions: ThemeOptions = createTheme({
     },
     palette: {
         primary: {
-            main: stylesVars.indigo600,
+            main: colorsVars.indigo600,
             dark: '#6C29E0',
             darker: '#3D1DAC',
             // dark: '#4112E4',

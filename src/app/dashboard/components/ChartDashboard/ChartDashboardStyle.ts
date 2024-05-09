@@ -1,6 +1,6 @@
 import { Tab, Tabs } from "@mui/material";
 import styled from "styled-components";
-// import { stylesVars } from "@/utils/stylesVars";
+// import { colorsVars } from "@/utils/colorsVars";
 
 export const TabStyled = styled(Tab)`
   padding:0;

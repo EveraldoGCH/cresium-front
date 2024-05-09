@@ -8,7 +8,7 @@ import {
   TrendUp01,
   TrendDown01,
 } from "../../../public/assets/iconsComponents/iconsComponents";
-import { stylesVars } from "@/utils/stylesVars";
+import { colorsVars } from "@/utils/colorsVars";
 import { CardDinero } from "./components/CardDinero/CardDinero";
 import { CardDatosCuenta } from "./components/CardDatosCuenta/CardDatosCuenta";
 import { CardInfo } from "./components/CardInfo/CardInfo";
@@ -75,22 +75,22 @@ export default function DashBoard() {
         {/*Contenedor Cards Ingreso egreso dinero*/}
         <Grid item xs={6}>
           <CardDinero
-            icon={<TrendUp01 color={stylesVars.succesMain} />}
+            icon={<TrendUp01 color={colorsVars.succesMain} />}
             title1="Ingreso de dinero"
             title2="$650.000"
             subtitle="1-9 de Marzo"
-            colorPrice={stylesVars.succesMain}
+            colorPrice={colorsVars.succesMain}
             price="$302.430"
             info="más que el mes pasado"
           />
         </Grid>
         <Grid item xs={6}>
           <CardDinero
-            icon={<TrendDown01 color={stylesVars.errorMain} />}
+            icon={<TrendDown01 color={colorsVars.errorMain} />}
             title1="Egreso de dinero"
             title2="$650.000"
             subtitle="1-9 de Marzo"
-            colorPrice={stylesVars.errorMain}
+            colorPrice={colorsVars.errorMain}
             price="$302.430"
             info="menos que el mes pasado"
           />

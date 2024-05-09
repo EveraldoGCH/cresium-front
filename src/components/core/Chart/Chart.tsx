@@ -1,6 +1,6 @@
 "use client";
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
-import { stylesVars } from "@/utils/stylesVars";
+import { colorsVars } from "@/utils/colorsVars";
 
 
 export function Chart(): React.JSX.Element {
@@ -53,8 +53,8 @@ export function Chart(): React.JSX.Element {
             <AreaChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
                 <defs>
                     <linearGradient id="area-performance" x1="0" x2="0" y1="0" y2="1">
-                        <stop offset="0" stopColor={stylesVars.primaryMain} stopOpacity={0.3} />
-                        <stop offset="100%" stopColor={stylesVars.primaryMain} stopOpacity={0} />
+                        <stop offset="0" stopColor={colorsVars.primaryMain} stopOpacity={0.3} />
+                        <stop offset="100%" stopColor={colorsVars.primaryMain} stopOpacity={0} />
                     </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="2 4" vertical={false} />
@@ -67,7 +67,7 @@ export function Chart(): React.JSX.Element {
                     fill="url(#area-performance)"
                     fillOpacity={1}
                     name="Balance"
-                    stroke={stylesVars.primaryMain}
+                    stroke={colorsVars.primaryMain}
                     strokeWidth={3}
                     type="natural"
                 />

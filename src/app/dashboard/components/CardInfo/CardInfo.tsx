@@ -1,6 +1,6 @@
 "use client";
 import { Card } from "@/components/core/Card/Card";
-import { stylesVars } from "@/utils/stylesVars";
+import { colorsVars } from "@/utils/colorsVars";
 import { Grid, Typography } from "@mui/material";
 import {
   ArrowRight,
@@ -11,8 +11,8 @@ export function CardInfo(): React.JSX.Element {
   return (
     <Card
       style={{
-        border: `1px solid ${stylesVars.primary200}`,
-        backgroundColor: `${stylesVars.primary25}`,
+        border: `1px solid ${colorsVars.primary200}`,
+        backgroundColor: `${colorsVars.primary25}`,
         padding: "16px",
         borderRadius:"12px"
       }}
@@ -33,7 +33,7 @@ export function CardInfo(): React.JSX.Element {
           <Grid item xs={10}>
             <Typography
               variant="subtitle2"
-              color={stylesVars.primary700}
+              color={colorsVars.primary700}
             >
               Ingresa dinero a tu cuenta de Cresium ahora y empeza a generar
               rendimiento.
@@ -51,7 +51,7 @@ export function CardInfo(): React.JSX.Element {
             <Typography
               variant="subtitle2"
               component={"button"}
-              color={stylesVars.primary700}
+              color={colorsVars.primary700}
               style={{ border: "none", background: "none", cursor: "pointer" }}
             >
               Aprendé más
@@ -67,13 +67,13 @@ export function CardInfo(): React.JSX.Element {
             <Typography
               variant="subtitle2"
               component={"button"}
-              color={stylesVars.primary700}
+              color={colorsVars.primary700}
               style={{ border: "none", background: "none", cursor: "pointer" }}
             >
               Ingresá dinero
             </Typography>
             <ArrowRight
-              color={stylesVars.primary700}
+              color={colorsVars.primary700}
               style={{ cursor: "pointer" }}
             />
           </Grid>

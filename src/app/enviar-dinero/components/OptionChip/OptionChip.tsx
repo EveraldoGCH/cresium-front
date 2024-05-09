@@ -1,6 +1,6 @@
 "use client";
 import { Card } from "@/components/core/Card/Card";
-import { stylesVars } from "@/utils/stylesVars";
+import { colorsVars } from "@/utils/colorsVars";
 import { Box, CardContent, Divider, FormControl, FormControlLabel, FormLabel, Grid, Radio, RadioGroup, Stack, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
@@ -20,8 +20,8 @@ export default function OptionChip({ labelTitle, labelSubTitle, selected }: Opti
         <Card
             style={
                 selected ? {
-                    border: `2px solid ${stylesVars.primary500}`,
-                    backgroundColor: `${stylesVars.primary25}`,
+                    border: `2px solid ${colorsVars.primary500}`,
+                    backgroundColor: `${colorsVars.primary25}`,
                     borderRadius: "8px",
                     padding: "16px",
                     boxShadow: "0px 0px 0px 1px #DCDFE4"
@@ -44,8 +44,8 @@ export default function OptionChip({ labelTitle, labelSubTitle, selected }: Opti
                     </FormControl>
                 </Grid>
                 <Grid item xs={10.5}>
-                    <Typography variant="h6">{labelTitle}</Typography>
-                    <Typography variant="body1" color={stylesVars.textSecondary}>{labelSubTitle}</Typography>
+                    <Typography variant="subtitle1">{labelTitle}</Typography>
+                    <Typography variant="body1" color={colorsVars.textSecondary}>{labelSubTitle}</Typography>
                 </Grid>
             </Grid>
 
