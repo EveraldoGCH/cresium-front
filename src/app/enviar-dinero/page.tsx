@@ -10,6 +10,7 @@ import Step1EnviarDinero from "./Step1EnviarDinero";
 import OptionChip from "./components/OptionChip/OptionChip";
 import "./style.css"
 import { Stepper } from "./components/Stepper/Stepper";
+import Step2EnviarDinero from "./Step2EnviarDinero";
 
 
 
@@ -73,6 +74,7 @@ export default function EnviarDinero() {
                 <Grid container xs={12} justifyContent={"space-between"}>
                     <Grid item xs={7.5}>
                         {step === 0 && (<Step1EnviarDinero />)}
+                        {step === 1 && (<Step2EnviarDinero />)}
                     </Grid>
                     <Grid item xs={4}>
                         <Stack gap={"16px"} style={{ width: "100%" }}>
@@ -120,22 +122,40 @@ export default function EnviarDinero() {
                                 </Grid>
                             </Card>
                             <Card>
-                                <Button variant="contained" style={{ width: "100%", height: "7vh" }} endIcon={<ArrowRight />}>Continuar</Button>
+                                {step === 0 && (<Button
+                                    variant="contained"
+                                    style={{ width: "100%", height: "7vh" }}
+                                    endIcon={<ArrowRight />}
+                                    onClick={() => setStep(1)}>
+                                    Continuar
+                                </Button>)}
+                                {step === 1 && (
+                                    <Box display={"flex"} flexDirection={"column"} gap={"16px"}>
+                                        <Button
+                                            variant="contained"
+                                            style={{ width: "100%", height: "7vh" }}
+                                            endIcon={<ArrowRight />}
+                                            onClick={() => setStep(1)}>
+                                            Confirmar transferencia
+                                        </Button>
+                                        <Typography
+                                            variant="body1"
+                                            style={{ margin: 0, fontSize: "12px", fontWeight: 400 }}>
+                                            Al enviar dinero estas aceptando los 
+                                            <p 
+                                            style={{color: colorsVars.blue600, 
+                                            margin: 0, 
+                                            display:"inline",
+                                            cursor:"pointer"
+                                            }}> términos de uso y privacidad de Cresium.</p>
+                                        </Typography>
+                                    </Box>
+                                )}
                             </Card>
                         </Stack>
                     </Grid>
                 </Grid>
-                {/* {step === 0 && (
-                    <Step1EnviarDinero />
-                )}
-                {step === 1 && (
-                    <Card height="733px">step2</Card>
-                )}
-                {step === 2 && (
-                    <Card height="733px">step3</Card>
-                )} */}
             </Stack>{/*FIN Contenedor card */}
-
             {/*FIN Contenedor Principal*/}
         </Stack>
     );

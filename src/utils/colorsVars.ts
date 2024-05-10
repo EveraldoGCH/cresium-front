@@ -21,6 +21,7 @@ export const colorsVars = {
 	grey600: "#475467",
 	grey700: "#344054",
 	grey900: "#101828",
+	blue600: "#1570EF",
 	indigo600: "#444CE7",
 	verticalMenuWidth: "280px",
 };

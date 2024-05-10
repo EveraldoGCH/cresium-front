@@ -2,7 +2,6 @@
 import { Card } from "@/components/core/Card/Card";
 import { colorsVars } from "@/utils/colorsVars";
 import { Box, Button, Grid, OutlinedInput, Stack, TextField, Typography } from "@mui/material";
-import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import OptionChip from "./components/OptionChip/OptionChip";
 import "./style.css"
@@ -11,10 +10,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import AddIcon from '@mui/icons-material/Add';
 
 export default function Step1EnviarDinero() {
-    const router = useRouter();
-    const [step, setStep] = useState(0)
-
-
+    
     return (
         <Stack gap={"16px"} style={{ width: "100%" }}>
             <Card style={{ padding: "24px" }}>
