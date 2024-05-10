@@ -2,11 +2,13 @@ export const colorsVars = {
 	navBorderColor: "#DCDFE4",
 	divider: "#DCDFE4",
 	textSecondary: "#667085",//igual a grey500
+	textDisabled: "#8A94A6",
 	succesMain: "#15B79F",
 	errorMain: "#F04438",
 	backgroundColor: "#F9FAFB",
 	primaryMain: "#635BFF",
 	primary25: "#F5F8FF",
+	primary50: "#EEF4FF",
 	primary200: "#C7D7FE",
 	primary500: "#6172F3",
 	primary600: "#444CE7",

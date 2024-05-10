@@ -1,12 +1,16 @@
 "use client";
-import { Stack, Box, Link, Typography, Breadcrumbs, Button, Divider } from "@mui/material";
+import { Stack, Box, Link, Typography, Breadcrumbs, Button, Divider, Grid, OutlinedInput } from "@mui/material";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import HomeIcon from '@mui/icons-material/Home';
 import { colorsVars } from "@/utils/colorsVars";
 import { Card } from "@/components/core/Card/Card";
-import { ArrowRight } from "../../../public/assets/iconsComponents/iconsComponents";
+import { ArrowRight, CheckCircle, CoinsStacked03 } from "../../../public/assets/iconsComponents/iconsComponents";
 import Step1EnviarDinero from "./Step1EnviarDinero";
+import OptionChip from "./components/OptionChip/OptionChip";
+import "./style.css"
+import { Stepper } from "./components/Stepper/Stepper";
+
 
 
 export default function EnviarDinero() {
@@ -66,7 +70,62 @@ export default function EnviarDinero() {
             </Stack>
             <Divider />
             <Stack sx={{ width: "100%", alignItems: "flex-end" }} spacing={4}>{/*Contenedor Card */}
-                {step === 0 && (
+                <Grid container xs={12} justifyContent={"space-between"}>
+                    <Grid item xs={7.5}>
+                        {step === 0 && (<Step1EnviarDinero />)}
+                    </Grid>
+                    <Grid item xs={4}>
+                        <Stack gap={"16px"} style={{ width: "100%" }}>
+                            <Card height="118px">
+                                <Stepper />
+                            </Card>
+                            <Card>
+                                <Grid container xs={12} gap={"16px"}>
+                                    <Typography variant="subtitle1">
+                                        Cuenta de origen
+                                    </Typography>
+                                    <Card style={{
+                                        border: `1px solid ${colorsVars.primary200}`,
+                                        backgroundColor: `${colorsVars.primary25}`,
+                                        borderRadius: "12px",
+                                        padding: "16px",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "12px"
+                                    }}>
+                                        <CoinsStacked03 />
+                                        <Typography
+                                            variant="subtitle2"
+                                            color={colorsVars.primary700}
+                                            fontWeight={500}
+                                        >
+                                            Alphabet Inc.
+                                        </Typography>
+                                    </Card>
+                                    <Card style={{
+                                        backgroundColor: `${colorsVars.grey100}`,
+                                        borderRadius: "12px",
+                                        padding: "16px",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "12px"
+                                    }}>
+                                        <Typography variant="body1" fontWeight={500}>
+                                            Monto disponible
+                                        </Typography>
+                                        <Typography variant="subtitle1">
+                                            ARS $12.231.123,99
+                                        </Typography>
+                                    </Card>
+                                </Grid>
+                            </Card>
+                            <Card>
+                                <Button variant="contained" style={{ width: "100%", height: "7vh" }} endIcon={<ArrowRight />}>Continuar</Button>
+                            </Card>
+                        </Stack>
+                    </Grid>
+                </Grid>
+                {/* {step === 0 && (
                     <Step1EnviarDinero />
                 )}
                 {step === 1 && (
@@ -74,25 +133,7 @@ export default function EnviarDinero() {
                 )}
                 {step === 2 && (
                     <Card height="733px">step3</Card>
-                )}
-                {step === 0 && (
-                    <>
-                        <Button
-                            variant="contained"
-                            endIcon={<ArrowRight />}
-                            onClick={() => { setStep(1), window.scrollTo({ top: 0, behavior: 'smooth' }) }}
-                        >Continuar</Button>
-                    </>
-                )}
-                {step === 1 && (
-                    <>
-                        <Button
-                            variant="contained"
-                            endIcon={<ArrowRight />}
-                            onClick={() => setStep(2)}
-                        >Confirmar transferencia</Button>
-                    </>
-                )}
+                )} */}
             </Stack>{/*FIN Contenedor card */}
 
             {/*FIN Contenedor Principal*/}

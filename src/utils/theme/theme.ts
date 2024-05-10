@@ -1,5 +1,6 @@
 import { createTheme, ThemeOptions } from '@mui/material/styles';
 import { colorsVars } from '../colorsVars';
+import { BorderColor } from '@mui/icons-material';
 
 const defaultTheme = createTheme();
 
@@ -39,9 +40,10 @@ const customThemeOptions: ThemeOptions = createTheme({
                     },
                 },
                 outlined: {
-                    border: `2px solid #787584`,
+                    border: `1px solid ${colorsVars.grey300}`,
+                    color:"black",
                     '&:hover': {
-                        borderWidth: '2px',
+                        borderColor: colorsVars.primary500
                     },
                 },
                 text: {
