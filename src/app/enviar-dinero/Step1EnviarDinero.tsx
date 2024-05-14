@@ -12,7 +12,7 @@ import AddIcon from '@mui/icons-material/Add';
 export default function Step1EnviarDinero() {
     
     return (
-        <Stack gap={"16px"} style={{ width: "100%" }}>
+        <Stack gap={"16px"} style={{ width: "100%", marginBottom:"32px" }}>
             <Card style={{ padding: "24px" }}>
                 <Stack gap={"16px"}>
                     <Grid container xs={12} flexDirection={"column"} gap={"8px"}>

@@ -1,7 +1,7 @@
 "use client";
 import { Stack, Box, Link, Typography, Breadcrumbs, Button, Divider, Grid, OutlinedInput } from "@mui/material";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import HomeIcon from '@mui/icons-material/Home';
 import { colorsVars } from "@/utils/colorsVars";
 import { Card } from "@/components/core/Card/Card";
@@ -11,7 +11,7 @@ import OptionChip from "./components/OptionChip/OptionChip";
 import "./style.css"
 import { Stepper } from "./components/Stepper/Stepper";
 import Step2EnviarDinero from "./Step2EnviarDinero";
-
+import { GreyCardInfo } from "@/components/core/GreyCardInfo/GreyCardInfo";
 
 
 export default function EnviarDinero() {
@@ -34,8 +34,12 @@ export default function EnviarDinero() {
         </Typography>,
     ];
 
+    const continueStep1=()=>{
+        setStep(1)
+    }
+
     return (
-        <Stack spacing={4} sx={{ width: "100%" }}>{/* Contenedor Principal*/}
+        <Stack spacing={4} sx={{ width: "100%"}}>{/* Contenedor Principal*/}
             <Stack
                 direction={{ xs: "column", sm: "column", md: "row" }}
                 spacing={3}
@@ -71,17 +75,17 @@ export default function EnviarDinero() {
             </Stack>
             <Divider />
             <Stack sx={{ width: "100%", alignItems: "flex-end" }} spacing={4}>{/*Contenedor Card */}
-                <Grid container xs={12} justifyContent={"space-between"}>
+                <Grid container xs={12} justifyContent={"space-between"} alignItems={"flex-start"}>
                     <Grid item xs={7.5}>
                         {step === 0 && (<Step1EnviarDinero />)}
                         {step === 1 && (<Step2EnviarDinero />)}
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={4} className={"sticky"}>
                         <Stack gap={"16px"} style={{ width: "100%" }}>
-                            <Card height="118px">
+                            <Card height="118px" style={{ padding: "24px" }}>
                                 <Stepper />
                             </Card>
-                            <Card>
+                            <Card style={{ padding: "24px" }}>
                                 <Grid container xs={12} gap={"16px"}>
                                     <Typography variant="subtitle1">
                                         Cuenta de origen
@@ -104,29 +108,22 @@ export default function EnviarDinero() {
                                             Alphabet Inc.
                                         </Typography>
                                     </Card>
-                                    <Card style={{
-                                        backgroundColor: `${colorsVars.grey100}`,
-                                        borderRadius: "12px",
-                                        padding: "16px",
-                                        display: "flex",
-                                        alignItems: "center",
-                                        gap: "12px"
-                                    }}>
+                                    <GreyCardInfo>
                                         <Typography variant="body1" fontWeight={500}>
                                             Monto disponible
                                         </Typography>
                                         <Typography variant="subtitle1">
                                             ARS $12.231.123,99
                                         </Typography>
-                                    </Card>
+                                    </GreyCardInfo>
                                 </Grid>
                             </Card>
-                            <Card>
+                            <Card style={{ padding: "24px" }}>
                                 {step === 0 && (<Button
                                     variant="contained"
                                     style={{ width: "100%", height: "7vh" }}
                                     endIcon={<ArrowRight />}
-                                    onClick={() => setStep(1)}>
+                                    onClick={() => continueStep1()}>
                                     Continuar
                                 </Button>)}
                                 {step === 1 && (
@@ -141,13 +138,14 @@ export default function EnviarDinero() {
                                         <Typography
                                             variant="body1"
                                             style={{ margin: 0, fontSize: "12px", fontWeight: 400 }}>
-                                            Al enviar dinero estas aceptando los 
-                                            <p 
-                                            style={{color: colorsVars.blue600, 
-                                            margin: 0, 
-                                            display:"inline",
-                                            cursor:"pointer"
-                                            }}> términos de uso y privacidad de Cresium.</p>
+                                            Al enviar dinero estas aceptando los
+                                            <p
+                                                style={{
+                                                    color: colorsVars.blue600,
+                                                    margin: 0,
+                                                    display: "inline",
+                                                    cursor: "pointer"
+                                                }}> términos de uso y privacidad de Cresium.</p>
                                         </Typography>
                                     </Box>
                                 )}

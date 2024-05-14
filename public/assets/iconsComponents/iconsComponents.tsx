@@ -16,6 +16,7 @@ import UploadCloud02 from "./General/UploadCloud02";
 import CoinsStacked03 from "./Finance/CoinsStacked03";
 import ArrowRight from "./Arrows/ArrowRight";
 import CheckCircle from "./General/CheckCircle"
+import ShieldTick from "./Security/ShieldTick"
 
 export {
   TrendUp01,
@@ -26,5 +27,6 @@ export {
   CoinsStacked03,
   ArrowRight,
   UploadCloud02,
-  CheckCircle
+  CheckCircle,
+  ShieldTick
 };

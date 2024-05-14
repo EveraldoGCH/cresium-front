@@ -4,6 +4,9 @@ export const colorsVars = {
 	textSecondary: "#667085",//igual a grey500
 	textDisabled: "#8A94A6",
 	succesMain: "#15B79F",
+	success50: "#ECFDF3",
+	success500: "#12B76A",
+	success700: "#027A48",
 	errorMain: "#F04438",
 	backgroundColor: "#F9FAFB",
 	primaryMain: "#635BFF",

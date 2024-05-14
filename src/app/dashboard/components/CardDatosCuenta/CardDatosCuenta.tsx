@@ -20,7 +20,7 @@ export function CardDatosCuenta(): React.JSX.Element {
 				</Typography>
 			</CardContent>
 			<Divider style={{ width: "100%" }} />
-			<CardActions style={{ padding: "24px" }}>
+			<CardActions style={{ padding: "16px 24px" }}>
 				<Grid container direction={"column"}>
 					{/*Contenedor Alias y cvu */}
 					<Grid item>

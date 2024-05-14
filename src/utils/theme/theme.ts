@@ -25,6 +25,16 @@ declare module '@mui/material/styles' {
 
 const customThemeOptions: ThemeOptions = createTheme({
     components: {
+        MuiChip:{
+            styleOverrides:{
+                root:{
+                    "& svg":{
+                        width:"14px",
+                        height:"14px"
+                    }
+                }
+            }
+        },
         MuiButton: {
             styleOverrides: {
                 root: {
