@@ -17,6 +17,7 @@ import CoinsStacked03 from "./Finance/CoinsStacked03";
 import ArrowRight from "./Arrows/ArrowRight";
 import CheckCircle from "./General/CheckCircle"
 import ShieldTick from "./Security/ShieldTick"
+import LogoCresiumIcon from "./LogoCresiumIcon";
 
 export {
   TrendUp01,
@@ -28,5 +29,6 @@ export {
   ArrowRight,
   UploadCloud02,
   CheckCircle,
-  ShieldTick
+  ShieldTick,
+  LogoCresiumIcon
 };

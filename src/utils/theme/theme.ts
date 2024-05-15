@@ -25,12 +25,12 @@ declare module '@mui/material/styles' {
 
 const customThemeOptions: ThemeOptions = createTheme({
     components: {
-        MuiChip:{
-            styleOverrides:{
-                root:{
-                    "& svg":{
-                        width:"14px",
-                        height:"14px"
+        MuiChip: {
+            styleOverrides: {
+                root: {
+                    "& svg": {
+                        width: "14px",
+                        height: "14px"
                     }
                 }
             }
@@ -51,13 +51,14 @@ const customThemeOptions: ThemeOptions = createTheme({
                 },
                 outlined: {
                     border: `1px solid ${colorsVars.grey300}`,
-                    color:"black",
+                    color: "black",
                     '&:hover': {
                         borderColor: colorsVars.primary500
                     },
                 },
                 text: {
                     borderRadius: 0,
+                    boxShadow:"none",
                     '&:hover': {
                         backgroundColor: 'transparent',
                         transform: 'none',
@@ -135,7 +136,8 @@ const customThemeOptions: ThemeOptions = createTheme({
                     background: "white",
                     input: {
                         padding: 0,
-                        height: "24px"
+                        height: "24px",
+                        color:colorsVars.textSecondary,
                     }
                 }
             }
@@ -145,9 +147,9 @@ const customThemeOptions: ThemeOptions = createTheme({
     typography: {
         fontFamily: "Inter",
         h1: {
-            fontSize: defaultTheme.typography.pxToRem(42),
-            fontWeight: 500,
-            lineHeight: defaultTheme.typography.pxToRem(46),
+            fontSize: defaultTheme.typography.pxToRem(36),
+            fontWeight: 600,
+            lineHeight: defaultTheme.typography.pxToRem(44),
             color: '#353535',
         },
         h2: {
