@@ -13,7 +13,7 @@ import { CardDinero } from "./components/CardDinero/CardDinero";
 import { CardDatosCuenta } from "./components/CardDatosCuenta/CardDatosCuenta";
 import { CardInfo } from "./components/CardInfo/CardInfo";
 import { ContenedorTabla } from "./components/ContenedorTabla/ContenedorTabla";
-import { ChartDashboard } from "./components/ChartDashboard/ChartDashbaord";
+import { ChartDashboard } from "./components/ChartDashboard/ChartDashboard";
 import { useRouter } from "next/navigation";
 
 

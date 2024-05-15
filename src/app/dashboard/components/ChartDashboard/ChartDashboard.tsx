@@ -2,10 +2,11 @@
 import { Card } from "@/components/core/Card/Card";
 import { CardContent, Chip, Divider, Grid, Stack, Typography } from "@mui/material";
 import { TabStyled, TabsStyled } from "./ChartDashboardStyle";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Chart } from "../../../../components/core/Chart/Chart";
 import { colorsVars } from "@/utils/colorsVars";
 import { ShieldTick, TrendUp01 } from "../../../../../public/assets/iconsComponents/iconsComponents";
+import axios from "axios";
 
 
 export function ChartDashboard(): React.JSX.Element {
@@ -17,6 +18,24 @@ export function ChartDashboard(): React.JSX.Element {
         { label: 'Año', value: 2 }
     ];
 
+    const getEx = () => {
+        console.log("HOLAA")
+        axios.get("/api/mock").then((res) => {
+            console.log("GET PRUEBA", res)
+            alert
+        }).catch(() => {
+            console.log("ERROR GET PRUEBA")
+        })
+            .finally(() => {
+                console.log("SE LLAMO?")
+            })
+    }
+
+    useEffect(() => {
+        getEx()
+    }, [])
+
+
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setTab(newValue);
     };
@@ -24,10 +43,10 @@ export function ChartDashboard(): React.JSX.Element {
     return (
         <Card>
             <Grid container xs={12} padding={"24px 24px 0 24px"} alignItems={"center"} gap={"8px"}>
-                <Typography variant="h5" fontWeight={600}>
+                <Typography variant="h5" fontWeight={600} onClick={() => getEx()}>
                     Balance de Cresium
                 </Typography>
-                <ShieldTick color={colorsVars.primary500}/>
+                <ShieldTick color={colorsVars.primary500} />
             </Grid>
             <CardContent style={{ padding: "16px 24px" }}>
                 <Grid container xs={12}>

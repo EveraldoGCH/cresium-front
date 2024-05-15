@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { VerticalMenuProps } from "./VerticalMenuProps";
 import {
   Block,
@@ -16,7 +16,7 @@ import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { routes } from "@/utils/routes";
 
-export function VerticalMenu({ children, path }: VerticalMenuProps) {
+export function VerticalMenu({ children }: VerticalMenuProps) {
   const pathname = usePathname();
   const router = useRouter();
   const ExcludedRoutes = [routes.login]

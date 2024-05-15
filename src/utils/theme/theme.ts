@@ -58,7 +58,7 @@ const customThemeOptions: ThemeOptions = createTheme({
                 },
                 text: {
                     borderRadius: 0,
-                    boxShadow:"none",
+                    boxShadow: "none",
                     '&:hover': {
                         backgroundColor: 'transparent',
                         transform: 'none',
@@ -107,10 +107,7 @@ const customThemeOptions: ThemeOptions = createTheme({
                     fontSize: defaultTheme.typography.pxToRem(14),
                     fontWeight: 500,
                     lineHeight: defaultTheme.typography.pxToRem(22),
-                    textTransform: "none"
-                },
-                selected: {
-                    color: "white"
+                    textTransform: "none",
                 },
 
 
@@ -137,7 +134,7 @@ const customThemeOptions: ThemeOptions = createTheme({
                     input: {
                         padding: 0,
                         height: "24px",
-                        color:colorsVars.textSecondary,
+                        color: colorsVars.textSecondary,
                     }
                 }
             }

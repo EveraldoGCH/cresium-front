@@ -13,8 +13,6 @@ export default function EnviarDinero() {
     const router = useRouter();
     const [step, setStep] = useState(0)
 
-
-
     return (
         <Grid container xs={12}>
             <Grid
