@@ -5,6 +5,7 @@ import styled from "styled-components";
 export const TabStyled = styled(Tab)`
   padding:0;
   min-width:40px;
+  max-width:100%
   
 `;
 

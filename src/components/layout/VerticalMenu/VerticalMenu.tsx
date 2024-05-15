@@ -15,28 +15,13 @@ import { colorsVars } from "@/utils/colorsVars";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { routes } from "@/utils/routes";
-import LogoCresiumIcon from "../../../../public/assets/iconsComponents/LogoCresiumIcon";
 
-export function VerticalMenu({ children }: VerticalMenuProps) {
+export function VerticalMenu({ children, path }: VerticalMenuProps) {
   const pathname = usePathname();
   const router = useRouter();
-  const [currentPath, setCurrentPath] = useState<string | null>(null);
-
-  useEffect(() => {
-    setCurrentPath(pathname);
-    console.log(pathname)
-  }, [pathname]);
-
   const ExcludedRoutes = [routes.login]
 
-  if (currentPath===null) {
-    return (
-      <div style={{width:"100vw", height:"100vh", display:"flex", alignItems:"center", justifyContent:"center"}}>
-        <LogoCresiumIcon className={"grow-animation"}/>
-      </div>)
-  }
-
-  if (ExcludedRoutes.includes(currentPath ?? "")) {
+  if (ExcludedRoutes.includes(pathname)) {
     return (<>{children}</>)
   }
 
@@ -53,7 +38,7 @@ export function VerticalMenu({ children }: VerticalMenuProps) {
                 <ListItemNav
                   key={i}
                   style={
-                    currentPath === elm.path
+                    pathname === elm.path
                       ? { backgroundColor: colorsVars.grey100 }
                       : {}
                   }
@@ -71,7 +56,7 @@ export function VerticalMenu({ children }: VerticalMenuProps) {
                 <ListItemNav
                   key={i}
                   style={
-                    currentPath === elm.path
+                    pathname === elm.path
                       ? { backgroundColor: colorsVars.grey100 }
                       : {}
                   }
