@@ -6,11 +6,12 @@ import { useEffect, useState } from "react";
 import { Chart } from "../../../../components/core/Chart/Chart";
 import { colorsVars } from "@/utils/colorsVars";
 import { ShieldTick, TrendUp01 } from "../../../../../public/assets/iconsComponents/iconsComponents";
-import axios from "axios";
+import axiosInstance from "@/utils/axiosInstance";
 
 
 export function ChartDashboard(): React.JSX.Element {
     const [tab, setTab] = useState(0)
+    const [xd, setXd]=useState("")
 
     const tabs = [
         { label: 'Día', value: 0 },
@@ -20,21 +21,16 @@ export function ChartDashboard(): React.JSX.Element {
 
     const getEx = () => {
         console.log("HOLAA")
-        axios.get("/api/mock").then((res) => {
-            console.log("GET PRUEBA", res)
-            alert
-        }).catch(() => {
-            console.log("ERROR GET PRUEBA")
+        axiosInstance.get("api/mock").then((res) => {
+            console.log("GET PRUEBA", res.data)
+            setXd(res.data.message)
+        }).catch((e) => {
+            console.log("ERROR GET PRUEBA", e)
         })
             .finally(() => {
                 console.log("SE LLAMO?")
             })
     }
-
-    useEffect(() => {
-        getEx()
-    }, [])
-
 
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setTab(newValue);
@@ -44,7 +40,7 @@ export function ChartDashboard(): React.JSX.Element {
         <Card>
             <Grid container xs={12} padding={"24px 24px 0 24px"} alignItems={"center"} gap={"8px"}>
                 <Typography variant="h5" fontWeight={600} onClick={() => getEx()}>
-                    Balance de Cresium
+                    Balance de Cresium{xd}
                 </Typography>
                 <ShieldTick color={colorsVars.primary500} />
             </Grid>
