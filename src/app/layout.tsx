@@ -3,14 +3,11 @@ import "./globals.css";
 import { VerticalMenu } from "@/components/layout/VerticalMenu/VerticalMenu";
 import StyledComponentsRegistry from "./registry";
 import ThemeProvider from "@/utils/theme/ThemeProvider";
-import axios from "axios";
 
 export const metadata: Metadata = {
   title: "Cresium",
   description: "Cresium dashboard",
 };
-
-axios.defaults.baseURL = "http://localhost:3000"
 
 export default function RootLayout({
   children,

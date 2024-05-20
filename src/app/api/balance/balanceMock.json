@@ -1,0 +1,12 @@
+    {
+        "id": 1,
+        "balance": 1500,
+        "lockedBalance": 0,
+        "currency": {
+            "symbol": "$",
+            "code": "ARS",
+            "image": "",
+            "decimals": 2
+        },
+        "companyId": 1
+    }

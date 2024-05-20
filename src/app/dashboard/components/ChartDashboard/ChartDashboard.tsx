@@ -1,36 +1,24 @@
 "use client";
 import { Card } from "@/components/core/Card/Card";
-import { CardContent, Chip, Divider, Grid, Stack, Typography } from "@mui/material";
+import { CardContent, Chip, Divider, Grid, Skeleton, Stack, Typography } from "@mui/material";
 import { TabStyled, TabsStyled } from "./ChartDashboardStyle";
 import { useEffect, useState } from "react";
 import { Chart } from "../../../../components/core/Chart/Chart";
 import { colorsVars } from "@/utils/colorsVars";
 import { ShieldTick, TrendUp01 } from "../../../../../public/assets/iconsComponents/iconsComponents";
-import axiosInstance from "@/utils/axiosInstance";
+import { useGetBalance } from "@/hooks/api/get/useGetBalance";
+import { formatCurrency } from "@/utils/helpers/numbers";
 
 
 export function ChartDashboard(): React.JSX.Element {
     const [tab, setTab] = useState(0)
-    const [xd, setXd]=useState("")
+    const { data: balanceResponse, isLoading: loadingBalance } = useGetBalance();
 
     const tabs = [
         { label: 'Día', value: 0 },
         { label: 'Mes', value: 1 },
         { label: 'Año', value: 2 }
     ];
-
-    const getEx = () => {
-        console.log("HOLAA")
-        axiosInstance.get("api/mock").then((res) => {
-            console.log("GET PRUEBA", res.data)
-            setXd(res.data.message)
-        }).catch((e) => {
-            console.log("ERROR GET PRUEBA", e)
-        })
-            .finally(() => {
-                console.log("SE LLAMO?")
-            })
-    }
 
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setTab(newValue);
@@ -39,15 +27,20 @@ export function ChartDashboard(): React.JSX.Element {
     return (
         <Card>
             <Grid container xs={12} padding={"24px 24px 0 24px"} alignItems={"center"} gap={"8px"}>
-                <Typography variant="h5" fontWeight={600} onClick={() => getEx()}>
-                    Balance de Cresium{xd}
+                <Typography variant="h5" fontWeight={600}>
+                    Balance de Cresium
                 </Typography>
                 <ShieldTick color={colorsVars.primary500} />
             </Grid>
             <CardContent style={{ padding: "16px 24px" }}>
                 <Grid container xs={12}>
                     <Grid item container xs={8} alignItems={"center"}>
-                        <Typography variant="h2" fontWeight={600}>$12.097.834,81</Typography>
+                        {loadingBalance ?
+                            <Skeleton sx={{width:"50%"}}/>
+                            :
+                            <Typography variant="h2" fontWeight={600}>{formatCurrency(balanceResponse?.balance)}</Typography>
+
+                        }
                         <Chip
                             color="success"
                             icon={<TrendUp01 color={colorsVars.success500} />}
