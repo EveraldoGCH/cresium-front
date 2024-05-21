@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "type": "ALIAS",
+      "value": "ALIAS-v0py7t",
+      "currencyId": 1
+    },
+    {
+      "type": "CVU",
+      "value": "CVU-928476434141",
+      "currencyId": 1
+    }
+  ]
+}

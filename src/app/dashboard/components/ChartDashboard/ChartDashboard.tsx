@@ -38,7 +38,7 @@ export function ChartDashboard(): React.JSX.Element {
                         {loadingBalance ?
                             <Skeleton sx={{width:"50%"}}/>
                             :
-                            <Typography variant="h2" fontWeight={600}>{formatCurrency(balanceResponse?.balance)}</Typography>
+                            <Typography variant="h2" fontWeight={600}>{formatCurrency(balanceResponse[0]?.balance)}</Typography>
 
                         }
                         <Chip
