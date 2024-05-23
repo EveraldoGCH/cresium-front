@@ -1,8 +1,8 @@
+import { AccountResponse } from "@/types/responses/responseTypes";
 import axiosInstance from "@/utils/axiosInstance";
 
-export const getDatosCuentaService = async (): Promise<any> => {
+export const getDatosCuentaService = async (): Promise<AccountResponse[]> => {
   const response = await axiosInstance.get('/account');
-  console.log(response)
 
   return response.data.data;
 };

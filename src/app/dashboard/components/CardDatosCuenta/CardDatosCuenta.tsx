@@ -11,12 +11,10 @@ import {
 	Typography,
 } from "@mui/material";
 import { Copy06 } from "../../../../../public/assets/iconsComponents/iconsComponents";
-import { useGetDatosCuenta } from "@/hooks/api/get/useGetDatosCuenta";
+import { useGetDatosCuenta } from "@/hooks/apiCalls/get/useGetDatosCuenta";
 
 export function CardDatosCuenta(): React.JSX.Element {
 	let { data: datosCuenta, isLoading: loadingDatosCuenta } = useGetDatosCuenta();
-	console.log(datosCuenta)
-
 
 	if (loadingDatosCuenta) {
 		return (
@@ -109,7 +107,7 @@ export function CardDatosCuenta(): React.JSX.Element {
 						alignItems={"center"}
 					>
 						<Typography variant="subtitle2" fontSize={"18px"}>
-							{datosCuenta[0].value}
+							{datosCuenta![0].value ?? ""}
 						</Typography>
 						<IconButton style={{ padding: "3px" }}>
 							<Copy06
@@ -136,7 +134,7 @@ export function CardDatosCuenta(): React.JSX.Element {
 						alignItems={"center"}
 					>
 						<Typography variant="subtitle2" fontSize={"18px"}>
-							{datosCuenta[1].value}
+							{datosCuenta![1].value}
 						</Typography>
 						<IconButton style={{ padding: "3px" }}>
 							<Copy06

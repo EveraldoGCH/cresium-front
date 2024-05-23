@@ -42,7 +42,7 @@ const tabs = [
   { label: "Día", value: "" },
   { label: "Mes", value: "" },
   { label: "Año", value: "" },
-] as const;
+] satisfies { label: string, value: string }[];
 
 export function ChartBalance(): React.JSX.Element {
   const chartHeight = 240;
@@ -68,7 +68,7 @@ export function ChartBalance(): React.JSX.Element {
                 sx={{ mx: 2 }}
               />
             </Stack>
-            <Tabs sx={{ px: 3 }} value={""} variant="scrollable">
+            <Tabs style={{ paddingLeft: "3px" }} value={""} variant="scrollable">
               {tabs.map((tab) => (
                 <Tab
                   iconPosition="end"

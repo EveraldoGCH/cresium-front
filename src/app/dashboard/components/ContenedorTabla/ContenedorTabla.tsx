@@ -6,12 +6,19 @@ import { UploadCloud02 } from "../../../../../public/assets/iconsComponents/icon
 import { useState } from "react";
 import Tabla from "../../../../components/core/Tabla/Tabla";
 import { Column } from "@/components/core/Tabla/TablaProps";
+import { useGetTransactions } from "@/hooks/apiCalls/get/useGetTransactions";
 
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
   value: number;
 }
+
+const tabs = [
+  { label: 'Ver todos', value: 0, type: "all" },
+  { label: 'Ingresos', value: 1, type: "income" },
+  { label: 'Egresos', value: 2, type: "outcome" }
+];
 
 function CustomTabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
@@ -32,35 +39,31 @@ function CustomTabPanel(props: TabPanelProps) {
   );
 }
 
-function a11yProps(index: number) {
-  return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`
-
-  };
-}
-
 export function ContenedorTabla(): React.JSX.Element {
-  const [value, setValue] = useState(0)
+  const [tab, setTab] = useState(0)
+
+  const { data: transactions, isLoading: loadingTransactions } = useGetTransactions(tabs[tab].type);
+
+  console.log("TRANSS", transactions)
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-    setValue(newValue);
+    setTab(newValue);
   };
 
   const columns: Column[] = [
     { label: "Fecha" },
     { label: "Nombre", align: "left" },
-    { label: "Monto", align:"right" },
-    { label: "Cuenta", align:"right" },
+    { label: "Monto", align: "right" },
+    { label: "Cuenta", align: "right" },
     { label: "Tipo de transacción", align: "right" },
   ]
 
   const rows = [
-    { name: "Fecha1", date: 'Snow', amount: 'Jon', account: 35, transaccion:"transaccion" },
-    { name: "Fecha2", date: 'Lannister', amount: 'Cersei', account: 42, transaccion:"transaccion" },
-    { name: "Fecha3", date: 'Lannister', amount: 'Jaime', account: 45, transaccion:"transaccion" },
-    { name: "Fecha4", date: 'Stark', amount: 'Arya', account: 16, transaccion:"transaccion" },
-    { name: "Fecha5", date: 'Targaryen', amount: 'Daenerys', account: null, transaccion:"transaccion" },
+    { name: "Fecha1", date: 'Snow', amount: 'Jon', account: 35, transaccion: "transaccion" },
+    { name: "Fecha2", date: 'Lannister', amount: 'Cersei', account: 42, transaccion: "transaccion" },
+    { name: "Fecha3", date: 'Lannister', amount: 'Jaime', account: 45, transaccion: "transaccion" },
+    { name: "Fecha4", date: 'Stark', amount: 'Arya', account: 16, transaccion: "transaccion" },
+    { name: "Fecha5", date: 'Targaryen', amount: 'Daenerys', account: null, transaccion: "transaccion" },
   ];
 
   return (
@@ -100,19 +103,19 @@ export function ContenedorTabla(): React.JSX.Element {
         <Grid item xs={12}>
           <Box sx={{ width: '100%' }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-              <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                <Tab label="Ver todos" {...a11yProps(0)} />
-                <Tab label="Ingresos" {...a11yProps(1)} />
-                <Tab label="Egresos" {...a11yProps(2)} />
+              <Tabs value={tab} aria-label="basic tabs example">
+                {tabs.map((tab, i) => (
+                  <Tab label={tab.label} onClick={(e)=>handleChange(e, i)}/>
+                ))}
               </Tabs>
             </Box>
-            <CustomTabPanel value={value} index={0}>
-              <Tabla columns={columns} rows={rows}/>
+            <CustomTabPanel value={tab} index={0}>
+              <Tabla columns={columns} rows={rows} />
             </CustomTabPanel>
-            <CustomTabPanel value={value} index={1}>
+            <CustomTabPanel value={tab} index={1}>
               Ingresos
             </CustomTabPanel>
-            <CustomTabPanel value={value} index={2}>
+            <CustomTabPanel value={tab} index={2}>
               Egresos
             </CustomTabPanel>
           </Box>

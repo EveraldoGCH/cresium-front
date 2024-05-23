@@ -1,0 +1,92 @@
+{
+    "data": {
+        "transactions": [
+            {
+                "id": 2,
+                "type": "DEPOSIT",
+                "status": "SUCCESS",
+                "currencyId": 1,
+                "currency": {
+                    "symbol": "$",
+                    "code": "ARS",
+                    "image": "",
+                    "decimals": 2
+                },
+                "fromId": 1,
+                "toId": 1,
+                "from": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "to": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "companyId": 1,
+                "collaboratorId": 1,
+                "collaborator": {
+                    "id": 1,
+                    "email": "cresium@max.com",
+                    "enabled": true,
+                    "firstName": "Max",
+                    "lastName": null,
+                    "image": null,
+                    "phone": "1141588259",
+                    "birthDate": null
+                },
+                "walletId": 1,
+                "createdAt": "2024-05-16T15:29:57.593Z",
+                "totalAmount": 1,
+                "netAmount": 1,
+                "externalId": null,
+                "tag": null
+            },
+            {
+                "id": 1,
+                "type": "WITHDRAWAL",
+                "status": "SUCCESS",
+                "currencyId": 1,
+                "currency": {
+                    "symbol": "$",
+                    "code": "ARS",
+                    "image": "",
+                    "decimals": 2
+                },
+                "fromId": 1,
+                "toId": 1,
+                "from": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "to": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "companyId": 1,
+                "collaboratorId": 1,
+                "collaborator": {
+                    "id": 1,
+                    "email": "cresium@max.com",
+                    "enabled": true,
+                    "firstName": "Max",
+                    "lastName": null,
+                    "image": null,
+                    "phone": "1141588259",
+                    "birthDate": null
+                },
+                "walletId": 1,
+                "createdAt": "2024-05-16T15:29:57.593Z",
+                "totalAmount": 1,
+                "netAmount": 1,
+                "externalId": null,
+                "tag": "SERVICES"
+            }
+        ],
+        "pageSize": 10,
+        "cursor": 1
+    }
+}
