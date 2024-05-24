@@ -15,7 +15,7 @@ export function CardDinero({
   info,
 }: CardDineroProps): React.JSX.Element {
   return (
-    <Card height={"216px"}>
+    <Card>
       <CardContent style={{ padding: "24px 24px 24px 24px" }}>
         <Grid container xs={12}>
           <Grid

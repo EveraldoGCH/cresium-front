@@ -23,7 +23,7 @@ export default function DashBoard() {
 
   return (
     <Stack spacing={5.5} sx={{ width: "100%" }}>{/* Contenedor Principal*/}
-      <Stack>{/* Primer contenedor */}
+      <Stack spacing={2.5}>{/* Primer contenedor */}
         <Stack
           direction={{ xs: "column", sm: "row" }}
           spacing={3}
@@ -31,22 +31,21 @@ export default function DashBoard() {
         >
           <Box sx={{ flex: "1 1 auto" }}>
             <Box display={"flex"} alignItems={"center"} gap={"8px"}>
-              <Home01 height={"18px"} width={"18px"} />
-              <p style={{ margin: 0 }}>Home</p>
+              <Home01 height={"16px"} width={"16px"} color={colorsVars.textSecondary}/>
+              <p style={{ margin: 0, color:colorsVars.textSecondary }}>Home</p>
             </Box>
             <Typography
               variant="h2"
-              style={{ fontWeight: "600", margin: "20px 0" }}
+              style={{ fontWeight: "600", margin: "14px 0" }}
             >
               Bienvenido Maximiliano
             </Typography>
-            <p>Cresium.io</p>
+            <p style={{ margin: 0, color:colorsVars.textSecondary }}>Alphabet Inc.</p>
           </Box>
-
           <Button variant="text" startIcon={<TrendDown02 />}>Recibir dinero</Button>
           <Button variant="contained" startIcon={<TrendUp02 />} onClick={() => router.push("/enviar-dinero")}>Enviar dinero</Button>
         </Stack>
-        <Divider />
+        <Divider style={{ color: colorsVars.grey200 }} />
       </Stack>{/*Fin primer contenedor */}
       <Grid
         container
