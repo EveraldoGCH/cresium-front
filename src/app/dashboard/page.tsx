@@ -1,7 +1,7 @@
 "use client";
 import { Box, Divider, Grid, Stack, Typography } from "@mui/material";
 import { Button } from "@mui/material";
-import React, { useEffect } from "react";
+import React from "react";
 import {
   TrendUp02,
   TrendDown02,

@@ -6,12 +6,15 @@ import React, { useState } from "react";
 import LoginA from "../../../public/assets/images/LoginA.jpg"
 import LogoCresiumIcon from "../../../public/assets/iconsComponents/LogoCresiumIcon";
 import { colorsVars } from "@/utils/constants/colorsVars";
+import { Modal2FA } from "./components/Modal2FA/Modal2FA";
+import { useModal } from "@/hooks/useModal";
 
 
 
 export default function EnviarDinero() {
     const router = useRouter();
     const [step, setStep] = useState(0)
+    const { open: openModal2FA, onClose: closeModal2FA, onOpen: onOpenModal2FA} = useModal()
 
     return (
         <Grid container xs={12}>
@@ -47,12 +50,12 @@ export default function EnviarDinero() {
                             </Typography>
                             <OutlinedInput placeholder="Ingresa tu contraseña" />
                         </Box>
-                        <Button variant="contained" fullWidth>Iniciar sesión</Button>
+                        <Button variant="contained" fullWidth onClick={()=>onOpenModal2FA()}>Iniciar sesión</Button>
                         <Button variant="text" fullWidth>¿Olvidaste tu contraseña?</Button>
-
                     </Stack>
                 </Box>
             </Grid>
+            <Modal2FA open={openModal2FA} title="MODAL 2 fa" onClose={closeModal2FA} />
         </Grid>
     );
 }
