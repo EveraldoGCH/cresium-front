@@ -2,6 +2,7 @@
 import { Card } from "@/components/core/Card/Card";
 import { colorsVars } from "@/utils/colorsVars";
 import {
+	Box,
 	CardActions,
 	CardContent,
 	Divider,
@@ -28,52 +29,43 @@ export function CardDatosCuenta(): React.JSX.Element {
 				<CardActions style={{ padding: "16px 24px" }}>
 					<Grid container direction={"column"}>
 						{/*Contenedor Alias y cvu */}
-						<Grid item>
-							<Typography
-								variant="subtitle2"
-								color={colorsVars.grey500}
-							>
-								Alias
-							</Typography>
-						</Grid>
-						<Grid
-							item
-							container
-							justifyContent={"space-between"}
-							alignItems={"center"}
-						>
-							<Skeleton variant="text" width={"70%"} height={"auto"} />
-							<IconButton style={{ padding: "3px" }} disabled>
-								<Copy06
-									style={{ colors: colorsVars.primary600 }}
-								/>
-							</IconButton>
-						</Grid>
+						<Box width={"100%"} flexWrap={"nowrap"}>
+							<Grid container xs={12}>
+								<Grid item container xs={8} direction={"column"} gap={"4px"}>
+									<Typography
+										variant="subtitle2"
+										color={colorsVars.grey500}
+										fontSize={"18px"}
+									>
+										Alias
+									</Typography>
+									<Skeleton variant="text" width={"100%"} height={"21px"} />
+								</Grid>
+								<Grid item xs={4}>
+									<div style={{ width: "24px", height: "30px" }} />
+								</Grid>
+							</Grid>
+						</Box>
 						<Grid item xs={12}>
 							<Divider style={{ width: "100%", margin: "16px 0" }} />
 						</Grid>
-						<Grid item>
-							<Typography
-								variant="subtitle2"
-								color={colorsVars.grey500}
-								fontSize={"18px"}
-							>
-								CVU
-							</Typography>
-						</Grid>
-						<Grid
-							item
-							container
-							justifyContent={"space-between"}
-							alignItems={"center"}
-						>
-							<Skeleton variant="text" width={"70%"} height={"auto"} />
-							<IconButton style={{ padding: "3px" }} disabled>
-								<Copy06
-									style={{ colors: colorsVars.primary600 }}
-								/>
-							</IconButton>
-						</Grid>
+						<Box width={"100%"} flexWrap={"nowrap"}>
+							<Grid container xs={12}>
+								<Grid item container xs={8} direction={"column"} gap={"4px"}>
+									<Typography
+										variant="subtitle2"
+										color={colorsVars.grey500}
+										fontSize={"18px"}
+									>
+										CVU
+									</Typography>
+									<Skeleton variant="text" width={"100%"} height={"21px"} />
+								</Grid>
+								<Grid item xs={4}>
+									<div style={{ width: "24px", height: "30px" }} />
+								</Grid>
+							</Grid>
+						</Box>
 					</Grid>
 					{/*FIN Contenedor Alias y cvu */}
 				</CardActions>
@@ -92,56 +84,69 @@ export function CardDatosCuenta(): React.JSX.Element {
 			<CardActions style={{ padding: "16px 24px" }}>
 				<Grid container direction={"column"}>
 					{/*Contenedor Alias y cvu */}
-					<Grid item>
-						<Typography
-							variant="subtitle2"
-							color={colorsVars.grey500}
-						>
-							Alias
-						</Typography>
-					</Grid>
-					<Grid
-						item
-						container
-						justifyContent={"space-between"}
-						alignItems={"center"}
-					>
-						<Typography variant="subtitle2" fontSize={"18px"}>
-							{datosCuenta![0].value ?? ""}
-						</Typography>
-						<IconButton style={{ padding: "3px" }}>
-							<Copy06
-								style={{ cursor: "pointer", colors: colorsVars.primary600 }}
-							/>
-						</IconButton>
-					</Grid>
+					<Box width={"100%"} flexWrap={"nowrap"}>
+						<Grid container xs={12}>
+							<Grid item container xs={8} direction={"column"} gap={"4px"}>
+								<Typography
+									variant="subtitle2"
+									color={colorsVars.grey500}
+									fontSize={"18px"}
+								>
+									Alias
+								</Typography>
+								<Typography variant="subtitle2" fontSize={"18px"}>
+									{datosCuenta![0].value}
+								</Typography>
+							</Grid>
+							<Grid
+								item
+								container
+								xs={4}
+								justifyContent={"flex-end"}
+								alignItems={"center"}
+							>
+
+								<IconButton style={{ padding: "3px" }}>
+									<Copy06
+										style={{ cursor: "pointer", colors: colorsVars.primary600 }}
+									/>
+								</IconButton>
+							</Grid>
+						</Grid>
+					</Box>
 					<Grid item xs={12}>
 						<Divider style={{ width: "100%", margin: "16px 0" }} />
 					</Grid>
-					<Grid item>
-						<Typography
-							variant="subtitle2"
-							color={colorsVars.grey500}
-							fontSize={"18px"}
-						>
-							CVU
-						</Typography>
-					</Grid>
-					<Grid
-						item
-						container
-						justifyContent={"space-between"}
-						alignItems={"center"}
-					>
-						<Typography variant="subtitle2" fontSize={"18px"}>
-							{datosCuenta![1].value}
-						</Typography>
-						<IconButton style={{ padding: "3px" }}>
-							<Copy06
-								style={{ cursor: "pointer", colors: colorsVars.primary600 }}
-							/>
-						</IconButton>
-					</Grid>
+					<Box width={"100%"} flexWrap={"nowrap"}>
+						<Grid container xs={12}>
+							<Grid item container xs={8} direction={"column"} gap={"4px"}>
+								<Typography
+									variant="subtitle2"
+									color={colorsVars.grey500}
+									fontSize={"18px"}
+								>
+									CVU
+								</Typography>
+								<Typography variant="subtitle2" fontSize={"18px"}>
+									{datosCuenta![1].value}
+								</Typography>
+							</Grid>
+							<Grid
+								item
+								container
+								xs={4}
+								justifyContent={"flex-end"}
+								alignItems={"center"}
+							>
+
+								<IconButton style={{ padding: "3px" }}>
+									<Copy06
+										style={{ cursor: "pointer", colors: colorsVars.primary600 }}
+									/>
+								</IconButton>
+							</Grid>
+						</Grid>
+					</Box>
 				</Grid>
 				{/*FIN Contenedor Alias y cvu */}
 			</CardActions>
