@@ -61,7 +61,6 @@ const customThemeOptions: ThemeOptions = createTheme({
                     boxShadow: "none",
                     '&:hover': {
                         backgroundColor: 'transparent',
-                        transform: 'none',
                     },
                 },
                 contained: ({ theme }) => ({

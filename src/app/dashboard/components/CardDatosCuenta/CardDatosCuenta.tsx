@@ -9,13 +9,30 @@ import {
 	Grid,
 	IconButton,
 	Skeleton,
+	Snackbar,
 	Typography,
 } from "@mui/material";
 import { Copy06 } from "../../../../../public/assets/iconsComponents/iconsComponents";
 import { useGetDatosCuenta } from "@/hooks/apiCalls/get/useGetDatosCuenta";
+import { useState } from "react";
+import { copyTextToClipboard } from "@/utils/helpers/copy";
 
 export function CardDatosCuenta(): React.JSX.Element {
+	const [open, setOpen] = useState(false);
 	let { data: datosCuenta, isLoading: loadingDatosCuenta } = useGetDatosCuenta();
+
+	const clickCopy = async (text: string) => {
+		await copyTextToClipboard(text)
+		setOpen(true);
+	};
+
+	const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
+		if (reason === 'clickaway') {
+			return;
+		}
+
+		setOpen(false);
+	};
 
 	if (loadingDatosCuenta) {
 		return (
@@ -106,7 +123,7 @@ export function CardDatosCuenta(): React.JSX.Element {
 								alignItems={"center"}
 							>
 
-								<IconButton style={{ padding: "3px" }}>
+								<IconButton style={{ padding: "3px" }} onClick={() => clickCopy(datosCuenta![0].value)}>
 									<Copy06
 										style={{ cursor: "pointer", colors: colorsVars.primary600 }}
 									/>
@@ -139,7 +156,7 @@ export function CardDatosCuenta(): React.JSX.Element {
 								alignItems={"center"}
 							>
 
-								<IconButton style={{ padding: "3px" }}>
+								<IconButton style={{ padding: "3px" }} onClick={() => clickCopy(datosCuenta![1].value)}>
 									<Copy06
 										style={{ cursor: "pointer", colors: colorsVars.primary600 }}
 									/>
@@ -150,6 +167,13 @@ export function CardDatosCuenta(): React.JSX.Element {
 				</Grid>
 				{/*FIN Contenedor Alias y cvu */}
 			</CardActions>
+			<Snackbar
+				open={open}
+				autoHideDuration={1500}
+				onClose={handleClose}
+				message="Copiado al portapapeles"
+				anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+			/>
 		</Card>
 	);
 }

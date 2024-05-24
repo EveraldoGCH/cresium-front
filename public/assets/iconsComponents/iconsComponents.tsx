@@ -18,6 +18,7 @@ import ArrowRight from "./Arrows/ArrowRight";
 import CheckCircle from "./General/CheckCircle"
 import ShieldTick from "./Security/ShieldTick"
 import LogoCresiumIcon from "./LogoCresiumIcon";
+import Home01 from "./General/Home01"
 
 export {
   TrendUp01,
@@ -30,5 +31,6 @@ export {
   UploadCloud02,
   CheckCircle,
   ShieldTick,
-  LogoCresiumIcon
+  LogoCresiumIcon,
+  Home01
 };

@@ -7,6 +7,7 @@ import {
   TrendDown02,
   TrendUp01,
   TrendDown01,
+  Home01,
 } from "../../../public/assets/iconsComponents/iconsComponents";
 import { colorsVars } from "@/utils/colorsVars";
 import { CardDinero } from "./components/CardDinero/CardDinero";
@@ -18,9 +19,8 @@ import { useRouter } from "next/navigation";
 
 
 export default function DashBoard() {
-
-  useEffect(()=>{console.log("MONTE padre")},[])
   const router = useRouter()
+
   return (
     <Stack spacing={5.5} sx={{ width: "100%" }}>{/* Contenedor Principal*/}
       <Stack>{/* Primer contenedor */}
@@ -30,7 +30,10 @@ export default function DashBoard() {
           sx={{ alignItems: "center", width: "100%" }}
         >
           <Box sx={{ flex: "1 1 auto" }}>
-            <p>Home</p>
+            <Box display={"flex"} alignItems={"center"} gap={"8px"}>
+              <Home01 height={"18px"} width={"18px"} />
+              <p style={{ margin: 0 }}>Home</p>
+            </Box>
             <Typography
               variant="h2"
               style={{ fontWeight: "600", margin: "20px 0" }}
@@ -40,8 +43,8 @@ export default function DashBoard() {
             <p>Cresium.io</p>
           </Box>
 
+          <Button variant="text" startIcon={<TrendDown02 />}>Recibir dinero</Button>
           <Button variant="contained" startIcon={<TrendUp02 />} onClick={() => router.push("/enviar-dinero")}>Enviar dinero</Button>
-          <Button variant="contained" startIcon={<TrendDown02 />}>Recibir dinero</Button>
         </Stack>
         <Divider />
       </Stack>{/*Fin primer contenedor */}
