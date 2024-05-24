@@ -1,7 +1,7 @@
 "use client";
 import { Box, Divider, Grid, Stack, Typography } from "@mui/material";
 import { Button } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import {
   TrendUp02,
   TrendDown02,
@@ -18,6 +18,8 @@ import { useRouter } from "next/navigation";
 
 
 export default function DashBoard() {
+
+  useEffect(()=>{console.log("MONTE padre")},[])
   const router = useRouter()
   return (
     <Stack spacing={5.5} sx={{ width: "100%" }}>{/* Contenedor Principal*/}

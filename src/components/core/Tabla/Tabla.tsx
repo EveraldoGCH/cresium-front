@@ -5,16 +5,15 @@ import TableCell, { TableCellProps } from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow, { TableRowProps } from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
 import { TablePagination } from '@mui/material';
 import { useState } from 'react';
 import { Column, Row, TablaProps } from './TablaProps';
 
 
-export default function Tabla({ columns, rows }: TablaProps) {
+export default function Tabla({ columns, rows=[] }: TablaProps) {
   const [rowsPerPage, setRowsPerPage] = useState(10);
   const [page, setPage] = useState(0);
-  
+
 
   const handleChangePage = (event: unknown, newPage: number) => {
     setPage(newPage);
@@ -24,8 +23,8 @@ export default function Tabla({ columns, rows }: TablaProps) {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   };
-  if(rows.length===0){
-    return(
+  if (rows.length === 0) {
+    return (
       <>NO HAY NA</>
     )
   }
@@ -35,13 +34,13 @@ export default function Tabla({ columns, rows }: TablaProps) {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            {columns.map((elm:Column) => {
+            {columns.map((elm: Column) => {
               return <TableCell align={elm.align ?? "inherit"}>{elm.label}</TableCell>
             })}
           </TableRow>
         </TableHead>
         <TableBody>
-        {rows
+          {rows
             .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
             .map((row: Row) => (
               <TableRow
@@ -58,14 +57,14 @@ export default function Tabla({ columns, rows }: TablaProps) {
         </TableBody>
       </Table>
       <TablePagination
-          rowsPerPageOptions={[5, 10, 25]}
-          component="div"
-          count={rows.length}
-          rowsPerPage={rowsPerPage}
-          page={page}
-          onPageChange={handleChangePage}
-          onRowsPerPageChange={handleChangeRowsPerPage}
-        />
-        </>
+        rowsPerPageOptions={[5, 10, 25]}
+        component="div"
+        count={rows.length}
+        rowsPerPage={rowsPerPage}
+        page={page}
+        onPageChange={handleChangePage}
+        onRowsPerPageChange={handleChangeRowsPerPage}
+      />
+    </>
   );
 }

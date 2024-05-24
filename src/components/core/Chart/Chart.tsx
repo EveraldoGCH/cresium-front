@@ -21,7 +21,11 @@ interface TooltipContentProps {
 }
 const chartHeight = 240;
 
-export function Chart({ data }: { data: ChartResponse[] | undefined }): React.JSX.Element {
+export function Chart(
+    { data, loadingData = false }
+        :
+        { data: ChartResponse[] | undefined, loadingData?: boolean }
+): React.JSX.Element {
 
     let formattedResponse = useMemo(() => {
         return useFormatChartData(data)
@@ -48,26 +52,39 @@ export function Chart({ data }: { data: ChartResponse[] | undefined }): React.JS
         return null;
     }
 
+    console.log("DATA", formattedResponse)
+    let dataForLoading=[
+        {name:"", value:70},
+        {name:"", value:63},
+        {name:"", value:69},
+        {name:"", value:61},
+        {name:"", value:80},
+        {name:"", value:75},
+        {name:"", value:83},
+
+    ]
+    //SOLO si le llega prop de cargando, de lo contrario actua normal
+console.log("CARGANDO?", loadingData)
     return (
         <ResponsiveContainer height={chartHeight} width="100%">
-            <AreaChart data={formattedResponse} margin={{ top: 10, right: 10, bottom: 10, left: 10 }}>
+            <AreaChart data={loadingData?dataForLoading:formattedResponse} margin={{ top: 10, right: 10, bottom: 10, left: 10 }}>
                 <defs>
                     <linearGradient id="area-performance" x1="0" x2="0" y1="0" y2="1">
-                        <stop offset="0" stopColor={colorsVars.primaryMain} stopOpacity={0.3} />
-                        <stop offset="100%" stopColor={colorsVars.primaryMain} stopOpacity={0} />
+                        <stop offset="0" stopColor={loadingData?"grey":colorsVars.primaryMain} stopOpacity={0.3} />
+                        <stop offset="100%" stopColor={loadingData?"grey":colorsVars.primaryMain} stopOpacity={0} />
                     </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="2 4" vertical={false} />
-                <XAxis axisLine={false} dataKey="name" tickLine={false} type="category" />
+                <XAxis axisLine={false} dataKey="name" tickLine={loadingData} type="category" />
                 <YAxis axisLine={false} domain={["auto", "auto"]} tickLine={false} type="number" hide={true} />
                 <Area
-                    animationDuration={600}
+                    animationDuration={loadingData?400:600}
                     dataKey="value"
                     dot={<Dot />}
                     fill="url(#area-performance)"
-                    fillOpacity={1}
+                    fillOpacity={2}
                     name="Balance"
-                    stroke={colorsVars.primaryMain}
+                    stroke={loadingData?"grey":colorsVars.primaryMain}
                     strokeWidth={3}
                     type="linear"
                 />

@@ -2,7 +2,7 @@
 import { Card } from "@/components/core/Card/Card";
 import { CardContent, Chip, Divider, Grid, Skeleton, Stack, Typography } from "@mui/material";
 import { TabStyled, TabsStyled } from "./ChartDashboardStyle";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Chart } from "../../../../components/core/Chart/Chart";
 import { colorsVars } from "@/utils/colorsVars";
 import { ShieldTick, TrendUp01 } from "../../../../../public/assets/iconsComponents/iconsComponents";
@@ -78,13 +78,7 @@ export function ChartDashboard(): React.JSX.Element {
                 </Grid>
                 <Divider style={{ margin: "16px 0" }} />
                 <Grid container xs={12}>
-                    {loadingChart ?
-                        <Skeleton
-                            sx={{ width: "100%", height: "240px" }}
-                            variant="rounded" />
-                        :
-                        <Chart data={chartData} />
-                    }
+                        <Chart data={chartData} loadingData={loadingChart}/>
                 </Grid>
             </CardContent>
         </Card>
