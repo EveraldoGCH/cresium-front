@@ -3,7 +3,7 @@ import { Stack, Box, Link, Typography, Breadcrumbs, Button, Divider, Grid, Outli
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import HomeIcon from '@mui/icons-material/Home';
-import { colorsVars } from "@/utils/colorsVars";
+import { colorsVars } from "@/utils/constants/colorsVars";
 import { Card } from "@/components/core/Card/Card";
 import { ArrowRight, CheckCircle, CoinsStacked03 } from "../../../public/assets/iconsComponents/iconsComponents";
 import Step1EnviarDinero from "./Step1EnviarDinero";

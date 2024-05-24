@@ -1,5 +1,5 @@
 import { createTheme, ThemeOptions } from '@mui/material/styles';
-import { colorsVars } from '../colorsVars';
+import { colorsVars } from '../constants/colorsVars';
 import { BorderColor } from '@mui/icons-material';
 
 const defaultTheme = createTheme();

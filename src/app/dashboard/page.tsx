@@ -9,7 +9,7 @@ import {
   TrendDown01,
   Home01,
 } from "../../../public/assets/iconsComponents/iconsComponents";
-import { colorsVars } from "@/utils/colorsVars";
+import { colorsVars } from "@/utils/constants/colorsVars";
 import { CardDinero } from "./components/CardDinero/CardDinero";
 import { CardDatosCuenta } from "./components/CardDatosCuenta/CardDatosCuenta";
 import { CardInfo } from "./components/CardInfo/CardInfo";

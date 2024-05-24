@@ -1,6 +1,6 @@
 "use client";
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
-import { colorsVars } from "@/utils/colorsVars";
+import { colorsVars } from "@/utils/constants/colorsVars";
 import { ChartResponse } from '@/types/responses/responseTypes';
 import { useFormatChartData } from '@/hooks/format/useFormatChartData';
 import { useMemo } from 'react';

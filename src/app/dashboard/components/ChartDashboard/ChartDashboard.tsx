@@ -4,7 +4,7 @@ import { CardContent, Chip, Divider, Grid, Skeleton, Stack, Typography } from "@
 import { TabStyled, TabsStyled } from "./ChartDashboardStyle";
 import { useState } from "react";
 import { Chart } from "../../../../components/core/Chart/Chart";
-import { colorsVars } from "@/utils/colorsVars";
+import { colorsVars } from "@/utils/constants/colorsVars";
 import { ShieldTick, TrendUp01 } from "../../../../../public/assets/iconsComponents/iconsComponents";
 import { useGetBalance } from "@/hooks/apiCalls/get/useGetBalance";
 import { formatCurrency } from "@/utils/helpers/numbers";

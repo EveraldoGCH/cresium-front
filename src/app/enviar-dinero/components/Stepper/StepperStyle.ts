@@ -1,4 +1,4 @@
-import { colorsVars } from '@/utils/colorsVars';
+import { colorsVars } from '@/utils/constants/colorsVars';
 import { styled } from '@mui/material/styles';
 
 export const Main = styled('main')(() => ({

@@ -10,8 +10,8 @@ import {
 } from "./styles";
 import Image from "next/image";
 import logo from "../../../../public/assets/logo.svg";
-import { pathsForVerticalMenu } from "@/utils/pathsForVerticalMenu";
-import { colorsVars } from "@/utils/colorsVars";
+import { pathsForVerticalMenu } from "@/utils/constants/pathsForVerticalMenu";
+import { colorsVars } from "@/utils/constants/colorsVars";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { routes } from "@/utils/routes";

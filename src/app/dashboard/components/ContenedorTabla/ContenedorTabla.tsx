@@ -1,6 +1,6 @@
 "use client";
 import { Card } from "@/components/core/Card/Card";
-import { colorsVars } from "@/utils/colorsVars";
+import { colorsVars } from "@/utils/constants/colorsVars";
 import { Box, Divider, Grid, IconButton, Skeleton, Stack, Tab, Tabs, Typography } from "@mui/material";
 import { UploadCloud02 } from "../../../../../public/assets/iconsComponents/iconsComponents";
 import { useMemo, useState } from "react";

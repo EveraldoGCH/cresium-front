@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Card } from "../Card/Card";
-import { colorsVars } from "@/utils/colorsVars";
+import { colorsVars } from "@/utils/constants/colorsVars";
 
 interface CardProps {
     height?: string;

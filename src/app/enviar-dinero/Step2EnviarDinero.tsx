@@ -1,6 +1,6 @@
 "use client";
 import { Card } from "@/components/core/Card/Card";
-import { colorsVars } from "@/utils/colorsVars";
+import { colorsVars } from "@/utils/constants/colorsVars";
 import { Box, Button, Grid, OutlinedInput, Stack, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 import OptionChip from "./components/OptionChip/OptionChip";

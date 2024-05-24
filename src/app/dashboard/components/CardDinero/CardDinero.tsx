@@ -3,7 +3,7 @@ import { Card } from "@/components/core/Card/Card";
 import { CardActions, CardContent, Divider, Grid, Typography } from "@mui/material";
 import React from "react";
 import { CardDineroProps } from "./CardDineroProps";
-import { colorsVars } from "@/utils/colorsVars";
+import { colorsVars } from "@/utils/constants/colorsVars";
 
 export function CardDinero({
   icon,

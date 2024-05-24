@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import LoginA from "../../../public/assets/images/LoginA.jpg"
 import LogoCresiumIcon from "../../../public/assets/iconsComponents/LogoCresiumIcon";
-import { colorsVars } from "@/utils/colorsVars";
+import { colorsVars } from "@/utils/constants/colorsVars";
 
 
 

@@ -1,6 +1,6 @@
 "use client";
 import { Card } from "@/components/core/Card/Card";
-import { colorsVars } from "@/utils/colorsVars";
+import { colorsVars } from "@/utils/constants/colorsVars";
 import { Box, CardContent, Divider, FormControl, FormControlLabel, FormLabel, Grid, Radio, RadioGroup, Stack, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
