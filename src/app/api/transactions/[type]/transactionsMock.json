@@ -84,7 +84,343 @@
                 "netAmount": 1,
                 "externalId": null,
                 "tag": "SERVICES"
-            }
+            },
+            {
+                "id": 3,
+                "type": "DEPOSIT",
+                "status": "SUCCESS",
+                "currencyId": 1,
+                "currency": {
+                    "symbol": "$",
+                    "code": "ARS",
+                    "image": "",
+                    "decimals": 2
+                },
+                "fromId": 1,
+                "toId": 1,
+                "from": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "to": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "companyId": 1,
+                "collaboratorId": 1,
+                "collaborator": {
+                    "id": 1,
+                    "email": "cresium@max.com",
+                    "enabled": true,
+                    "firstName": "Everaldo",
+                    "lastName": null,
+                    "image": null,
+                    "phone": "1141588259",
+                    "birthDate": null
+                },
+                "walletId": 1,
+                "createdAt": "2024-05-16T15:29:57.593Z",
+                "totalAmount": 1,
+                "netAmount": 1,
+                "externalId": null,
+                "tag": null
+            },
+            {
+                "id": 4,
+                "type": "DEPOSIT",
+                "status": "SUCCESS",
+                "currencyId": 1,
+                "currency": {
+                    "symbol": "$",
+                    "code": "ARS",
+                    "image": "",
+                    "decimals": 2
+                },
+                "fromId": 1,
+                "toId": 1,
+                "from": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "to": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "companyId": 1,
+                "collaboratorId": 1,
+                "collaborator": {
+                    "id": 1,
+                    "email": "cresium@max.com",
+                    "enabled": true,
+                    "firstName": "Nacho",
+                    "lastName": null,
+                    "image": null,
+                    "phone": "1141588259",
+                    "birthDate": null
+                },
+                "walletId": 1,
+                "createdAt": "2024-05-16T15:29:57.593Z",
+                "totalAmount": 1,
+                "netAmount": 1,
+                "externalId": null,
+                "tag": null
+            },
+            {
+                "id": 5,
+                "type": "DEPOSIT",
+                "status": "SUCCESS",
+                "currencyId": 1,
+                "currency": {
+                    "symbol": "$",
+                    "code": "ARS",
+                    "image": "",
+                    "decimals": 2
+                },
+                "fromId": 1,
+                "toId": 1,
+                "from": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "to": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "companyId": 1,
+                "collaboratorId": 1,
+                "collaborator": {
+                    "id": 1,
+                    "email": "cresium@max.com",
+                    "enabled": true,
+                    "firstName": "Lolo",
+                    "lastName": null,
+                    "image": null,
+                    "phone": "1141588259",
+                    "birthDate": null
+                },
+                "walletId": 1,
+                "createdAt": "2024-05-16T15:29:57.593Z",
+                "totalAmount": 1,
+                "netAmount": 1,
+                "externalId": null,
+                "tag": null
+            },
+            {
+                "id": 6,
+                "type": "DEPOSIT",
+                "status": "SUCCESS",
+                "currencyId": 1,
+                "currency": {
+                    "symbol": "$",
+                    "code": "ARS",
+                    "image": "",
+                    "decimals": 2
+                },
+                "fromId": 1,
+                "toId": 1,
+                "from": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "to": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "companyId": 1,
+                "collaboratorId": 1,
+                "collaborator": {
+                    "id": 1,
+                    "email": "cresium@max.com",
+                    "enabled": true,
+                    "firstName": "Benja",
+                    "lastName": null,
+                    "image": null,
+                    "phone": "1141588259",
+                    "birthDate": null
+                },
+                "walletId": 1,
+                "createdAt": "2024-05-16T15:29:57.593Z",
+                "totalAmount": 1,
+                "netAmount": 1,
+                "externalId": null,
+                "tag": null
+            },
+            {
+                "id": 7,
+                "type": "DEPOSIT",
+                "status": "SUCCESS",
+                "currencyId": 1,
+                "currency": {
+                    "symbol": "$",
+                    "code": "ARS",
+                    "image": "",
+                    "decimals": 2
+                },
+                "fromId": 1,
+                "toId": 1,
+                "from": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "to": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "companyId": 1,
+                "collaboratorId": 1,
+                "collaborator": {
+                    "id": 1,
+                    "email": "cresium@max.com",
+                    "enabled": true,
+                    "firstName": "Franco",
+                    "lastName": null,
+                    "image": null,
+                    "phone": "1141588259",
+                    "birthDate": null
+                },
+                "walletId": 1,
+                "createdAt": "2024-05-16T15:29:57.593Z",
+                "totalAmount": 1,
+                "netAmount": 1,
+                "externalId": null,
+                "tag": null
+            },
+            {
+                "id": 6,
+                "type": "DEPOSIT",
+                "status": "SUCCESS",
+                "currencyId": 1,
+                "currency": {
+                    "symbol": "$",
+                    "code": "ARS",
+                    "image": "",
+                    "decimals": 2
+                },
+                "fromId": 1,
+                "toId": 1,
+                "from": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "to": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "companyId": 1,
+                "collaboratorId": 1,
+                "collaborator": {
+                    "id": 1,
+                    "email": "cresium@max.com",
+                    "enabled": true,
+                    "firstName": "Pepito",
+                    "lastName": null,
+                    "image": null,
+                    "phone": "1141588259",
+                    "birthDate": null
+                },
+                "walletId": 1,
+                "createdAt": "2024-05-16T15:29:57.593Z",
+                "totalAmount": 1,
+                "netAmount": 1,
+                "externalId": null,
+                "tag": null
+            },
+            {
+                "id": 7,
+                "type": "DEPOSIT",
+                "status": "SUCCESS",
+                "currencyId": 1,
+                "currency": {
+                    "symbol": "$",
+                    "code": "ARS",
+                    "image": "",
+                    "decimals": 2
+                },
+                "fromId": 1,
+                "toId": 1,
+                "from": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "to": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "companyId": 1,
+                "collaboratorId": 1,
+                "collaborator": {
+                    "id": 1,
+                    "email": "cresium@max.com",
+                    "enabled": true,
+                    "firstName": "Leonel",
+                    "lastName": null,
+                    "image": null,
+                    "phone": "1141588259",
+                    "birthDate": null
+                },
+                "walletId": 1,
+                "createdAt": "2024-05-16T15:29:57.593Z",
+                "totalAmount": 1,
+                "netAmount": 1,
+                "externalId": null,
+                "tag": null
+            },
+            {
+                "id": 8,
+                "type": "DEPOSIT",
+                "status": "SUCCESS",
+                "currencyId": 1,
+                "currency": {
+                    "symbol": "$",
+                    "code": "ARS",
+                    "image": "",
+                    "decimals": 2
+                },
+                "fromId": 1,
+                "toId": 1,
+                "from": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "to": {
+                    "id": 1,
+                    "type": "ALIAS",
+                    "value": "valid.address"
+                },
+                "companyId": 1,
+                "collaboratorId": 1,
+                "collaborator": {
+                    "id": 1,
+                    "email": "cresium@max.com",
+                    "enabled": true,
+                    "firstName": "Maradona",
+                    "lastName": null,
+                    "image": null,
+                    "phone": "1141588259",
+                    "birthDate": null
+                },
+                "walletId": 1,
+                "createdAt": "2024-05-16T15:29:57.593Z",
+                "totalAmount": 1,
+                "netAmount": 1,
+                "externalId": null,
+                "tag": null
+            } 
         ],
         "pageSize": 10,
         "cursor": 1

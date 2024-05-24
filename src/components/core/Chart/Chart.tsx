@@ -27,8 +27,6 @@ export function Chart({ data }: { data: ChartResponse[] | undefined }): React.JS
         return useFormatChartData(data)
     }, [data]) satisfies { name: string; value: number }[];
 
-    console.log("RES FROMAT", formattedResponse)
-
     function Dot({ active, cx, cy, payload, stroke }: DotProps): React.JSX.Element | null {
         if (active && payload?.name === active) {
             return <circle cx={cx} cy={cy} fill={stroke} r={6} />;

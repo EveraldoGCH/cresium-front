@@ -12,7 +12,7 @@ import { Column, Row, TablaProps } from './TablaProps';
 
 
 export default function Tabla({ columns, rows }: TablaProps) {
-  const [rowsPerPage, setRowsPerPage] = useState(5);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
   const [page, setPage] = useState(0);
   
 
@@ -41,20 +41,20 @@ export default function Tabla({ columns, rows }: TablaProps) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row:Row) => (
-            <TableRow
-              key={row.name}
-              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-            >
-              <TableCell component="th" scope="row">
-                {row.name}
-              </TableCell>
-              <TableCell align="inherit">{row.date}</TableCell>
-              <TableCell align="right">{row.amount}</TableCell>
-              <TableCell align="right">{row.account}</TableCell>
-              <TableCell align="right">{row.transaccion}</TableCell>
-            </TableRow>
-          ))}
+        {rows
+            .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+            .map((row: Row) => (
+              <TableRow
+                key={row.name}
+                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              >
+                {columns.map((column) => (
+                  <TableCell key={column.rowAccesor} align={column.align ?? "inherit"}>
+                    {row[column.rowAccesor as keyof Row]}
+                  </TableCell>
+                ))}
+              </TableRow>
+            ))}
         </TableBody>
       </Table>
       <TablePagination
