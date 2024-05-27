@@ -42,7 +42,7 @@ export function VerticalMenu({ children }: VerticalMenuProps) {
                   }
                   onClick={() => router.push(elm.path)}
                 >
-                  <Image src={elm.icon} alt={elm.name} />
+                  <elm.icon />
                   {elm.name}
                 </ListItemNav>
               );
@@ -59,7 +59,7 @@ export function VerticalMenu({ children }: VerticalMenuProps) {
                       : {}
                   }
                 >
-                  <Image src={elm.icon} alt={elm.name} />
+                  <elm.icon />
                   {elm.name}
                 </ListItemNav>
               );

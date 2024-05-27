@@ -19,6 +19,15 @@ import CheckCircle from "./General/CheckCircle";
 import ShieldTick from "./Security/ShieldTick";
 import LogoCresiumIcon from "./LogoCresiumIcon";
 import Home01 from "./General/Home01";
+import HomeLine from "./General/HomeLine"
+import List from "./Layout/List"
+import SwitchHorizontal02 from "./Arrows/SwitchHorizontal02"
+import Bank from "./Finance/Bank"
+import LifeBuoy01 from "./General/LifeBuoy01"
+import Settings01 from "./General/Settings01"
+import UserCircle from "./Users/UserCircle"
+
+
 
 export {
   TrendUp01,
@@ -33,4 +42,11 @@ export {
   ShieldTick,
   LogoCresiumIcon,
   Home01,
+  HomeLine,
+  List,
+  SwitchHorizontal02,
+  Bank,
+  LifeBuoy01,
+  Settings01,
+  UserCircle
 };
