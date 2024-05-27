@@ -36,9 +36,8 @@ export function Chart({
   data: ChartResponse[] | undefined;
   loadingData?: boolean;
 }): React.JSX.Element {
-  let formattedResponse = useMemo(() => {
-    return useFormatChartData(data);
-  }, [data]) satisfies { name: string; value: number }[];
+
+  let formattedResponse = useFormatChartData(data);
 
   function Dot({
     active,
