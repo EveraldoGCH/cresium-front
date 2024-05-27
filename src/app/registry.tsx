@@ -4,7 +4,6 @@ import { useServerInsertedHTML } from "next/navigation";
 import { ServerStyleSheet, StyleSheetManager } from "styled-components";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-
 export default function StyledComponentsRegistry({
   children,
 }: {
@@ -21,7 +20,7 @@ export default function StyledComponentsRegistry({
             refetchOnWindowFocus: false,
           },
         },
-      })
+      }),
   );
 
   useServerInsertedHTML(() => {
@@ -30,10 +29,10 @@ export default function StyledComponentsRegistry({
     return <>{styles}</>;
   });
 
-  if (typeof window !== "undefined") return (
-    <QueryClientProvider client={queryClient}>
-      {children}
-    </QueryClientProvider>);
+  if (typeof window !== "undefined")
+    return (
+      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    );
 
   return (
     <QueryClientProvider client={queryClient}>

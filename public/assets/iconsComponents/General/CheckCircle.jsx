@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 function CheckCircle(props) {
   return (
@@ -18,7 +18,7 @@ function CheckCircle(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
-export default CheckCircle
+export default CheckCircle;

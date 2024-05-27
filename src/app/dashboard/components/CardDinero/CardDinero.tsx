@@ -1,6 +1,12 @@
 "use client";
 import { Card } from "@/components/core/Card/Card";
-import { CardActions, CardContent, Divider, Grid, Typography } from "@mui/material";
+import {
+  CardActions,
+  CardContent,
+  Divider,
+  Grid,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import { CardDineroProps } from "./CardDineroProps";
 import { colorsVars } from "@/utils/constants/colorsVars";
@@ -25,15 +31,11 @@ export function CardDinero({
             direction={"column"}
             style={{ gap: "8px" }}
           >
-            <Typography variant="subtitle2">
-              {title1}
-            </Typography>
+            <Typography variant="subtitle2">{title1}</Typography>
             <Typography variant="h4">{title2}</Typography>
           </Grid>
           <Grid item container xs={4} justifyContent={"flex-end"}>
-            <Typography variant="subtitle2">
-              {subtitle}
-            </Typography>
+            <Typography variant="subtitle2">{subtitle}</Typography>
           </Grid>
         </Grid>
       </CardContent>
@@ -48,7 +50,7 @@ export function CardDinero({
         </Typography>
         <Typography
           variant="subtitle2"
-          style={{ marginLeft: "4px", color:colorsVars.grey500}}
+          style={{ marginLeft: "4px", color: colorsVars.grey500 }}
         >
           {info}
         </Typography>

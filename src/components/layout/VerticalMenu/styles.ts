@@ -46,8 +46,8 @@ export const ChildrenCont = styled.main`
   margin-left: ${colorsVars.verticalMenuWidth};
   padding: 32px 64px 48px 64px;
   width: 100vw;
-  min-width:81vw;
-  height:100vh;
-  display:flex;
-  align-items:flex-start;
+  min-width: 81vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
 `;

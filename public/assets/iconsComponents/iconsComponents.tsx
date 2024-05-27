@@ -15,10 +15,10 @@ import Copy06 from "./General/Copy06";
 import UploadCloud02 from "./General/UploadCloud02";
 import CoinsStacked03 from "./Finance/CoinsStacked03";
 import ArrowRight from "./Arrows/ArrowRight";
-import CheckCircle from "./General/CheckCircle"
-import ShieldTick from "./Security/ShieldTick"
+import CheckCircle from "./General/CheckCircle";
+import ShieldTick from "./Security/ShieldTick";
 import LogoCresiumIcon from "./LogoCresiumIcon";
-import Home01 from "./General/Home01"
+import Home01 from "./General/Home01";
 
 export {
   TrendUp01,
@@ -32,5 +32,5 @@ export {
   CheckCircle,
   ShieldTick,
   LogoCresiumIcon,
-  Home01
+  Home01,
 };

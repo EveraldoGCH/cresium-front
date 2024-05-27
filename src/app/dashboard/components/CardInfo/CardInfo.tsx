@@ -14,7 +14,7 @@ export function CardInfo(): React.JSX.Element {
         border: `1px solid ${colorsVars.primary200}`,
         backgroundColor: `${colorsVars.primary25}`,
         padding: "16px",
-        borderRadius:"12px"
+        borderRadius: "12px",
       }}
     >
       <Grid container xs={12}>
@@ -31,10 +31,7 @@ export function CardInfo(): React.JSX.Element {
             <CoinsStacked03 />
           </Grid>
           <Grid item xs={10}>
-            <Typography
-              variant="subtitle2"
-              color={colorsVars.primary700}
-            >
+            <Typography variant="subtitle2" color={colorsVars.primary700}>
               Ingresa dinero a tu cuenta de Cresium ahora y empeza a generar
               rendimiento.
             </Typography>

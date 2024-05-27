@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 function LogoCresiumIcon(props: any) {
   return (
@@ -19,7 +19,7 @@ function LogoCresiumIcon(props: any) {
         fill="#000"
       />
     </svg>
-  )
+  );
 }
 
-export default LogoCresiumIcon
+export default LogoCresiumIcon;

@@ -17,13 +17,14 @@ import { ContenedorTabla } from "./components/ContenedorTabla/ContenedorTabla";
 import { ChartDashboard } from "./components/ChartDashboard/ChartDashboard";
 import { useRouter } from "next/navigation";
 
-
 export default function DashBoard() {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
-    <Stack spacing={5.5} sx={{ width: "100%" }}>{/* Contenedor Principal*/}
-      <Stack spacing={2.5}>{/* Primer contenedor */}
+    <Stack spacing={5.5} sx={{ width: "100%" }}>
+      {/* Contenedor Principal*/}
+      <Stack spacing={2.5}>
+        {/* Primer contenedor */}
         <Stack
           direction={{ xs: "column", sm: "row" }}
           spacing={3}
@@ -31,8 +32,12 @@ export default function DashBoard() {
         >
           <Box sx={{ flex: "1 1 auto" }}>
             <Box display={"flex"} alignItems={"center"} gap={"8px"}>
-              <Home01 height={"16px"} width={"16px"} color={colorsVars.textSecondary}/>
-              <p style={{ margin: 0, color:colorsVars.textSecondary }}>Home</p>
+              <Home01
+                height={"16px"}
+                width={"16px"}
+                color={colorsVars.textSecondary}
+              />
+              <p style={{ margin: 0, color: colorsVars.textSecondary }}>Home</p>
             </Box>
             <Typography
               variant="h2"
@@ -40,20 +45,32 @@ export default function DashBoard() {
             >
               Bienvenido Maximiliano
             </Typography>
-            <p style={{ margin: 0, color:colorsVars.textSecondary }}>Alphabet Inc.</p>
+            <p style={{ margin: 0, color: colorsVars.textSecondary }}>
+              Alphabet Inc.
+            </p>
           </Box>
-          <Button variant="text" startIcon={<TrendDown02 />}>Recibir dinero</Button>
-          <Button variant="contained" startIcon={<TrendUp02 />} onClick={() => router.push("/enviar-dinero")}>Enviar dinero</Button>
+          <Button variant="text" startIcon={<TrendDown02 />}>
+            Recibir dinero
+          </Button>
+          <Button
+            variant="contained"
+            startIcon={<TrendUp02 />}
+            onClick={() => router.push("/enviar-dinero")}
+          >
+            Enviar dinero
+          </Button>
         </Stack>
         <Divider style={{ color: colorsVars.grey200 }} />
-      </Stack>{/*Fin primer contenedor */}
+      </Stack>
+      {/*Fin primer contenedor */}
       <Grid
         container
         xs={12}
         justifyContent={"space-between"}
         style={{ gap: "4%" }}
         flexWrap={"nowrap"}
-      >{/*Contenedor Cards y chart*/}
+      >
+        {/*Contenedor Cards y chart*/}
         <Grid item xs={8}>
           <ChartDashboard />
         </Grid>

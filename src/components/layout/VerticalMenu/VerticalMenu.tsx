@@ -19,13 +19,11 @@ import { routes } from "@/utils/routes";
 export function VerticalMenu({ children }: VerticalMenuProps) {
   const pathname = usePathname();
   const router = useRouter();
-  const ExcludedRoutes = [routes.login]
+  const ExcludedRoutes = [routes.login];
 
   if (ExcludedRoutes.includes(pathname)) {
-    return (<>{children}</>)
-  }
-
-  else {
+    return <>{children}</>;
+  } else {
     return (
       <>
         <SideNavCont>

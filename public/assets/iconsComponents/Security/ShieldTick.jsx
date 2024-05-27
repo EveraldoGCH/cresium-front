@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 function ShieldTick(props) {
   return (
@@ -18,7 +18,7 @@ function ShieldTick(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
-export default ShieldTick
+export default ShieldTick;
