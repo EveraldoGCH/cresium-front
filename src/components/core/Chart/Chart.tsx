@@ -12,7 +12,7 @@ interface DotProps {
     cy?: number;
     payload?: { name: string };
     stroke?: string;
-}
+};
 
 interface TooltipContentProps {
     active?: boolean;
