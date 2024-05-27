@@ -1,69 +1,69 @@
 {
-    "data": [
-        {
-            "type": "month",
-            "date": "2023-03-02T21:00:00.000Z",
-            "amount": 1550
-        },
-        {
-            "type": "month",
-            "date": "2023-04-02T21:00:00.000Z",
-            "amount": 600
-        },
-        {
-            "type": "month",
-            "date": "2023-05-02T21:00:00.000Z",
-            "amount": 880
-        },
-        {
-            "type": "month",
-            "date": "2023-06-02T21:00:00.000Z",
-            "amount": 60
-        },
-        {
-            "type": "month",
-            "date": "2023-07-02T21:00:00.000Z",
-            "amount": 60
-        },
-        {
-            "type": "month",
-            "date": "2023-08-02T21:00:00.000Z",
-            "amount": 60
-        },
-        {
-            "type": "month",
-            "date": "2023-09-02T21:00:00.000Z",
-            "amount": 670
-        },
-        {
-            "type": "month",
-            "date": "2023-10-02T21:00:00.000Z",
-            "amount": 540
-        },
-        {
-            "type": "month",
-            "date": "2023-11-02T21:00:00.000Z",
-            "amount": 540
-        },
-        {
-            "type": "month",
-            "date": "2023-12-02T21:00:00.000Z",
-            "amount": 540
-        },
-        {
-            "type": "month",
-            "date": "2024-01-02T21:00:00.000Z",
-            "amount": 110
-        },
-        {
-            "type": "month",
-            "date": "2024-02-02T21:00:00.000Z",
-            "amount": 120
-        },
-        {
-            "type": "month",
-            "date": "2024-03-02T21:00:00.000Z",
-            "amount": 500
-        }
-    ]
+  "data": [
+    {
+      "type": "month",
+      "date": "2023-03-02T21:00:00.000Z",
+      "amount": 1550
+    },
+    {
+      "type": "month",
+      "date": "2023-04-02T21:00:00.000Z",
+      "amount": 600
+    },
+    {
+      "type": "month",
+      "date": "2023-05-02T21:00:00.000Z",
+      "amount": 880
+    },
+    {
+      "type": "month",
+      "date": "2023-06-02T21:00:00.000Z",
+      "amount": 60
+    },
+    {
+      "type": "month",
+      "date": "2023-07-02T21:00:00.000Z",
+      "amount": 60
+    },
+    {
+      "type": "month",
+      "date": "2023-08-02T21:00:00.000Z",
+      "amount": 60
+    },
+    {
+      "type": "month",
+      "date": "2023-09-02T21:00:00.000Z",
+      "amount": 670
+    },
+    {
+      "type": "month",
+      "date": "2023-10-02T21:00:00.000Z",
+      "amount": 540
+    },
+    {
+      "type": "month",
+      "date": "2023-11-02T21:00:00.000Z",
+      "amount": 540
+    },
+    {
+      "type": "month",
+      "date": "2023-12-02T21:00:00.000Z",
+      "amount": 540
+    },
+    {
+      "type": "month",
+      "date": "2024-01-02T21:00:00.000Z",
+      "amount": 110
+    },
+    {
+      "type": "month",
+      "date": "2024-02-02T21:00:00.000Z",
+      "amount": 120
+    },
+    {
+      "type": "month",
+      "date": "2024-03-02T21:00:00.000Z",
+      "amount": 500
+    }
+  ]
 }

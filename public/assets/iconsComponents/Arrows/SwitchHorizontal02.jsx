@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 function SwitchHorizontal02(props) {
   return (
@@ -18,7 +18,7 @@ function SwitchHorizontal02(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
-export default SwitchHorizontal02
+export default SwitchHorizontal02;

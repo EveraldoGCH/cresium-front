@@ -5,7 +5,7 @@ import {
   List,
   Settings01,
   SwitchHorizontal02,
-  UserCircle
+  UserCircle,
 } from "../../../public/assets/iconsComponents/iconsComponents";
 
 export const pathsForVerticalMenu = {

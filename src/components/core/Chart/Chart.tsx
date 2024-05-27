@@ -11,7 +11,6 @@ import {
 import { colorsVars } from "@/utils/constants/colorsVars";
 import { ChartResponse } from "@/types/responses/responseTypes";
 import { useFormatChartData } from "@/hooks/format/useFormatChartData";
-import { useMemo } from "react";
 
 interface DotProps {
   hover?: boolean;
@@ -36,7 +35,6 @@ export function Chart({
   data: ChartResponse[] | undefined;
   loadingData?: boolean;
 }): React.JSX.Element {
-
   let formattedResponse = useFormatChartData(data);
 
   function Dot({

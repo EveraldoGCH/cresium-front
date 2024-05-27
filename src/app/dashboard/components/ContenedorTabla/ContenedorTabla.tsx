@@ -196,7 +196,11 @@ export function ContenedorTabla(): React.JSX.Element {
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs value={tab} aria-label="basic tabs example">
                 {tabs.map((tab, i) => (
-                  <Tab label={tab.label} onClick={(e) => handleChange(e, i)} key={tab.value + i} />
+                  <Tab
+                    label={tab.label}
+                    onClick={(e) => handleChange(e, i)}
+                    key={tab.value + i}
+                  />
                 ))}
               </Tabs>
             </Box>

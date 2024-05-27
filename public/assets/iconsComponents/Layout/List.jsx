@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 function List(props) {
   return (
@@ -18,7 +18,7 @@ function List(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
-export default List
+export default List;

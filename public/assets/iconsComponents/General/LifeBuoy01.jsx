@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 function LifeBuoy01(props) {
   return (
@@ -18,7 +18,7 @@ function LifeBuoy01(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
-export default LifeBuoy01
+export default LifeBuoy01;

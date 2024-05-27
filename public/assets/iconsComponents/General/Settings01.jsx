@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 function Settings01(props) {
   return (
@@ -25,7 +25,7 @@ function Settings01(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
-export default Settings01
+export default Settings01;

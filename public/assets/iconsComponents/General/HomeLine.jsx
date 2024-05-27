@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 function HomeLine(props) {
   return (
@@ -18,7 +18,7 @@ function HomeLine(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
-export default HomeLine
+export default HomeLine;

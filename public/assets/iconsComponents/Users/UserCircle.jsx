@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 function UserCircle(props) {
   return (
@@ -18,7 +18,7 @@ function UserCircle(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
-export default UserCircle
+export default UserCircle;

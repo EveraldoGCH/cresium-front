@@ -4,7 +4,6 @@ import { useMemo } from "react";
 
 export const useFormatChartData = (data: ChartResponse[] | undefined) => {
   const formattedResponse = useMemo(() => {
-    console.log("LLAMADO");
     let formatted: { name: string; value: number }[] = [];
     if (data) {
       data.forEach((elm) => {

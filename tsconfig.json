@@ -21,6 +21,13 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "public/assets/iconsComponents/Charts/TrendUp02.jsx", "public/assets/iconsComponents/General/Copy06.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "public/assets/iconsComponents/Charts/TrendUp02.jsx",
+    "public/assets/iconsComponents/General/Copy06.jsx"
+  ],
   "exclude": ["node_modules"]
 }

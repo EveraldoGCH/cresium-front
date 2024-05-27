@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 function Bank(props) {
   return (
@@ -18,7 +18,7 @@ function Bank(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
-export default Bank
+export default Bank;
