@@ -6,7 +6,7 @@ const axiosInstance: AxiosInstance = axios.create({
   // eslint-disable-next-line
   baseURL: isMock
     ? process.env.NEXT_PUBLIC_BASE_URL_MOCK
-    : window.location.origin,
+    : "https://cresium-front-git-main-everaldogchs-projects.vercel.app/api",
 });
 
 export default axiosInstance;
