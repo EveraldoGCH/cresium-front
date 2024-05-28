@@ -25,7 +25,9 @@ import SwitchHorizontal02 from "./Arrows/SwitchHorizontal02";
 import Bank from "./Finance/Bank";
 import LifeBuoy01 from "./General/LifeBuoy01";
 import Settings01 from "./General/Settings01";
+import XClose from "./General/XClose";
 import UserCircle from "./Users/UserCircle";
+import Lock01 from "./Security/Lock01";
 
 export {
   TrendUp01,
@@ -47,4 +49,6 @@ export {
   LifeBuoy01,
   Settings01,
   UserCircle,
+  XClose,
+  Lock01,
 };

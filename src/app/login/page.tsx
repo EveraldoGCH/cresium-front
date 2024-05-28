@@ -75,11 +75,7 @@ export default function EnviarDinero() {
           </Stack>
         </Box>
       </Grid>
-      <Modal2FA
-        open={openModal2FA}
-        title="MODAL 2 fa"
-        onClose={closeModal2FA}
-      />
+      <Modal2FA open={openModal2FA} onClose={closeModal2FA} />
     </Grid>
   );
 }
