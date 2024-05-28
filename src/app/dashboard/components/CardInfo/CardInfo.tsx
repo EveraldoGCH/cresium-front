@@ -28,7 +28,7 @@ export function CardInfo(): React.JSX.Element {
             justifyContent={"center"}
             alignContent={"flex-start"}
           >
-            <CoinsStacked03 />
+            <CoinsStacked03 color={colorsVars.primary600} />
           </Grid>
           <Grid item xs={10}>
             <Typography variant="subtitle2" color={colorsVars.primary700}>

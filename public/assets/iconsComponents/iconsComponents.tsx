@@ -28,6 +28,10 @@ import Settings01 from "./General/Settings01";
 import XClose from "./General/XClose";
 import UserCircle from "./Users/UserCircle";
 import Lock01 from "./Security/Lock01";
+import CoinSwap01 from "./Finance/CoinSwap01";
+import ChevronDown from "./Arrows/ChevronDown";
+import ChevronUp from "./Arrows/ChevronUp";
+import ArrowDownLeft from "./Arrows/ArrowDownLeft";
 
 export {
   TrendUp01,
@@ -51,4 +55,8 @@ export {
   UserCircle,
   XClose,
   Lock01,
+  CoinSwap01,
+  ChevronDown,
+  ChevronUp,
+  ArrowDownLeft,
 };

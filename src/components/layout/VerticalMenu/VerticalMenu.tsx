@@ -7,7 +7,7 @@ import {
   ListItemNav,
   LogoCont,
   SideNavCont,
-} from "./styles";
+} from "./VerticalMenuStyle";
 import Image from "next/image";
 import logo from "../../../../public/assets/logo.svg";
 import { pathsForVerticalMenu } from "@/utils/constants/pathsForVerticalMenu";
@@ -15,6 +15,8 @@ import { colorsVars } from "@/utils/constants/colorsVars";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { routes } from "@/utils/routes";
+import { Box } from "@mui/material";
+import ExpandableItem from "./components/ExpandableItem/ExpandableItem";
 
 export function VerticalMenu({ children }: VerticalMenuProps) {
   const pathname = usePathname();
@@ -32,9 +34,16 @@ export function VerticalMenu({ children }: VerticalMenuProps) {
           </LogoCont>
           <Block style={{ flex: "1 1 auto" }}>
             {pathsForVerticalMenu.firstBlock.map((elm, i) => {
-              return (
+              return elm.expand != undefined ? (
+                <ExpandableItem
+                  key={elm.name + i}
+                  icon={elm.icon}
+                  name={elm.name}
+                  items={elm.expand}
+                />
+              ) : (
                 <ListItemNav
-                  key={i}
+                  key={elm.name + i}
                   style={
                     pathname === elm.path
                       ? { backgroundColor: colorsVars.grey100 }
@@ -42,8 +51,10 @@ export function VerticalMenu({ children }: VerticalMenuProps) {
                   }
                   onClick={() => router.push(elm.path)}
                 >
-                  <elm.icon />
-                  {elm.name}
+                  <Box display={"flex"} alignItems={"center"} gap={"16px"}>
+                    <elm.icon />
+                    {elm.name}
+                  </Box>
                 </ListItemNav>
               );
             })}
@@ -59,8 +70,10 @@ export function VerticalMenu({ children }: VerticalMenuProps) {
                       : {}
                   }
                 >
-                  <elm.icon />
-                  {elm.name}
+                  <Box display={"flex"} alignItems={"center"} gap={"16px"}>
+                    <elm.icon />
+                    {elm.name}
+                  </Box>
                 </ListItemNav>
               );
             })}

@@ -1,19 +1,29 @@
 import {
-  Bank,
+  ArrowDownLeft,
+  CoinSwap01,
+  CoinsStacked03,
   HomeLine,
   LifeBuoy01,
   List,
   Settings01,
-  SwitchHorizontal02,
+  TrendUp02,
   UserCircle,
 } from "../../../public/assets/iconsComponents/iconsComponents";
 
 export const pathsForVerticalMenu = {
   firstBlock: [
     { path: "/dashboard", icon: HomeLine, name: "Home" },
-    { path: "/transactions", icon: List, name: "Transacciones" },
-    { path: "/payments", icon: SwitchHorizontal02, name: "Pagos" },
-    { path: "/accounts", icon: Bank, name: "Cuentas" },
+    { path: "/transactions", icon: List, name: "Movimientos" },
+    {
+      path: "",
+      icon: CoinSwap01,
+      name: "Transferencias",
+      expand: [
+        { path: "/enviar-dinero", icon: TrendUp02, name: "Enviar dinero" },
+        { path: "/enviar-dinero", icon: ArrowDownLeft, name: "Recibir dinero" },
+        { path: "/enviar-dinero", icon: CoinsStacked03, name: "Pago en lotes" },
+      ],
+    },
   ],
   secondBlock: [
     { path: "/account", icon: LifeBuoy01, name: "Soporte" },

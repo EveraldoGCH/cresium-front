@@ -31,6 +31,8 @@ export const ListItemNav = styled.div`
   gap: 8px;
   padding: 6px 16px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-weight: 500;
   border-radius: 8px;
   cursor: pointer;
