@@ -28,6 +28,7 @@ export function Modal2FA({
       nextInputRef.current.focus();
     }
   };
+
   return (
     <Modal
       open={open}

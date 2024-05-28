@@ -15,6 +15,7 @@ import "./style.css";
 import { CheckCircle } from "../../../public/assets/iconsComponents/iconsComponents";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import AddIcon from "@mui/icons-material/Add";
+import { GreyCardInfo } from "@/components/core/GreyCardInfo/GreyCardInfo";
 
 export default function Step1EnviarDinero() {
   return (
@@ -52,38 +53,11 @@ export default function Step1EnviarDinero() {
               />
             </Box>
             <Box display={"flex"} flexDirection={"column"} gap={"8px"}>
-              <Card
-                style={{
-                  backgroundColor: `${colorsVars.grey100}`,
-                  borderRadius: "12px",
-                  padding: "16px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  gap: "12px",
-                }}
-              >
-                <Typography variant="body1" fontWeight={500}>
-                  Nombre de la cuenta recipiente
-                </Typography>
-                <Typography variant="subtitle1">Maximiliano Sanchez</Typography>
-              </Card>
-              <Card
-                style={{
-                  backgroundColor: `${colorsVars.grey100}`,
-                  borderRadius: "12px",
-                  padding: "16px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  gap: "12px",
-                }}
-              >
-                <Typography variant="body1" fontWeight={500}>
-                  Nombre del banco
-                </Typography>
-                <Typography variant="subtitle1">Santander Rio</Typography>
-              </Card>
+              <GreyCardInfo
+                text1="Nombre de la cuenta recipiente"
+                text2="Maximiliano Sanchez"
+              />
+              <GreyCardInfo text1="Nombre del banco" text2="Santander Rio" />
             </Box>
             <Box display={"flex"} flexDirection={"column"} gap={"4px"}>
               <Typography variant="body1">Dinero a enviar</Typography>

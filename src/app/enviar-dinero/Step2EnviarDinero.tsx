@@ -11,70 +11,31 @@ export default function Step2EnviarDinero() {
       <Card style={{ padding: "24px" }}>
         <Stack gap={"16px"}>
           <Typography variant="subtitle1">Detalles de monto</Typography>
-          <GreyCardInfo>
-            <Typography variant="body1" fontWeight={500}>
-              Envías exactamente
-            </Typography>
-            <Typography variant="subtitle1">ARS $12.231.123,99</Typography>
-          </GreyCardInfo>
-          <GreyCardInfo>
-            <Typography variant="body1" fontWeight={500}>
-              Comisión de transacción
-            </Typography>
-            <Typography variant="subtitle1">ARS $12.24</Typography>
-          </GreyCardInfo>
-          <GreyCardInfo>
-            <Typography variant="body1" fontWeight={500}>
-              Destinatario recibe
-            </Typography>
-            <Typography variant="subtitle1">ARS $12.231.123,99</Typography>
-          </GreyCardInfo>
+          <GreyCardInfo text1="Envías exactamente" text2="ARS $12.231.123,99" />
+          <GreyCardInfo text1="Comisión de transacción" text2="ARS $12.24" />
+          <GreyCardInfo
+            text1="Destinatario recibe"
+            text2="ARS $12.231.123,99"
+          />
         </Stack>
       </Card>
       <Card style={{ padding: "24px" }}>
         <Stack gap={"16px"}>
           <Typography variant="subtitle1">Detalles de recipiente</Typography>
-          <GreyCardInfo>
-            <Typography variant="body1" fontWeight={500}>
-              Nombre de la cuenta recipiente
-            </Typography>
-            <Typography variant="subtitle1">Maximiliano Sánchez</Typography>
-          </GreyCardInfo>
-          <GreyCardInfo>
-            <Typography variant="body1" fontWeight={500}>
-              CBU / CVU / ALIAS
-            </Typography>
-            <Typography variant="subtitle1">CBU</Typography>
-          </GreyCardInfo>
-          <GreyCardInfo>
-            <Typography variant="body1" fontWeight={500}>
-              CUIT
-            </Typography>
-            <Typography variant="subtitle1">821618261782 32837138</Typography>
-          </GreyCardInfo>
-          <GreyCardInfo>
-            <Typography variant="body1" fontWeight={500}>
-              Nombre del banco
-            </Typography>
-            <Typography variant="subtitle1">Santander Rio</Typography>
-          </GreyCardInfo>
+          <GreyCardInfo
+            text1="Nombre de la cuenta recipiente"
+            text2="Maximiliano Sánchez"
+          />
+          <GreyCardInfo text1="CBU / CVU / ALIAS" text2="CBU" />
+          <GreyCardInfo text1="CUIT" text2="821618261782 32837138" />
+          <GreyCardInfo text1="Nombre del banco" text2="Santander Rio" />
         </Stack>
       </Card>
       <Card style={{ padding: "24px" }}>
         <Stack gap={"16px"}>
           <Typography variant="subtitle1">Detalles de envío</Typography>
-          <GreyCardInfo>
-            <Typography variant="body1" fontWeight={500}>
-              Categoría de transacción
-            </Typography>
-            <Typography variant="subtitle1">Proveedores</Typography>
-          </GreyCardInfo>
-          <GreyCardInfo>
-            <Typography variant="body1" fontWeight={500}>
-              Fecha de envío
-            </Typography>
-            <Typography variant="subtitle1">29/04/2024 (HOY)</Typography>
-          </GreyCardInfo>
+          <GreyCardInfo text1="Categoría de transacción" text2="Proveedores" />
+          <GreyCardInfo text1="Fecha de envío" text2="29/04/2024 (HOY)" />
         </Stack>
       </Card>
     </Stack>

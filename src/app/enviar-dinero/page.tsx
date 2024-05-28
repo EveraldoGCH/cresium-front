@@ -138,14 +138,10 @@ export default function EnviarDinero() {
                       Alphabet Inc.
                     </Typography>
                   </Card>
-                  <GreyCardInfo>
-                    <Typography variant="body1" fontWeight={500}>
-                      Monto disponible
-                    </Typography>
-                    <Typography variant="subtitle1">
-                      ARS $12.231.123,99
-                    </Typography>
-                  </GreyCardInfo>
+                  <GreyCardInfo
+                    text1="Monto disponible"
+                    text2="ARS $12.231.123,99"
+                  />
                 </Grid>
               </Card>
               <Card style={{ padding: "24px" }}>

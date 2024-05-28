@@ -2,16 +2,19 @@
 import React from "react";
 import { Card } from "../Card/Card";
 import { colorsVars } from "@/utils/constants/colorsVars";
+import { Typography } from "@mui/material";
 
 interface CardProps {
   height?: string;
-  children?: React.ReactNode;
   style?: React.CSSProperties;
+  text1: string;
+  text2: string;
 }
 
 export function GreyCardInfo({
-  children,
   style,
+  text1,
+  text2,
 }: CardProps): React.JSX.Element {
   return (
     <Card
@@ -26,7 +29,10 @@ export function GreyCardInfo({
         gap: "12px",
       }}
     >
-      {children}
+      <Typography variant="body1" fontWeight={500}>
+        {text1}
+      </Typography>
+      <Typography variant="subtitle1">{text2}</Typography>
     </Card>
   );
 }
