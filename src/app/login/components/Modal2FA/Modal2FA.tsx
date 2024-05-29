@@ -1,7 +1,7 @@
 "use client";
 import Modal from "@/components/core/Modal/Modal";
 import { Lock01 } from "../../../../../public/assets/iconsComponents/iconsComponents";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import { InputStyled } from "./Modal2FAStyle";
 import { colorsVars } from "@/utils/constants/colorsVars";
 import { useRef } from "react";
@@ -37,7 +37,6 @@ export function Modal2FA({
       subtitle="Para terminar con tu inicio de sesión deberas conectar tu cuenta con Google Authenticator App e ingresar el código de verificación debajo."
       maxWidth={"xs"}
       icon={<Lock01 />}
-      textOnAccept="Confirmar"
       {...props}
     >
       <Typography variant="body1" sx={{ marginBottom: "6px" }}>
@@ -97,6 +96,14 @@ export function Modal2FA({
           </Box>
         </Grid>
       </Grid>
+      <Button
+        variant="contained"
+        fullWidth
+        onClick={onClose}
+        sx={{ marginTop: "16px" }}
+      >
+        Confirmar
+      </Button>
     </Modal>
   );
 }

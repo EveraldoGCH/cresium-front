@@ -7,9 +7,10 @@ export const ModalRoot = styled(Dialog)(({ maxWidth }) => ({
     backgroundColor: "white",
     boxShadow: "0px 0px 40px rgba(12, 40, 84, 0.17)",
   },
-  // "& .MuiDialogActions-root": {
-  //   padding: theme.spacing(1),
-  // },
+  "& .MuiDialog-container": {
+    overflowY: "auto",
+    paddingRight: "16px",
+  },
   "& .MuiPaper-root": {
     color: "inherit",
     maxWidth: maxWidth || "900px",

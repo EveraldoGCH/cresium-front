@@ -15,8 +15,10 @@ import {
 import { UploadCloud02 } from "../../../../../public/assets/iconsComponents/iconsComponents";
 import { useMemo, useState } from "react";
 import Tabla from "../../../../components/core/Tabla/Tabla";
-import { Column } from "@/components/core/Tabla/TablaProps";
+import { Column, Row } from "@/components/core/Tabla/TablaProps";
 import { useGetTransactions } from "@/hooks/apiCalls/get/useGetTransactions";
+import { useModal } from "@/hooks/useModal";
+import { ModalDetalleTransaccion } from "../ModalDetalleTransaccion/ModalDetalleTransaccion";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -46,7 +48,17 @@ function CustomTabPanel(props: TabPanelProps) {
 }
 
 export function ContenedorTabla(): React.JSX.Element {
+  const [columns] = useState<Column[]>([
+    { label: "Fecha", rowAccesor: "createdAt" },
+    { label: "Nombre", align: "left", rowAccesor: "collaboratorFirstName" },
+    { label: "Monto", align: "right", rowAccesor: "amount" },
+    { label: "Cuenta", align: "right", rowAccesor: "account" },
+    { label: "Tipo de transacción", align: "right", rowAccesor: "transaction" },
+  ]);
   const [tab, setTab] = useState(0);
+  const [selectedRow, setSelectedRow] = useState<Row>();
+
+  const { open, onOpen, onClose } = useModal();
 
   const { data: dataTransactions, isLoading: loadingTransactions } =
     useGetTransactions(tabs[tab].type);
@@ -55,17 +67,10 @@ export function ContenedorTabla(): React.JSX.Element {
     setTab(newValue);
   };
 
-  const columns: Column[] = [
-    { label: "Fecha", rowAccesor: "createdAt" },
-    { label: "Nombre", align: "left", rowAccesor: "collaboratorFirstName" },
-    { label: "Monto", align: "right", rowAccesor: "amount" },
-    { label: "Cuenta", align: "right", rowAccesor: "account" },
-    { label: "Tipo de transacción", align: "right", rowAccesor: "transaction" },
-  ];
-
   let rows = useMemo(() => {
     let rowsMap = dataTransactions?.transactions.map((elm) => {
       return {
+        id: elm.id,
         createdAt: elm.createdAt,
         collaboratorFirstName: elm.collaborator.firstName,
         amount: elm.totalAmount,
@@ -73,9 +78,13 @@ export function ContenedorTabla(): React.JSX.Element {
         transaction: elm.type,
       };
     });
-
     return rowsMap;
   }, [dataTransactions]);
+
+  let handleRowClick = (row: Row) => {
+    onOpen();
+    setSelectedRow(row);
+  };
 
   if (loadingTransactions) {
     return (
@@ -132,17 +141,11 @@ export function ContenedorTabla(): React.JSX.Element {
                   ))}
                 </Tabs>
               </Box>
-              {tabs.map((elm, i) => (
-                <CustomTabPanel
-                  value={tab}
-                  index={elm.value}
-                  key={elm.value + i}
-                >
-                  <Stack padding={"24px"}>
-                    <Skeleton variant="rounded" height={"658px"} />
-                  </Stack>
-                </CustomTabPanel>
-              ))}
+              <CustomTabPanel value={tab} index={tab}>
+                <Stack padding={"24px"}>
+                  <Skeleton variant="rounded" height={"602px"} />
+                </Stack>
+              </CustomTabPanel>
             </Box>
           </Grid>
         </Grid>
@@ -204,13 +207,22 @@ export function ContenedorTabla(): React.JSX.Element {
                 ))}
               </Tabs>
             </Box>
-            {tabs.map((elm) => (
-              <CustomTabPanel value={tab} index={elm.value} key={elm.value}>
-                <Tabla columns={columns} rows={rows} />
-              </CustomTabPanel>
-            ))}
+            <CustomTabPanel value={tab} index={tab}>
+              <Tabla
+                columns={columns}
+                rows={rows}
+                onClickRow={handleRowClick}
+              />
+            </CustomTabPanel>
           </Box>
         </Grid>
+        {selectedRow && (
+          <ModalDetalleTransaccion
+            open={open}
+            onClose={onClose}
+            element={selectedRow}
+          />
+        )}
       </Grid>
     </Card>
   );

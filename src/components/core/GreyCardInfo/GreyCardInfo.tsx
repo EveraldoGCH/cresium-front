@@ -8,7 +8,7 @@ interface CardProps {
   height?: string;
   style?: React.CSSProperties;
   text1: string;
-  text2: string;
+  text2: string | number;
 }
 
 export function GreyCardInfo({

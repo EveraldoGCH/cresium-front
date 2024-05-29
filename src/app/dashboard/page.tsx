@@ -21,9 +21,9 @@ export default function DashBoard() {
   const router = useRouter();
 
   return (
-    <Stack spacing={5.5} sx={{ width: "100%" }}>
+    <Stack spacing={5.5} sx={{ width: "100%" }} alignItems={"center"}>
       {/* Contenedor Principal*/}
-      <Stack spacing={2.5}>
+      <Stack spacing={2.5} sx={{ width: "100%" }}>
         {/* Primer contenedor */}
         <Stack
           direction={{ xs: "column", sm: "row" }}
@@ -67,7 +67,7 @@ export default function DashBoard() {
         container
         xs={12}
         justifyContent={"space-between"}
-        style={{ gap: "4%" }}
+        style={{ gap: "4%", maxWidth: "1116px" }}
         flexWrap={"nowrap"}
       >
         {/*Contenedor Cards y chart*/}
@@ -91,7 +91,7 @@ export default function DashBoard() {
         xs={12}
         justifyContent={"space-between"}
         flexWrap={"nowrap"}
-        style={{ gap: "4%" }}
+        style={{ gap: "4%", maxWidth: "1116px" }}
       >
         {/*Contenedor Cards Ingreso egreso dinero*/}
         <Grid item xs={6}>
@@ -118,7 +118,7 @@ export default function DashBoard() {
         </Grid>
       </Grid>
       {/*FIN contenedor Cards Ingreso egreso dinero*/}
-      <Grid container xs={12}>
+      <Grid container xs={12} style={{ maxWidth: "1116px" }}>
         {/*Contenedor Tabla */}
         <ContenedorTabla />
         {/*FIN Contenedor Tabla */}

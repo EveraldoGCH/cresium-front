@@ -2,7 +2,6 @@ import {
   ArrowDownLeft,
   CoinSwap01,
   CoinsStacked03,
-  Copy06,
   HomeLine,
   LifeBuoy01,
   List,
@@ -33,10 +32,6 @@ export const pathsForVerticalMenu = {
         },
       ],
     },
-    { path: "/", icon: UserCircle, name: "Prueba mas larga" },
-
-    { path: "/", icon: Copy06, name: "a ver como se comporta" },
-    { path: "/", icon: CoinsStacked03, name: "con mas items" },
   ],
   secondBlock: [
     { path: "/account", icon: LifeBuoy01, name: "Soporte" },

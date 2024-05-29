@@ -12,4 +12,5 @@ export interface Row {
 export interface TablaProps {
   columns: Column[];
   rows: Row[] | undefined;
+  onClickRow?: (_row: Row) => void;
 }

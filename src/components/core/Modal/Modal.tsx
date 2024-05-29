@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  DialogProps,
-  IconButton,
-  Typography,
-} from "@mui/material";
+import { Box, DialogProps, IconButton, Typography } from "@mui/material";
 import { XClose } from "../../../../public/assets/iconsComponents/iconsComponents";
 import {
   CloseContainer,
@@ -21,7 +15,6 @@ export interface ModalProps extends DialogProps {
   subtitle?: string;
   children: React.ReactNode;
   hideCloseButton?: boolean;
-  textOnAccept?: string;
   icon?: React.ReactNode;
 }
 
@@ -33,12 +26,11 @@ const Modal = ({
   hideCloseButton = false,
   title,
   subtitle,
-  textOnAccept,
   ...props
 }: ModalProps) => {
   //BREAKPOINTS for maxWidth: xs=0px, sm=600px, md=900px, lg=1200px, xl=1536px
   return (
-    <ModalRoot {...props} open={open}>
+    <ModalRoot {...props} open={open} className={open ? ".modalOpen" : ""}>
       <ModalWrapper>
         <ModalHeader>
           <Box display={"flex"} justifyContent={"space-between"}>
@@ -57,16 +49,6 @@ const Modal = ({
           </Box>
         </ModalHeader>
         {children}
-        {textOnAccept && (
-          <Button
-            variant="contained"
-            fullWidth
-            onClick={onClose}
-            sx={{ marginTop: "32px" }}
-          >
-            {textOnAccept}
-          </Button>
-        )}
       </ModalWrapper>
     </ModalRoot>
   );
