@@ -46,7 +46,7 @@ export function VerticalMenu({ children }: VerticalMenuProps) {
                   key={elm.name + i}
                   style={
                     pathname === elm.path
-                      ? { backgroundColor: colorsVars.grey100 }
+                      ? { backgroundColor: colorsVars.grey200 }
                       : {}
                   }
                   onClick={() => router.push(elm.path)}

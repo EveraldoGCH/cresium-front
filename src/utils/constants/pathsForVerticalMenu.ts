@@ -2,6 +2,7 @@ import {
   ArrowDownLeft,
   CoinSwap01,
   CoinsStacked03,
+  Copy06,
   HomeLine,
   LifeBuoy01,
   List,
@@ -20,10 +21,22 @@ export const pathsForVerticalMenu = {
       name: "Transferencias",
       expand: [
         { path: "/enviar-dinero", icon: TrendUp02, name: "Enviar dinero" },
-        { path: "/enviar-dinero", icon: ArrowDownLeft, name: "Recibir dinero" },
-        { path: "/enviar-dinero", icon: CoinsStacked03, name: "Pago en lotes" },
+        {
+          path: "/enviar-dinero2",
+          icon: ArrowDownLeft,
+          name: "Recibir dinero",
+        },
+        {
+          path: "/enviar-dinero3",
+          icon: CoinsStacked03,
+          name: "Pago en lotes",
+        },
       ],
     },
+    { path: "/", icon: UserCircle, name: "Prueba mas larga" },
+
+    { path: "/", icon: Copy06, name: "a ver como se comporta" },
+    { path: "/", icon: CoinsStacked03, name: "con mas items" },
   ],
   secondBlock: [
     { path: "/account", icon: LifeBuoy01, name: "Soporte" },

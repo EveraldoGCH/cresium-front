@@ -46,28 +46,35 @@ export default function ExpandableItem({
           />
         )}
       </ListItemNav>
-      {expanded && (
-        <Stack marginLeft={"24px"} gap={"8px"}>
-          {items.map((elm, i) => {
-            return (
-              <ListItemNav
-                key={elm.name + i}
-                onClick={() => router.push(elm.path)}
-                style={
-                  pathname === elm.path
-                    ? { backgroundColor: colorsVars.grey100 }
-                    : {}
-                }
-              >
-                <Box display={"flex"} alignItems={"center"} gap={"16px"}>
-                  <elm.icon />
-                  {elm.name}
-                </Box>
-              </ListItemNav>
-            );
-          })}
-        </Stack>
-      )}
+
+      <Stack
+        marginLeft={"24px"}
+        gap={"8px"}
+        style={
+          expanded
+            ? { maxHeight: "50vh", overflow: "hidden", transition: "0.5s" }
+            : { maxHeight: 0, overflow: "hidden", transition: "0.2s" }
+        }
+      >
+        {items.map((elm, i) => {
+          return (
+            <ListItemNav
+              key={elm.name + i}
+              onClick={() => router.push(elm.path)}
+              style={
+                pathname === elm.path
+                  ? { backgroundColor: colorsVars.grey100 }
+                  : {}
+              }
+            >
+              <Box display={"flex"} alignItems={"center"} gap={"16px"}>
+                <elm.icon />
+                {elm.name}
+              </Box>
+            </ListItemNav>
+          );
+        })}
+      </Stack>
     </Stack>
   );
 }

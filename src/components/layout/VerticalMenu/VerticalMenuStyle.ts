@@ -39,7 +39,7 @@ export const ListItemNav = styled.div`
   font-size: 0.875rem;
   line-height: 28px;
   &:hover {
-    background-color: rgb(242, 244, 247, 0.4);
+    background-color: rgb(242, 244, 247, 0.6);
     transition: 0.2s ease;
   }
 `;

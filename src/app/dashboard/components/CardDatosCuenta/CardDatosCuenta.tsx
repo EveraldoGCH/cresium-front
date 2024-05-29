@@ -127,7 +127,7 @@ export function CardDatosCuenta(): React.JSX.Element {
                   onClick={() => clickCopy(datosCuenta![0].value)}
                 >
                   <Copy06
-                    style={{ cursor: "pointer", colors: colorsVars.primary600 }}
+                    style={{ cursor: "pointer", color: colorsVars.primary600 }}
                   />
                 </IconButton>
               </Grid>
@@ -162,7 +162,7 @@ export function CardDatosCuenta(): React.JSX.Element {
                   onClick={() => clickCopy(datosCuenta![1].value)}
                 >
                   <Copy06
-                    style={{ cursor: "pointer", colors: colorsVars.primary600 }}
+                    style={{ cursor: "pointer", color: colorsVars.primary600 }}
                   />
                 </IconButton>
               </Grid>
